@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/carry0987/Brickhead/compare/v1.1.0...v1.1.1) (2026-10-24)
+
+
+### Bug Fixes
+
+* **ai:** block zombie paths through barrels ([#4](https://github.com/carry0987/Brickhead/issues/4)) ([7ab6631](https://github.com/carry0987/Brickhead/commit/7ab663102c4c93a2b03acdef71ff0f43d5d65d5e))
+* **ai:** hold partner when path is unreachable ([#7](https://github.com/carry0987/Brickhead/issues/7)) ([deb58de](https://github.com/carry0987/Brickhead/commit/deb58ded7c1505e3b81e8bb6d785d3adf7b99114))
+
 ## [1.1.0](https://github.com/carry0987/Brickhead/compare/v1.0.0...v1.1.0) (2026-10-24)
 
 
