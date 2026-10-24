@@ -121,7 +121,8 @@
   "model_weapon_mount": "在右手骨骼 weapon_mount_bone 掛載武器 .bbmodel：",
   "model_texture_animation_badge": "內嵌 64×64 PNG 貼圖與完整骨骼動畫",
   "model_texture_animation_help": "每個 .bbmodel 都內嵌彩色貼圖，可在 Blockbench 中完整顯示，並包含完整關鍵影格動畫。",
-  "poster_label": "Boxhead 2Play Rooms 實機 .bbmodel 靜態示意海報",
-  "poster_caption": "實機 .bbmodel 靜態快照 · 圓柱油桶 · 純白八角柱假牆 · 白底紅燈地雷 · 紅捆綠燈遙控炸藥",
-  "poster_description": "所有角色、怪物、槍械與戰術裝備皆為獨立 .bbmodel 檔案並整合於 /assets。"
+  "poster_label": "Brickhead 戰場實機畫面",
+  "poster_caption": "屍潮逼近 · 油桶、假牆與地雷構築防線",
+  "poster_description": "維持連擊、解鎖火力，在一波波屍潮中活下來。",
+  "poster_modes": "單人 · AI 戰友 · 本機雙人合作 · 死亡競賽"
 }

@@ -876,7 +876,7 @@ export const BoxheadHeroDioramaArt: FC = () => {
                         <h3 className="text-lg font-bold text-white mt-0.5">{m.poster_description()}</h3>
                     </div>
                     <div className="text-right font-mono-tabular text-xs text-stone-300">
-                        <span>STATIC .BBMODEL RENDER</span>
+                        <span>{m.poster_modes()}</span>
                     </div>
                 </div>
             </div>
