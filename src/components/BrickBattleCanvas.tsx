@@ -64,8 +64,11 @@ interface BrickBattleCanvasProps {
     roomId: RoomId;
     minimapEnabled?: boolean;
     isMapViewerOpen?: boolean;
+    isComboModalOpen: boolean;
     onToggleMinimap?: () => void;
     onOpenMapViewer?: () => void;
+    onOpenComboModal: () => void;
+    onCloseComboModal: () => void;
     onReturnToTitle: () => void;
     onGameStateChange: (nextState: GameState) => void;
 }
@@ -81,7 +84,10 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
     roomId,
     minimapEnabled = true,
     isMapViewerOpen = false,
+    isComboModalOpen,
     onToggleMinimap,
+    onOpenComboModal,
+    onCloseComboModal,
     onReturnToTitle,
     onGameStateChange,
 }) => {
@@ -91,7 +97,6 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
     // Offscreen Persistent World Floor Bitmap (Flash BitmapData technique for zero-cost blood/scorch decals!)
     const floorBufferRef = useRef<HTMLCanvasElement | null>(null);
 
-    const [isComboModalOpen, setIsComboModalOpen] = useState(false);
     const [useMouseAim, setUseMouseAim] = useState(false);
     // In 2P Deathmatch mode, allows swapping Left & Right split-screen order via bottom arrow button outside the canvas
     const [isSplitSwapped, setIsSplitSwapped] = useState(false);
@@ -177,6 +182,7 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
         spawnQueue: [],
         lastSpawnTime: 0,
         spawnIntervalMs: WAVE_TUNING.spawning.initialIntervalMs,
+        nextWaveStartAt: null,
         score: 0,
         combo: 0,
         maxComboReached: 0,
@@ -312,6 +318,7 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
         st.sandboxAllUnlocked = false;
         st.deathmatchWinner = null;
         st.gameOverPendingAt = null;
+        st.nextWaveStartAt = null;
         st.waveBanner =
             gameMode === 'DEATHMATCH_2P' ? null : { text: `WAVE ${startingWave}`, createdAt: now, durationMs: 2400 };
         st.enemies = [];
@@ -489,10 +496,11 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
         applyRoomGeometryAndSpawns(room);
 
         st.spawnQueue = buildWaveEnemies(startingWave);
+        soundFX.playWorldEnd();
         st.spawnIntervalMs = getWaveSpawnIntervalMs(st.wave);
         st.lastSpawnTime = now;
         st.lastRedBoxTime = now;
-        setIsComboModalOpen(false);
+        onCloseComboModal();
 
         const runId = ++bootRunIdRef.current;
         loadingPhaseRef.current = 'READY';
@@ -527,6 +535,7 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
         room,
         roomBounds,
         startingWave,
+        onCloseComboModal,
         worldH,
         worldW,
     ]);
@@ -600,10 +609,10 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
             }
             engineRef.current.keys.add(k);
 
-            if (k === 'escape' || k === 'p') {
+            if (k === 'p') {
                 soundFX.playClick();
                 if (isComboModalOpen) {
-                    setIsComboModalOpen(false);
+                    onCloseComboModal();
                     return;
                 }
                 if (gameState === 'PLAYING') onGameStateChange('PAUSED');
@@ -614,7 +623,8 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
             if (k === 'tab' || k === 'b') {
                 e.preventDefault();
                 soundFX.playClick();
-                setIsComboModalOpen((prev) => !prev);
+                if (isComboModalOpen) onCloseComboModal();
+                else onOpenComboModal();
                 return;
             }
 
@@ -671,7 +681,9 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
         gameState,
         isComboModalOpen,
         isMapViewerOpen,
+        onCloseComboModal,
         onGameStateChange,
+        onOpenComboModal,
         p1Binds.down,
         p1Binds.left,
         p1Binds.nextWeapon,
@@ -1199,7 +1211,9 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
                         }
                     } else {
                         st.gameOverPendingAt = null;
-                        if (st.spawnQueue.length === 0 && st.enemies.length === 0) {
+                        if (st.spawnQueue.length > 0 || st.enemies.length > 0) {
+                            st.nextWaveStartAt = null;
+                        } else if (st.nextWaveStartAt === null) {
                             const res = statsStorage.updateFromRun({
                                 roomId,
                                 maxCombo: st.earnedMaxCombo,
@@ -1209,11 +1223,14 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
                             });
                             if (res.isNewBestCombo) st.newRecordCombo = true;
                             if (res.isNewBestTime) st.newRecordTime = true;
-
+                            st.nextWaveStartAt = now + WAVE_TUNING.spawning.nextWaveDelayMs;
+                        } else if (now >= st.nextWaveStartAt) {
+                            st.nextWaveStartAt = null;
                             st.wave += 1;
                             st.spawnQueue = buildWaveEnemies(st.wave);
+                            soundFX.playWorldEnd();
                             st.spawnIntervalMs = getWaveSpawnIntervalMs(st.wave);
-                            st.lastSpawnTime = now + WAVE_TUNING.spawning.nextWaveDelayMs;
+                            st.lastSpawnTime = now - st.spawnIntervalMs;
                             st.players.forEach((p) => {
                                 if (p.isDowned) {
                                     p.isDowned = false;
@@ -1446,7 +1463,8 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
             targetPl.currentWeapon = weaponId;
             syncWeaponStateToStorage();
         } else {
-            setIsComboModalOpen(true);
+            soundFX.playClick();
+            onOpenComboModal();
         }
     };
 
@@ -1481,7 +1499,7 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
             onToggleMouseAim={() => setUseMouseAim((previous) => !previous)}
             onToggleDebugPathfinding={handleToggleDebugPathfinding}
             onOpenComboModal={() => {
-                if (loadingPhase === 'READY') setIsComboModalOpen(true);
+                if (loadingPhase === 'READY') onOpenComboModal();
             }}
             onTogglePause={() => {
                 if (loadingPhase === 'READY') {
@@ -1499,7 +1517,7 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
                 setIsSplitSwapped((previous) => !previous);
             }}
             onSelectWeapon={handleSelectWeaponFromBar}
-            onCloseComboModal={() => setIsComboModalOpen(false)}
+            onCloseComboModal={onCloseComboModal}
         />
     );
 };
