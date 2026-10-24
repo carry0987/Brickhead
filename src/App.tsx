@@ -115,6 +115,9 @@ export default function App() {
     const [lobbySubView, setLobbySubView] = useState<LobbySubView>('MAIN');
     const [isModelStudioOpen, setIsModelStudioOpen] = useState<boolean>(false);
     const [isMapViewerOpen, setIsMapViewerOpen] = useState<boolean>(false);
+    const [isComboModalOpen, setIsComboModalOpen] = useState<boolean>(false);
+    const openComboModal = useCallback(() => setIsComboModalOpen(true), []);
+    const closeComboModal = useCallback(() => setIsComboModalOpen(false), []);
 
     // Global Startup Preload State (Loads all 3D .bbmodel models, 18 room maps, SVG effects, and WAV sounds before homepage)
     const startupLoadRunIdRef = useRef<number>(0);
@@ -214,6 +217,24 @@ export default function App() {
         player: 'p1' | 'p2';
         action: keyof PlayerControlsBinding;
     } | null>(null);
+    const keyboardStateRef = useRef({
+        gameState,
+        menuStep,
+        lobbySubView,
+        isModelStudioOpen,
+        isMapViewerOpen,
+        isComboModalOpen,
+        listeningBind,
+    });
+    keyboardStateRef.current = {
+        gameState,
+        menuStep,
+        lobbySubView,
+        isModelStudioOpen,
+        isMapViewerOpen,
+        isComboModalOpen,
+        listeningBind,
+    };
 
     const [personalStats, setPersonalStats] = useState<PersonalBestStats>(() => statsStorage.getStats());
     const [confirmReset, setConfirmReset] = useState<boolean>(false);
@@ -331,51 +352,73 @@ export default function App() {
         });
     }, []);
 
-    // Listen for key press when remapping controls
     useEffect(() => {
-        if (!listeningBind) return;
         const handleKeyDown = (e: KeyboardEvent) => {
-            e.preventDefault();
-            e.stopPropagation();
-            const rawKey = e.key.toLowerCase();
-            if (rawKey === 'escape') {
+            const state = keyboardStateRef.current;
+            const binding = state.listeningBind;
+            if (binding) {
+                e.preventDefault();
+                e.stopPropagation();
+                const rawKey = e.key.toLowerCase();
                 soundFX.playClick();
+                if (rawKey !== 'escape') {
+                    setControls((prev) => ({
+                        ...prev,
+                        [binding.player]: {
+                            ...prev[binding.player],
+                            [binding.action]: rawKey,
+                        },
+                    }));
+                }
                 setListeningBind(null);
                 return;
             }
-            soundFX.playClick();
-            setControls((prev) => ({
-                ...prev,
-                [listeningBind.player]: {
-                    ...prev[listeningBind.player],
-                    [listeningBind.action]: rawKey,
-                },
-            }));
-            setListeningBind(null);
-        };
-        window.addEventListener('keydown', handleKeyDown, { capture: true });
-        return () => window.removeEventListener('keydown', handleKeyDown, { capture: true });
-    }, [listeningBind]);
 
-    useEffect(() => {
-        if (menuStep !== 'LOBBY' || listeningBind || isMapViewerOpen || isModelStudioOpen) {
-            return;
-        }
+            if (e.key !== 'Escape' || e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+            const target = e.target as HTMLElement | null;
+            if (
+                target &&
+                (target.tagName === 'TEXTAREA' || target.tagName === 'SELECT' || target.tagName === 'INPUT')
+            ) {
+                return;
+            }
 
-        const handleLobbySubviewEscape = (event: KeyboardEvent) => {
-            if (event.key !== 'Escape' || event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
-            event.preventDefault();
+            e.preventDefault();
             soundFX.playClick();
-            if (lobbySubView !== 'MAIN') {
+
+            if (state.isMapViewerOpen) {
+                setIsMapViewerOpen(false);
+                return;
+            }
+            if (state.isModelStudioOpen) {
+                setIsModelStudioOpen(false);
+                return;
+            }
+            if (state.isComboModalOpen) {
+                setIsComboModalOpen(false);
+                return;
+            }
+            if (state.gameState === 'PAUSED') {
+                setGameState('PLAYING');
+                return;
+            }
+            if (state.gameState === 'PLAYING') {
+                setGameState('PAUSED');
+                return;
+            }
+            if (state.gameState !== 'TITLE_MENU' || state.menuStep !== 'LOBBY') {
+                return;
+            }
+            if (state.lobbySubView !== 'MAIN') {
                 setLobbySubView('MAIN');
                 return;
             }
             setMenuStep('MODE_SELECT');
         };
 
-        window.addEventListener('keydown', handleLobbySubviewEscape);
-        return () => window.removeEventListener('keydown', handleLobbySubviewEscape);
-    }, [isMapViewerOpen, isModelStudioOpen, listeningBind, lobbySubView, menuStep]);
+        window.addEventListener('keydown', handleKeyDown, { capture: true });
+        return () => window.removeEventListener('keydown', handleKeyDown, { capture: true });
+    }, []);
 
     // Global keyboard shortcut ('M' key) to toggle master volume between current volume and 0%
     useEffect(() => {
@@ -510,7 +553,7 @@ export default function App() {
     };
 
     const handleStartGame = () => {
-        soundFX.playWorldEnd();
+        setIsComboModalOpen(false);
         setGameState('PLAYING');
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
@@ -545,7 +588,13 @@ export default function App() {
     const HEALTH_BRICK_IDS = Array.from({ length: 10 }, (_, index) => `health-brick-${index + 1}`);
 
     return (
-        <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col">
+        <div
+            className="min-h-screen bg-stone-950 text-stone-100 flex flex-col"
+            onFocusCapture={(event) => {
+                if (event.target instanceof HTMLButtonElement) {
+                    event.target.blur();
+                }
+            }}>
             {/* Top Bar: When playing, hide everything except the game name on the left */}
             <header className="sticky top-0 z-40 flex items-center justify-between gap-8 px-6 py-4 border-b border-stone-800 bg-stone-950/95 backdrop-blur-md">
                 <GameButton
@@ -627,13 +676,17 @@ export default function App() {
                         roomId={roomId}
                         minimapEnabled={options.minimapEnabled}
                         isMapViewerOpen={isMapViewerOpen}
+                        isComboModalOpen={isComboModalOpen}
                         onToggleMinimap={() =>
                             setOptions((prev) => ({ ...prev, minimapEnabled: !prev.minimapEnabled }))
                         }
                         onOpenMapViewer={() => setIsMapViewerOpen(true)}
+                        onOpenComboModal={openComboModal}
+                        onCloseComboModal={closeComboModal}
                         onReturnToTitle={() => {
                             soundFX.stopAllGameplaySounds();
                             soundFX.playClick();
+                            setIsComboModalOpen(false);
                             setGameState('TITLE_MENU');
                             setMenuStep('LOBBY');
                         }}

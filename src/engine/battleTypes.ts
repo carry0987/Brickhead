@@ -107,6 +107,7 @@ export interface BattleEngineState {
     spawnQueue: EnemyKind[];
     lastSpawnTime: number;
     spawnIntervalMs: number;
+    nextWaveStartAt: number | null;
     score: number;
     combo: number;
     maxComboReached: number;

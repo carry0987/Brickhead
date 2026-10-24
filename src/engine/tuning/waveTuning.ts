@@ -21,7 +21,7 @@ export const WAVE_TUNING = {
         intervalReductionPerWaveMs: 55,
         minimumIntervalMs: 260,
         maximumActiveEnemies: 56,
-        nextWaveDelayMs: 700,
+        nextWaveDelayMs: 3000,
     },
 } as const;
 
