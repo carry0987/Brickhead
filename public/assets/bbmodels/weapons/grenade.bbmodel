@@ -1,0 +1,919 @@
+{
+  "meta": {
+    "format_version": "4.5",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "boxhead_grenade",
+  "model_identifier": "boxhead_grenade",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "Grenade_Olive_Body",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -3.2,
+        0,
+        -3.2
+      ],
+      "to": [
+        3.2,
+        6.5,
+        3.2
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "1884fdb8-1884-4188-a188-00006f75c078"
+    },
+    {
+      "name": "Grenade_Safety_Pin_Cap",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.8,
+        6.5,
+        -1.8
+      ],
+      "to": [
+        1.8,
+        8.5,
+        1.8
+      ],
+      "autouv": 0,
+      "color": 1,
+      "origin": [
+        0,
+        6.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "5e871cd6-5e87-45e8-a5e8-00002928cfc6"
+    }
+  ],
+  "outliner": [
+    {
+      "name": "root",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "01f849be-1f84-41f8-a1f8-000021facaee",
+      "export": true,
+      "isOpen": true,
+      "children": [
+        {
+          "name": "body_bone",
+          "origin": [
+            0,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "2733856c-2733-4273-a273-00005e48ceb4",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "1884fdb8-1884-4188-a188-00006f75c078",
+            "5e871cd6-5e87-45e8-a5e8-00002928cfc6",
+            {
+              "name": "head_bone",
+              "origin": [
+                0,
+                20,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "4018cf71-4018-4401-a401-00001d08ef59",
+              "export": true,
+              "isOpen": true,
+              "children": []
+            },
+            {
+              "name": "left_arm_bone",
+              "origin": [
+                -6.8,
+                18.2,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "53e75212-53e7-453e-a53e-00005902c29e",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                {
+                  "name": "left_forearm_bone",
+                  "origin": [
+                    -6.8,
+                    15.8,
+                    4.2
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "uuid": "194401ab-1944-4194-a194-00003a4fd2dd",
+                  "export": true,
+                  "isOpen": true,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "right_arm_bone",
+              "origin": [
+                6.8,
+                18.2,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "4988981f-4988-4498-a498-000041852ab7",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                {
+                  "name": "right_forearm_bone",
+                  "origin": [
+                    6.8,
+                    15.8,
+                    4.2
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "uuid": "5a3efa70-5a3e-45a3-a5a3-0000072e17f0",
+                  "export": true,
+                  "isOpen": true,
+                  "children": [
+                    {
+                      "name": "weapon_mount_bone",
+                      "origin": [
+                        6.8,
+                        15.5,
+                        10.2
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "uuid": "64566068-6456-4645-a645-0000515f1aa8",
+                      "export": true,
+                      "isOpen": true,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "left_leg_bone",
+          "origin": [
+            -2.6,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "13254f39-1325-4132-a132-00005df1579f",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            {
+              "name": "left_knee_bone",
+              "origin": [
+                -2.6,
+                4.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "38accf1b-38ac-438a-a38a-0000666c2fed",
+              "export": true,
+              "isOpen": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "right_leg_bone",
+          "origin": [
+            2.6,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "15fd5431-15fd-415f-a15f-000040f91de7",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            {
+              "name": "right_knee_bone",
+              "origin": [
+                2.6,
+                4.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "188b2b51-188b-4188-a188-000063b95e39",
+              "export": true,
+              "isOpen": true,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "uuid": "anim-grenade-idle",
+      "name": "animation.boxhead.idle",
+      "loop": "loop",
+      "override": false,
+      "length": 1.6,
+      "snapping": 20,
+      "selected": true,
+      "animators": {
+        "2733856c-2733-4273-a273-00005e48ceb4": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 4,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "anim-grenade-fire",
+      "name": "animation.boxhead.fire",
+      "loop": "once",
+      "override": false,
+      "length": 1,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "4988981f-4988-4498-a498-000041852ab7": {
+          "name": "right_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 38.96,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 33.12,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 17.53,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 2.2
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 1.87
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0.99
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "5a3efa70-5a3e-45a3-a5a3-0000072e17f0": {
+          "name": "right_forearm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 23.38,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 19.87,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 10.52,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "53e75212-53e7-453e-a53e-00005902c29e": {
+          "name": "left_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 19.48,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 16.56,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 8.77,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 1.1
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0.94
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0.5
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "path": "",
+      "name": "boxhead_palette.png",
+      "folder": "block",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "mode": "bitmap",
+      "saved": true,
+      "uuid": "78b0b7ac-78b0-478b-a78b-000047fcb274",
+      "relative_path": "",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA7klEQVR42u3Yrw4BAQDHcZuoGXZjN5vNbYKisAnKeYETbxOIGg/gT7iXYAJFs+mippiRJFVQzM7Ndt7gp999w/cFPvGbuO+mocowCrKbZckcx5W584vMD76y5uwt+4xysgQAAAAAAAAAxBjgaduhqtx/yBbrrWwwnMgae1/WzidlrV5aFhyzMgAAAAAAAACIM8BmtQxVxUpdVjp0ZZlOVTY2TdmrlpJ5nie7nk8yAAAAAAAAAIgzwL/hEfUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDC/QBaeU7W8BJhBgAAAABJRU5ErkJggg==",
+      "width": 64,
+      "height": 64,
+      "uv_width": 64,
+      "uv_height": 64
+    }
+  ],
+  "boxhead_meta": {
+    "id": "grenade",
+    "scale": 1.35,
+    "bones": {
+      "root": {
+        "uuid": "01f849be-1f84-41f8-a1f8-000021facaee",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "body_bone": {
+        "uuid": "2733856c-2733-4273-a273-00005e48ceb4",
+        "origin": [
+          0,
+          9,
+          0
+        ]
+      },
+      "head_bone": {
+        "uuid": "4018cf71-4018-4401-a401-00001d08ef59",
+        "origin": [
+          0,
+          20,
+          0
+        ]
+      },
+      "left_arm_bone": {
+        "uuid": "53e75212-53e7-453e-a53e-00005902c29e",
+        "origin": [
+          -6.8,
+          18.2,
+          0
+        ]
+      },
+      "left_forearm_bone": {
+        "uuid": "194401ab-1944-4194-a194-00003a4fd2dd",
+        "origin": [
+          -6.8,
+          15.8,
+          4.2
+        ]
+      },
+      "right_arm_bone": {
+        "uuid": "4988981f-4988-4498-a498-000041852ab7",
+        "origin": [
+          6.8,
+          18.2,
+          0
+        ]
+      },
+      "right_forearm_bone": {
+        "uuid": "5a3efa70-5a3e-45a3-a5a3-0000072e17f0",
+        "origin": [
+          6.8,
+          15.8,
+          4.2
+        ]
+      },
+      "weapon_mount_bone": {
+        "uuid": "64566068-6456-4645-a645-0000515f1aa8",
+        "origin": [
+          6.8,
+          15.5,
+          10.2
+        ]
+      },
+      "left_leg_bone": {
+        "uuid": "13254f39-1325-4132-a132-00005df1579f",
+        "origin": [
+          -2.6,
+          9,
+          0
+        ]
+      },
+      "left_knee_bone": {
+        "uuid": "38accf1b-38ac-438a-a38a-0000666c2fed",
+        "origin": [
+          -2.6,
+          4.5,
+          0
+        ]
+      },
+      "right_leg_bone": {
+        "uuid": "15fd5431-15fd-415f-a15f-000040f91de7",
+        "origin": [
+          2.6,
+          9,
+          0
+        ]
+      },
+      "right_knee_bone": {
+        "uuid": "188b2b51-188b-4188-a188-000063b95e39",
+        "origin": [
+          2.6,
+          4.5,
+          0
+        ]
+      }
+    },
+    "cubes": [
+      {
+        "uuid": "1884fdb8-1884-4188-a188-00006f75c078",
+        "name": "Grenade_Olive_Body",
+        "from": [
+          -3.2,
+          0,
+          -3.2
+        ],
+        "to": [
+          3.2,
+          6.5,
+          3.2
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#3f6212",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      },
+      {
+        "uuid": "5e871cd6-5e87-45e8-a5e8-00002928cfc6",
+        "name": "Grenade_Safety_Pin_Cap",
+        "from": [
+          -1.8,
+          6.5,
+          -1.8
+        ],
+        "to": [
+          1.8,
+          8.5,
+          1.8
+        ],
+        "origin": [
+          0,
+          6.5,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#52525b",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      }
+    ]
+  }
+}

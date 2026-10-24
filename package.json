@@ -1,0 +1,49 @@
+{
+  "name": "brickhead",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A modern LEGO-style top-down zombie survival and tower defense shooting game with local co-op and AI companions.",
+  "keywords": [
+    "carry0987",
+    "brickhead",
+    "lego",
+    "zombie",
+    "survival",
+    "tower-defense",
+    "shooting-game"
+  ],
+  "author": "carry0987",
+  "homepage": "https://carry0987.github.io/Brickhead",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carry0987/Brickhead"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "i18n:compile": "paraglide-js compile --project ./i18n/project.inlang --outdir ./src/paraglide --emit-ts-declarations",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.9.0",
+    "@inlang/paraglide-js": "^2.29.1",
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.2",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}

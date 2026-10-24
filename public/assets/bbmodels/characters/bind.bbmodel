@@ -1,0 +1,3461 @@
+{
+  "meta": {
+    "format_version": "4.5",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "boxhead_bind",
+  "model_identifier": "boxhead_bind",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "Left_Thigh_Pants",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -4.6,
+        4.2,
+        -2.6
+      ],
+      "to": [
+        -0.6,
+        9.5,
+        2.6
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        -2.5999999999999996,
+        4.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "54020df3-5402-4540-a540-00006f7d86ab"
+    },
+    {
+      "name": "Left_Chunky_Boot",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -4.8,
+        0,
+        -2.6
+      ],
+      "to": [
+        -0.4,
+        4.4,
+        4.6
+      ],
+      "autouv": 0,
+      "color": 1,
+      "origin": [
+        -2.6,
+        0,
+        0.9999999999999998
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "3d26d8ec-3d26-43d2-a3d2-000067b08f34"
+    },
+    {
+      "name": "Right_Thigh_Pants",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        0.6,
+        4.2,
+        -2.6
+      ],
+      "to": [
+        4.6,
+        9.5,
+        2.6
+      ],
+      "autouv": 0,
+      "color": 2,
+      "origin": [
+        2.5999999999999996,
+        4.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "7606a660-7606-4760-a760-00006bfc02a0"
+    },
+    {
+      "name": "Right_Chunky_Boot",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        0.4,
+        0,
+        -2.6
+      ],
+      "to": [
+        4.8,
+        4.4,
+        4.6
+      ],
+      "autouv": 0,
+      "color": 3,
+      "origin": [
+        2.6,
+        0,
+        0.9999999999999998
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "055bf02b-55bf-455b-a55b-00000329ffa3"
+    },
+    {
+      "name": "Torso_Box",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -5.2,
+        9,
+        -3.6
+      ],
+      "to": [
+        5.2,
+        20.2,
+        3.6
+      ],
+      "autouv": 0,
+      "color": 4,
+      "origin": [
+        0,
+        9,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            17,
+            15,
+            23
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            17,
+            15,
+            23
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            17,
+            15,
+            23
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            17,
+            15,
+            23
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            17,
+            15,
+            23
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            17,
+            15,
+            23
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "7c8d7e89-7c8d-47c8-a7c8-00007ba9cfcf"
+    },
+    {
+      "name": "Left_Upper_Arm",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -8.4,
+        14,
+        -1.2
+      ],
+      "to": [
+        -5.2,
+        18.8,
+        4.4
+      ],
+      "autouv": 0,
+      "color": 5,
+      "origin": [
+        -6.800000000000001,
+        14,
+        1.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "351b5fd4-351b-4351-a351-00002c1aaa0c"
+    },
+    {
+      "name": "Left_Forearm",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -8.2,
+        14,
+        4.2
+      ],
+      "to": [
+        -5.3,
+        18.5,
+        10.4
+      ],
+      "autouv": 0,
+      "color": 6,
+      "origin": [
+        -6.75,
+        14,
+        7.300000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "108c6238-108c-4108-a108-00004f9d0708"
+    },
+    {
+      "name": "Right_Upper_Arm",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        5.2,
+        14,
+        -1.2
+      ],
+      "to": [
+        8.4,
+        18.8,
+        4.4
+      ],
+      "autouv": 0,
+      "color": 7,
+      "origin": [
+        6.800000000000001,
+        14,
+        1.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "1b136001-1b13-41b1-a1b1-000056b2da69"
+    },
+    {
+      "name": "Right_Forearm",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        5.3,
+        14,
+        4.2
+      ],
+      "to": [
+        8.2,
+        18.5,
+        10.4
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        6.75,
+        14,
+        7.300000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "266b0e91-266b-4266-a266-00003925ec87"
+    },
+    {
+      "name": "Faceless_Cube_Head",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -5.5,
+        20,
+        -5
+      ],
+      "to": [
+        5.5,
+        30.5,
+        5
+      ],
+      "autouv": 0,
+      "color": 1,
+      "origin": [
+        0,
+        20,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "008f9848-8f98-48f9-a8f9-000056883a78"
+    },
+    {
+      "name": "Stepped_BackHair_Sideburns",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -5.8,
+        23.2,
+        -5.4
+      ],
+      "to": [
+        5.8,
+        28.4,
+        0.4
+      ],
+      "autouv": 0,
+      "color": 2,
+      "origin": [
+        0,
+        23.2,
+        -2.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "0f175064-f175-4f17-af17-00004cdfa104"
+    },
+    {
+      "name": "FlatTop_Hair_Cap",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -5.7,
+        30.4,
+        -5.2
+      ],
+      "to": [
+        5.7,
+        34.6,
+        5.2
+      ],
+      "autouv": 0,
+      "color": 3,
+      "origin": [
+        0,
+        30.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "6f300c5e-6f30-46f3-a6f3-00007f662172"
+    },
+    {
+      "name": "Agent_Sunglasses",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -4.8,
+        24.5,
+        4.6
+      ],
+      "to": [
+        4.8,
+        27.2,
+        5.6
+      ],
+      "autouv": 0,
+      "color": 4,
+      "origin": [
+        0,
+        24.5,
+        5.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "5a13bc0b-5a13-45a1-a5a1-000059b55e83"
+    }
+  ],
+  "outliner": [
+    {
+      "name": "root",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "3bc15f99-3bc1-43bc-a3bc-00005620e03f",
+      "export": true,
+      "isOpen": true,
+      "children": [
+        {
+          "name": "body_bone",
+          "origin": [
+            0,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "566f5e7f-566f-4566-a566-00007949b7e9",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "7c8d7e89-7c8d-47c8-a7c8-00007ba9cfcf",
+            {
+              "name": "head_bone",
+              "origin": [
+                0,
+                20,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "7d72ece2-7d72-47d7-a7d7-00003906dcb2",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                "008f9848-8f98-48f9-a8f9-000056883a78",
+                "0f175064-f175-4f17-af17-00004cdfa104",
+                "6f300c5e-6f30-46f3-a6f3-00007f662172",
+                "5a13bc0b-5a13-45a1-a5a1-000059b55e83"
+              ]
+            },
+            {
+              "name": "left_arm_bone",
+              "origin": [
+                -6.8,
+                18.2,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "796021bf-7960-4796-a796-0000677d22a9",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                "351b5fd4-351b-4351-a351-00002c1aaa0c",
+                {
+                  "name": "left_forearm_bone",
+                  "origin": [
+                    -6.8,
+                    15.8,
+                    4.2
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "uuid": "3ceebc2c-3cee-43ce-a3ce-00003c67d9f4",
+                  "export": true,
+                  "isOpen": true,
+                  "children": [
+                    "108c6238-108c-4108-a108-00004f9d0708"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "right_arm_bone",
+              "origin": [
+                6.8,
+                18.2,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "0d358ca0-d358-4d35-ad35-000010051260",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                "1b136001-1b13-41b1-a1b1-000056b2da69",
+                {
+                  "name": "right_forearm_bone",
+                  "origin": [
+                    6.8,
+                    15.8,
+                    4.2
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "uuid": "56c19fef-56c1-456c-a56c-0000245d80f9",
+                  "export": true,
+                  "isOpen": true,
+                  "children": [
+                    "266b0e91-266b-4266-a266-00003925ec87",
+                    {
+                      "name": "weapon_mount_bone",
+                      "origin": [
+                        6.7,
+                        15.2,
+                        10.2
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "uuid": "10984bdb-1098-4109-a109-0000629d7ad3",
+                      "export": true,
+                      "isOpen": true,
+                      "children": []
+                    },
+                    {
+                      "name": "shoulder_mount_bone",
+                      "origin": [
+                        6.8,
+                        18.8,
+                        5.8
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "uuid": "b009-bind-shoulder-mount",
+                      "export": true,
+                      "isOpen": true,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "left_leg_bone",
+          "origin": [
+            -2.6,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "0c4bc714-c4bc-4c4b-ac4b-000027f42f34",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "54020df3-5402-4540-a540-00006f7d86ab",
+            {
+              "name": "left_knee_bone",
+              "origin": [
+                -2.6,
+                4.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "21a37afe-21a3-421a-a21a-00004b5581d2",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                "3d26d8ec-3d26-43d2-a3d2-000067b08f34"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "right_leg_bone",
+          "origin": [
+            2.6,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "7f1a9c4a-7f1a-47f1-a7f1-00002f9aa1a6",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "7606a660-7606-4760-a760-00006bfc02a0",
+            {
+              "name": "right_knee_bone",
+              "origin": [
+                2.6,
+                4.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "12eeae1c-12ee-412e-a12e-00007d213e84",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                "055bf02b-55bf-455b-a55b-00000329ffa3"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "uuid": "anim-bind-walk",
+      "name": "animation.boxhead.walk",
+      "loop": "loop",
+      "override": false,
+      "length": 0.8,
+      "snapping": 20,
+      "selected": true,
+      "animators": {
+        "566f5e7f-566f-4566-a566-00007949b7e9": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 2,
+                  "y": 3.5,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 2,
+                  "y": -3.5,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": 2,
+                  "y": 3.5,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "7d72ece2-7d72-47d7-a7d7-00003906dcb2": {
+          "name": "head_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": -2.5,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 2.5,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": -2.5,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "0c4bc714-c4bc-4c4b-ac4b-000027f42f34": {
+          "name": "left_leg_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 34,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": -34,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": 34,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "7f1a9c4a-7f1a-47f1-a7f1-00002f9aa1a6": {
+          "name": "right_leg_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": -34,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 34,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": -34,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "21a37afe-21a3-421a-a21a-00004b5581d2": {
+          "name": "left_knee_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": -28,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "12eeae1c-12ee-412e-a12e-00007d213e84": {
+          "name": "right_knee_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": -28,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": -28,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "796021bf-7960-4796-a796-0000677d22a9": {
+          "name": "left_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": -14,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 14,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": -14,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "0d358ca0-d358-4d35-ad35-000010051260": {
+          "name": "right_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 8,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": -8,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": 8,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "anim-bind-idle",
+      "name": "animation.boxhead.idle",
+      "loop": "loop",
+      "override": false,
+      "length": 1.6,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "566f5e7f-566f-4566-a566-00007949b7e9": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": 1.8,
+                  "y": 1.5,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "7d72ece2-7d72-47d7-a7d7-00003906dcb2": {
+          "name": "head_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": -1.5,
+                  "y": -2.5,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "796021bf-7960-4796-a796-0000677d22a9": {
+          "name": "left_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": -3,
+                  "y": 0,
+                  "z": -2
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "0d358ca0-d358-4d35-ad35-000010051260": {
+          "name": "right_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": -3,
+                  "y": 0,
+                  "z": 2
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "anim-bind-shoot-pistol",
+      "name": "animation.boxhead.shoot_pistol_uzi",
+      "loop": "loop",
+      "override": false,
+      "length": 0.4,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "566f5e7f-566f-4566-a566-00007949b7e9": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.08,
+              "data_points": [
+                {
+                  "x": -3,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        "0d358ca0-d358-4d35-ad35-000010051260": {
+          "name": "right_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.08,
+              "data_points": [
+                {
+                  "x": -14,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.08,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": -1.6
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        "56c19fef-56c1-456c-a56c-0000245d80f9": {
+          "name": "right_forearm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.08,
+              "data_points": [
+                {
+                  "x": -9,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "anim-bind-shoot-heavy",
+      "name": "animation.boxhead.shoot_heavy",
+      "loop": "once",
+      "override": false,
+      "length": 0.5,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "566f5e7f-566f-4566-a566-00007949b7e9": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": -6,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "0d358ca0-d358-4d35-ad35-000010051260": {
+          "name": "right_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": -22,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": -2.8
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "56c19fef-56c1-456c-a56c-0000245d80f9": {
+          "name": "right_forearm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": -14,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "796021bf-7960-4796-a796-0000677d22a9": {
+          "name": "left_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": -12,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": -1.4
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "anim-bind-throw-place",
+      "name": "animation.boxhead.throw_place",
+      "loop": "once",
+      "override": false,
+      "length": 0.5,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "566f5e7f-566f-4566-a566-00007949b7e9": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.18,
+              "data_points": [
+                {
+                  "x": 9,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "0d358ca0-d358-4d35-ad35-000010051260": {
+          "name": "right_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.18,
+              "data_points": [
+                {
+                  "x": 36,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.18,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 2.2
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "796021bf-7960-4796-a796-0000677d22a9": {
+          "name": "left_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.18,
+              "data_points": [
+                {
+                  "x": 22,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.5,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "anim-bind-hurt",
+      "name": "animation.boxhead.hurt",
+      "loop": "once",
+      "override": false,
+      "length": 0.4,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "566f5e7f-566f-4566-a566-00007949b7e9": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": -7,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "7d72ece2-7d72-47d7-a7d7-00003906dcb2": {
+          "name": "head_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": -5,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "796021bf-7960-4796-a796-0000677d22a9": {
+          "name": "left_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": -20,
+                  "y": -15,
+                  "z": -10
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 2.6
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "0d358ca0-d358-4d35-ad35-000010051260": {
+          "name": "right_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": -20,
+                  "y": 15,
+                  "z": 10
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 2.6
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "anim-bind-death",
+      "name": "animation.boxhead.death",
+      "loop": "hold",
+      "override": false,
+      "length": 0.6,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "3bc15f99-3bc1-43bc-a3bc-00005620e03f": {
+          "name": "root",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.3,
+              "data_points": [
+                {
+                  "x": -38,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.6,
+              "data_points": [
+                {
+                  "x": -87,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "position",
+              "time": 0.3,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 3.2,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.6,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 4.2,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        "796021bf-7960-4796-a796-0000677d22a9": {
+          "name": "left_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.25,
+              "data_points": [
+                {
+                  "x": -16,
+                  "y": -12,
+                  "z": -9
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.6,
+              "data_points": [
+                {
+                  "x": -10,
+                  "y": -8,
+                  "z": -5
+                }
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        },
+        "0d358ca0-d358-4d35-ad35-000010051260": {
+          "name": "right_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.25,
+              "data_points": [
+                {
+                  "x": -16,
+                  "y": 12,
+                  "z": 9
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.6,
+              "data_points": [
+                {
+                  "x": -10,
+                  "y": 8,
+                  "z": 5
+                }
+              ],
+              "interpolation": "linear"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "path": "",
+      "name": "boxhead_palette.png",
+      "folder": "block",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "mode": "bitmap",
+      "saved": true,
+      "uuid": "5570232f-5570-4557-a557-00007bc2d447",
+      "relative_path": "",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA7klEQVR42u3Yrw4BAQDHcZuoGXZjN5vNbYKisAnKeYETbxOIGg/gT7iXYAJFs+mippiRJFVQzM7Ndt7gp999w/cFPvGbuO+mocowCrKbZckcx5W584vMD76y5uwt+4xysgQAAAAAAAAAxBjgaduhqtx/yBbrrWwwnMgae1/WzidlrV5aFhyzMgAAAAAAAACIM8BmtQxVxUpdVjp0ZZlOVTY2TdmrlpJ5nie7nk8yAAAAAAAAAIgzwL/hEfUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDC/QBaeU7W8BJhBgAAAABJRU5ErkJggg==",
+      "width": 64,
+      "height": 64,
+      "uv_width": 64,
+      "uv_height": 64
+    }
+  ],
+  "boxhead_meta": {
+    "id": "bind",
+    "scale": 1.28,
+    "bones": {
+      "root": {
+        "uuid": "3bc15f99-3bc1-43bc-a3bc-00005620e03f",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "body_bone": {
+        "uuid": "566f5e7f-566f-4566-a566-00007949b7e9",
+        "origin": [
+          0,
+          9,
+          0
+        ]
+      },
+      "head_bone": {
+        "uuid": "7d72ece2-7d72-47d7-a7d7-00003906dcb2",
+        "origin": [
+          0,
+          20,
+          0
+        ]
+      },
+      "left_arm_bone": {
+        "uuid": "796021bf-7960-4796-a796-0000677d22a9",
+        "origin": [
+          -6.8,
+          18.2,
+          0
+        ]
+      },
+      "left_forearm_bone": {
+        "uuid": "3ceebc2c-3cee-43ce-a3ce-00003c67d9f4",
+        "origin": [
+          -6.8,
+          15.8,
+          4.2
+        ]
+      },
+      "right_arm_bone": {
+        "uuid": "0d358ca0-d358-4d35-ad35-000010051260",
+        "origin": [
+          6.8,
+          18.2,
+          0
+        ]
+      },
+      "right_forearm_bone": {
+        "uuid": "56c19fef-56c1-456c-a56c-0000245d80f9",
+        "origin": [
+          6.8,
+          15.8,
+          4.2
+        ]
+      },
+      "weapon_mount_bone": {
+        "uuid": "10984bdb-1098-4109-a109-0000629d7ad3",
+        "origin": [
+          6.7,
+          15.2,
+          10.2
+        ]
+      },
+      "left_leg_bone": {
+        "uuid": "0c4bc714-c4bc-4c4b-ac4b-000027f42f34",
+        "origin": [
+          -2.6,
+          9,
+          0
+        ]
+      },
+      "left_knee_bone": {
+        "uuid": "21a37afe-21a3-421a-a21a-00004b5581d2",
+        "origin": [
+          -2.6,
+          4.5,
+          0
+        ]
+      },
+      "right_leg_bone": {
+        "uuid": "7f1a9c4a-7f1a-47f1-a7f1-00002f9aa1a6",
+        "origin": [
+          2.6,
+          9,
+          0
+        ]
+      },
+      "right_knee_bone": {
+        "uuid": "12eeae1c-12ee-412e-a12e-00007d213e84",
+        "origin": [
+          2.6,
+          4.5,
+          0
+        ]
+      },
+      "shoulder_mount_bone": {
+        "uuid": "b009-bind-shoulder-mount",
+        "origin": [
+          6.8,
+          18.8,
+          5.8
+        ]
+      }
+    },
+    "cubes": [
+      {
+        "uuid": "54020df3-5402-4540-a540-00006f7d86ab",
+        "name": "Left_Thigh_Pants",
+        "from": [
+          -4.6,
+          4.2,
+          -2.6
+        ],
+        "to": [
+          -0.6,
+          9.5,
+          2.6
+        ],
+        "origin": [
+          -2.5999999999999996,
+          4.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "root",
+          "left_leg_bone"
+        ]
+      },
+      {
+        "uuid": "3d26d8ec-3d26-43d2-a3d2-000067b08f34",
+        "name": "Left_Chunky_Boot",
+        "from": [
+          -4.8,
+          0,
+          -2.6
+        ],
+        "to": [
+          -0.4,
+          4.4,
+          4.6
+        ],
+        "origin": [
+          -2.6,
+          0,
+          0.9999999999999998
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#52525b",
+        "bonePath": [
+          "root",
+          "left_leg_bone",
+          "left_knee_bone"
+        ]
+      },
+      {
+        "uuid": "7606a660-7606-4760-a760-00006bfc02a0",
+        "name": "Right_Thigh_Pants",
+        "from": [
+          0.6,
+          4.2,
+          -2.6
+        ],
+        "to": [
+          4.6,
+          9.5,
+          2.6
+        ],
+        "origin": [
+          2.5999999999999996,
+          4.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "root",
+          "right_leg_bone"
+        ]
+      },
+      {
+        "uuid": "055bf02b-55bf-455b-a55b-00000329ffa3",
+        "name": "Right_Chunky_Boot",
+        "from": [
+          0.4,
+          0,
+          -2.6
+        ],
+        "to": [
+          4.8,
+          4.4,
+          4.6
+        ],
+        "origin": [
+          2.6,
+          0,
+          0.9999999999999998
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#52525b",
+        "bonePath": [
+          "root",
+          "right_leg_bone",
+          "right_knee_bone"
+        ]
+      },
+      {
+        "uuid": "7c8d7e89-7c8d-47c8-a7c8-00007ba9cfcf",
+        "name": "Torso_Box",
+        "from": [
+          -5.2,
+          9,
+          -3.6
+        ],
+        "to": [
+          5.2,
+          20.2,
+          3.6
+        ],
+        "origin": [
+          0,
+          9,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#1f2937",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      },
+      {
+        "uuid": "351b5fd4-351b-4351-a351-00002c1aaa0c",
+        "name": "Left_Upper_Arm",
+        "from": [
+          -8.4,
+          14,
+          -1.2
+        ],
+        "to": [
+          -5.2,
+          18.8,
+          4.4
+        ],
+        "origin": [
+          -6.800000000000001,
+          14,
+          1.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#e2b281",
+        "bonePath": [
+          "root",
+          "body_bone",
+          "left_arm_bone"
+        ]
+      },
+      {
+        "uuid": "108c6238-108c-4108-a108-00004f9d0708",
+        "name": "Left_Forearm",
+        "from": [
+          -8.2,
+          14,
+          4.2
+        ],
+        "to": [
+          -5.3,
+          18.5,
+          10.4
+        ],
+        "origin": [
+          -6.75,
+          14,
+          7.300000000000001
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#e2b281",
+        "bonePath": [
+          "root",
+          "body_bone",
+          "left_arm_bone",
+          "left_forearm_bone"
+        ]
+      },
+      {
+        "uuid": "1b136001-1b13-41b1-a1b1-000056b2da69",
+        "name": "Right_Upper_Arm",
+        "from": [
+          5.2,
+          14,
+          -1.2
+        ],
+        "to": [
+          8.4,
+          18.8,
+          4.4
+        ],
+        "origin": [
+          6.800000000000001,
+          14,
+          1.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#e2b281",
+        "bonePath": [
+          "root",
+          "body_bone",
+          "right_arm_bone"
+        ]
+      },
+      {
+        "uuid": "266b0e91-266b-4266-a266-00003925ec87",
+        "name": "Right_Forearm",
+        "from": [
+          5.3,
+          14,
+          4.2
+        ],
+        "to": [
+          8.2,
+          18.5,
+          10.4
+        ],
+        "origin": [
+          6.75,
+          14,
+          7.300000000000001
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#e2b281",
+        "bonePath": [
+          "root",
+          "body_bone",
+          "right_arm_bone",
+          "right_forearm_bone"
+        ]
+      },
+      {
+        "uuid": "008f9848-8f98-48f9-a8f9-000056883a78",
+        "name": "Faceless_Cube_Head",
+        "from": [
+          -5.5,
+          20,
+          -5
+        ],
+        "to": [
+          5.5,
+          30.5,
+          5
+        ],
+        "origin": [
+          0,
+          20,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#e2b281",
+        "bonePath": [
+          "root",
+          "body_bone",
+          "head_bone"
+        ]
+      },
+      {
+        "uuid": "0f175064-f175-4f17-af17-00004cdfa104",
+        "name": "Stepped_BackHair_Sideburns",
+        "from": [
+          -5.8,
+          23.2,
+          -5.4
+        ],
+        "to": [
+          5.8,
+          28.4,
+          0.4
+        ],
+        "origin": [
+          0,
+          23.2,
+          -2.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#451a03",
+        "bonePath": [
+          "root",
+          "body_bone",
+          "head_bone"
+        ]
+      },
+      {
+        "uuid": "6f300c5e-6f30-46f3-a6f3-00007f662172",
+        "name": "FlatTop_Hair_Cap",
+        "from": [
+          -5.7,
+          30.4,
+          -5.2
+        ],
+        "to": [
+          5.7,
+          34.6,
+          5.2
+        ],
+        "origin": [
+          0,
+          30.4,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#451a03",
+        "bonePath": [
+          "root",
+          "body_bone",
+          "head_bone"
+        ]
+      },
+      {
+        "uuid": "5a13bc0b-5a13-45a1-a5a1-000059b55e83",
+        "name": "Agent_Sunglasses",
+        "from": [
+          -4.8,
+          24.5,
+          4.6
+        ],
+        "to": [
+          4.8,
+          27.2,
+          5.6
+        ],
+        "origin": [
+          0,
+          24.5,
+          5.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "root",
+          "body_bone",
+          "head_bone"
+        ]
+      }
+    ]
+  }
+}

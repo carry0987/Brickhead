@@ -1,0 +1,986 @@
+[
+  {
+    "id": "room_01",
+    "worldWidth": 721,
+    "worldHeight": 801,
+    "bounds": {
+      "x": 16,
+      "y": 103.3,
+      "w": 704,
+      "h": 544
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#b2b2b2",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_01.json"
+  },
+  {
+    "id": "room_02",
+    "worldWidth": 813,
+    "worldHeight": 712,
+    "bounds": {
+      "x": 12.8,
+      "y": 39.85,
+      "w": 800,
+      "h": 672
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_02.json",
+    "stainTransforms": [
+      [
+        0.5,
+        0,
+        0,
+        0.5,
+        106.55,
+        500.5
+      ],
+      [
+        -0.2187,
+        -0.1212,
+        0.1212,
+        -0.2186,
+        352.6,
+        147.95
+      ],
+      [
+        0.1765,
+        -0.243,
+        0.243,
+        0.1765,
+        657.45,
+        556
+      ],
+      [
+        0.1765,
+        -0.243,
+        0.243,
+        0.1765,
+        547.65,
+        331.45
+      ],
+      [
+        0.0676,
+        0.2926,
+        -0.2926,
+        0.0676,
+        119,
+        257.2
+      ]
+    ]
+  },
+  {
+    "id": "room_03",
+    "worldWidth": 1168,
+    "worldHeight": 1397,
+    "bounds": {
+      "x": 79.25,
+      "y": 124.4,
+      "w": 1088,
+      "h": 1216
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#b2b2b2",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_03.json",
+    "stainTransforms": [
+      [
+        -0.4859,
+        -0.353,
+        0.353,
+        -0.4859,
+        919.8,
+        1127.15
+      ],
+      [
+        -0.4859,
+        -0.353,
+        0.353,
+        -0.4859,
+        78.9,
+        678.7
+      ],
+      [
+        -0.4859,
+        -0.353,
+        0.353,
+        -0.4859,
+        146.1,
+        42.75
+      ],
+      [
+        -0.5974,
+        -0.0628,
+        0.0628,
+        -0.5973,
+        705.2,
+        1111.9
+      ],
+      [
+        -0.5974,
+        -0.0628,
+        0.0628,
+        -0.5973,
+        449.25,
+        899.95
+      ],
+      [
+        -0.5974,
+        -0.0628,
+        0.0628,
+        -0.5973,
+        705.2,
+        493.2
+      ],
+      [
+        0.5974,
+        0.0628,
+        -0.0628,
+        0.5973,
+        382.85,
+        98.9
+      ]
+    ]
+  },
+  {
+    "id": "room_04",
+    "worldWidth": 806,
+    "worldHeight": 800,
+    "bounds": {
+      "x": 0.2,
+      "y": 0.15,
+      "w": 800,
+      "h": 800
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_04.json",
+    "stainTransforms": [
+      [
+        -1.2544,
+        -0.1318,
+        0.1318,
+        -1.2544,
+        401.25,
+        415.8
+      ]
+    ]
+  },
+  {
+    "id": "room_05",
+    "worldWidth": 1977,
+    "worldHeight": 657,
+    "bounds": {
+      "x": 201.0,
+      "y": 68.25,
+      "w": 1472,
+      "h": 544
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_05.json",
+    "stainTransforms": [
+      [
+        0.6611,
+        -1.1927,
+        0.9146,
+        0.507,
+        72.25,
+        262.4
+      ],
+      [
+        0.6611,
+        -1.1927,
+        0.9146,
+        0.507,
+        1462.45,
+        262.4
+      ]
+    ]
+  },
+  {
+    "id": "room_06",
+    "worldWidth": 1043,
+    "worldHeight": 1416,
+    "bounds": {
+      "x": 148.35,
+      "y": 71.85,
+      "w": 704,
+      "h": 1312
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_06.json",
+    "stainTransforms": [
+      [
+        -1.7493,
+        -0.9696,
+        0.9696,
+        -1.7492,
+        372.8,
+        742.25
+      ]
+    ]
+  },
+  {
+    "id": "room_07",
+    "worldWidth": 1541,
+    "worldHeight": 1538,
+    "bounds": {
+      "x": 316.4,
+      "y": 221.3,
+      "w": 1056,
+      "h": 960
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_07.json",
+    "stainTransforms": [
+      [
+        0.5,
+        0.0,
+        0.0,
+        0.5,
+        119.35,
+        621.75
+      ],
+      [
+        0.407,
+        1.1819,
+        -1.1819,
+        0.407,
+        946.5,
+        372.05
+      ],
+      [
+        -0.985,
+        0.7696,
+        -0.7696,
+        -0.985,
+        37.45,
+        115.55
+      ],
+      [
+        -0.985,
+        0.7696,
+        -0.7696,
+        -0.985,
+        912.55,
+        932.65
+      ],
+      [
+        -0.985,
+        0.7696,
+        -0.7696,
+        -0.985,
+        213.8,
+        998.4
+      ]
+    ]
+  },
+  {
+    "id": "room_08",
+    "worldWidth": 1323,
+    "worldHeight": 1323,
+    "bounds": {
+      "x": 167.95,
+      "y": 233.6,
+      "w": 960,
+      "h": 800
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_08.json",
+    "stainTransforms": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        462.95,
+        897.45
+      ],
+      [
+        0.7962,
+        0.6024,
+        -0.6024,
+        0.7962,
+        473.8,
+        9.45
+      ],
+      [
+        0.0,
+        1.0,
+        -1.0,
+        0.0,
+        24.05,
+        395.5
+      ],
+      [
+        -0.6024,
+        0.7962,
+        -0.7962,
+        -0.6024,
+        912.05,
+        406.35
+      ]
+    ]
+  },
+  {
+    "id": "room_09",
+    "worldWidth": 1625,
+    "worldHeight": 1296,
+    "bounds": {
+      "x": 197.3,
+      "y": 126.2,
+      "w": 1312,
+      "h": 1056
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#b2b2b2",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_09.json",
+    "stainTransforms": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        696.95,
+        978.05
+      ],
+      [
+        0.7962,
+        0.6024,
+        -0.6024,
+        0.7962,
+        666.2,
+        123.05
+      ],
+      [
+        0.0,
+        1.0,
+        -1.0,
+        0.0,
+        -5.3,
+        554.95
+      ],
+      [
+        -0.6024,
+        0.7962,
+        -0.7962,
+        -0.6024,
+        1185.1,
+        573.1
+      ],
+      [
+        -1.4883,
+        -1.3323,
+        1.3323,
+        -1.4883,
+        585.95,
+        438.3
+      ]
+    ]
+  },
+  {
+    "id": "room_10",
+    "worldWidth": 1874,
+    "worldHeight": 801,
+    "bounds": {
+      "x": 16.0,
+      "y": 103.3,
+      "w": 1856,
+      "h": 544
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#b2b2b2",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_10.json",
+    "stainTransforms": [
+      [
+        -0.5318,
+        1.1321,
+        -0.6118,
+        -0.9841,
+        340.8,
+        303.0
+      ]
+    ]
+  },
+  {
+    "id": "room_11",
+    "worldWidth": 1637,
+    "worldHeight": 1296,
+    "bounds": {
+      "x": 197.3,
+      "y": 126.2,
+      "w": 1312,
+      "h": 1056
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_11.json",
+    "stainTransforms": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        696.95,
+        978.05
+      ],
+      [
+        0.7962,
+        0.6024,
+        -0.6024,
+        0.7962,
+        666.2,
+        123.05
+      ],
+      [
+        0.0,
+        1.0,
+        -1.0,
+        0.0,
+        -5.3,
+        554.95
+      ],
+      [
+        -0.6024,
+        0.7962,
+        -0.7962,
+        -0.6024,
+        1185.1,
+        573.1
+      ],
+      [
+        -1.4883,
+        -1.3323,
+        1.3323,
+        -1.4883,
+        585.95,
+        438.3
+      ]
+    ]
+  },
+  {
+    "id": "room_12",
+    "worldWidth": 1625,
+    "worldHeight": 1296,
+    "bounds": {
+      "x": 197.3,
+      "y": 126.2,
+      "w": 1280,
+      "h": 1056
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_12.json",
+    "stainTransforms": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        696.95,
+        978.05
+      ],
+      [
+        0.7962,
+        0.6024,
+        -0.6024,
+        0.7962,
+        666.2,
+        123.05
+      ],
+      [
+        0.0,
+        1.0,
+        -1.0,
+        0.0,
+        -5.3,
+        554.95
+      ],
+      [
+        -0.6024,
+        0.7962,
+        -0.7962,
+        -0.6024,
+        1185.1,
+        573.1
+      ],
+      [
+        -1.4883,
+        -1.3323,
+        1.3323,
+        -1.4883,
+        585.95,
+        438.3
+      ]
+    ]
+  },
+  {
+    "id": "room_13",
+    "worldWidth": 1625,
+    "worldHeight": 1296,
+    "bounds": {
+      "x": 197.3,
+      "y": 126.2,
+      "w": 1216,
+      "h": 1088
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#b2b2b2",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_13.json",
+    "stainTransforms": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        696.95,
+        978.05
+      ],
+      [
+        0.7962,
+        0.6024,
+        -0.6024,
+        0.7962,
+        666.2,
+        123.05
+      ],
+      [
+        0.0,
+        1.0,
+        -1.0,
+        0.0,
+        -5.3,
+        554.95
+      ],
+      [
+        -0.6024,
+        0.7962,
+        -0.7962,
+        -0.6024,
+        1185.1,
+        573.1
+      ],
+      [
+        -1.4883,
+        -1.3323,
+        1.3323,
+        -1.4883,
+        585.95,
+        438.3
+      ]
+    ]
+  },
+  {
+    "id": "room_14",
+    "worldWidth": 1875,
+    "worldHeight": 1639,
+    "bounds": {
+      "x": 16.0,
+      "y": 103.3,
+      "w": 1856,
+      "h": 1504
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#b2b2b2",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_14.json",
+    "stainTransforms": [
+      [
+        -0.5318,
+        1.1321,
+        -0.6118,
+        -0.9841,
+        340.8,
+        303.0
+      ]
+    ]
+  },
+  {
+    "id": "room_15",
+    "worldWidth": 2925,
+    "worldHeight": 868,
+    "bounds": {
+      "x": 140.8,
+      "y": 174.85,
+      "w": 2688,
+      "h": 544
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#b2b2b2",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_15.json",
+    "stainTransforms": [
+      [
+        -0.5318,
+        1.1321,
+        -0.6118,
+        -0.9841,
+        1557.25,
+        231.45
+      ],
+      [
+        -0.5318,
+        1.1321,
+        -0.6118,
+        -0.9841,
+        330.55,
+        299.1
+      ],
+      [
+        -1.0626,
+        0.6598,
+        0.0229,
+        -1.1585,
+        955.2,
+        293.0
+      ],
+      [
+        -1.0626,
+        0.6598,
+        0.0229,
+        -1.1585,
+        2370.85,
+        245.15
+      ]
+    ]
+  },
+  {
+    "id": "room_16",
+    "worldWidth": 2139,
+    "worldHeight": 1879,
+    "bounds": {
+      "x": 167.95,
+      "y": 233.6,
+      "w": 1856,
+      "h": 1600
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_16.json",
+    "stainTransforms": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1651.2,
+        1449.85
+      ],
+      [
+        0.7962,
+        0.6024,
+        -0.6024,
+        0.7962,
+        473.8,
+        9.45
+      ],
+      [
+        0.0,
+        1.0,
+        -1.0,
+        0.0,
+        24.05,
+        395.5
+      ],
+      [
+        -0.6024,
+        0.7962,
+        -0.7962,
+        -0.6024,
+        965.75,
+        336.7
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1400.8,
+        766.85
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        907.75,
+        773.9
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        479.55,
+        1067.0
+      ],
+      [
+        -0.6024,
+        0.7962,
+        -0.7962,
+        -0.6024,
+        1727.65,
+        450.85
+      ],
+      [
+        -0.6024,
+        0.7962,
+        -0.7962,
+        -0.6024,
+        1708.25,
+        1195.1
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1454.85,
+        171.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1053.6,
+        1453.4
+      ]
+    ]
+  },
+  {
+    "id": "room_17",
+    "worldWidth": 2957,
+    "worldHeight": 1086,
+    "bounds": {
+      "x": 140.8,
+      "y": 203.2,
+      "w": 2688,
+      "h": 704
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#b2b2b2",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_17.json",
+    "stainTransforms": [
+      [
+        -0.5318,
+        1.1321,
+        -0.6118,
+        -0.9841,
+        1719.95,
+        488.2
+      ],
+      [
+        -0.5318,
+        1.1321,
+        -0.6118,
+        -0.9841,
+        330.55,
+        203.1
+      ],
+      [
+        -1.0626,
+        0.6598,
+        0.0229,
+        -1.1585,
+        955.2,
+        197.0
+      ],
+      [
+        -1.0626,
+        0.6598,
+        0.0229,
+        -1.1585,
+        2370.85,
+        149.15
+      ]
+    ]
+  },
+  {
+    "id": "room_18",
+    "worldWidth": 3284,
+    "worldHeight": 3113,
+    "bounds": {
+      "x": 234.1,
+      "y": 120.0,
+      "w": 2784,
+      "h": 2784
+    },
+    "floorColor": "#ebdcc7",
+    "patchColor": "#d8cccc",
+    "gridLineColor": "#dfd2b8",
+    "wallTopColor": "#ffffff",
+    "wallBevelColor": "#bbbbbb",
+    "wallSideColor": "#888888",
+    "hasPerimeterWalls": false,
+    "filePath": "assets/maps/room_18.json",
+    "stainTransforms": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1077.9,
+        1300.35
+      ],
+      [
+        0.7962,
+        0.6024,
+        -0.6024,
+        0.7962,
+        666.2,
+        123.05
+      ],
+      [
+        0.0,
+        1.0,
+        -1.0,
+        0.0,
+        -5.3,
+        554.95
+      ],
+      [
+        -0.6024,
+        0.7962,
+        -0.7962,
+        -0.6024,
+        2601.3,
+        236.15
+      ],
+      [
+        -1.4883,
+        -1.3323,
+        1.3323,
+        -1.4883,
+        290.45,
+        2499.1
+      ],
+      [
+        -1.4883,
+        -1.3323,
+        1.3323,
+        -1.4883,
+        680.9,
+        498.45
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        910.75,
+        1930.35
+      ],
+      [
+        -0.1104,
+        -1.9945,
+        1.9945,
+        -0.1104,
+        1845.25,
+        609.1
+      ],
+      [
+        1.3322,
+        -1.4883,
+        1.4883,
+        1.3322,
+        2485.6,
+        2255.4
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        2208.0,
+        1612.85
+      ]
+    ]
+  }
+]

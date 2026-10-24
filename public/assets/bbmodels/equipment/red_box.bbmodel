@@ -1,0 +1,587 @@
+{
+  "meta": {
+    "format_version": "4.5",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "boxhead_red_box",
+  "model_identifier": "boxhead_red_box",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "RedBox_Classic_Simple_Cube",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -9,
+        0,
+        -9
+      ],
+      "to": [
+        9,
+        13,
+        9
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            41,
+            17,
+            47,
+            23
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            41,
+            17,
+            47,
+            23
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            41,
+            17,
+            47,
+            23
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            41,
+            17,
+            47,
+            23
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            41,
+            17,
+            47,
+            23
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            41,
+            17,
+            47,
+            23
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "43cfe4c2-43cf-443c-a43c-00001cb6b86e"
+    }
+  ],
+  "outliner": [
+    {
+      "name": "root",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "5f4d128f-5f4d-45f4-a5f4-00002e8b3d59",
+      "export": true,
+      "isOpen": true,
+      "children": [
+        {
+          "name": "body_bone",
+          "origin": [
+            0,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "1321a759-1321-4132-a132-00001d71f27f",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "43cfe4c2-43cf-443c-a43c-00001cb6b86e",
+            {
+              "name": "head_bone",
+              "origin": [
+                0,
+                20,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "28acdcb6-28ac-428a-a28a-0000101542a6",
+              "export": true,
+              "isOpen": true,
+              "children": []
+            },
+            {
+              "name": "left_arm_bone",
+              "origin": [
+                -6.8,
+                18.2,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "45b9eee7-45b9-445b-a45b-0000351d12bf",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                {
+                  "name": "left_forearm_bone",
+                  "origin": [
+                    -6.8,
+                    15.8,
+                    4.2
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "uuid": "171078a4-1710-4171-a171-00004f3fa344",
+                  "export": true,
+                  "isOpen": true,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "right_arm_bone",
+              "origin": [
+                6.8,
+                18.2,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "486a64a8-486a-4486-a486-0000679b58e8",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                {
+                  "name": "right_forearm_bone",
+                  "origin": [
+                    6.8,
+                    15.8,
+                    4.2
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "uuid": "560147f9-5601-4560-a560-00001d2cd0df",
+                  "export": true,
+                  "isOpen": true,
+                  "children": [
+                    {
+                      "name": "weapon_mount_bone",
+                      "origin": [
+                        6.8,
+                        15.5,
+                        10.2
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "uuid": "0779309d-7793-4779-a779-00002e203d9b",
+                      "export": true,
+                      "isOpen": true,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "left_leg_bone",
+          "origin": [
+            -2.6,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "6ea7462c-6ea7-46ea-a6ea-00001a0cc00c",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            {
+              "name": "left_knee_bone",
+              "origin": [
+                -2.6,
+                4.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "2abe54ca-2abe-42ab-a2ab-00003c790ada",
+              "export": true,
+              "isOpen": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "right_leg_bone",
+          "origin": [
+            2.6,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "2277c5fe-2277-4227-a227-0000377b412e",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            {
+              "name": "right_knee_bone",
+              "origin": [
+                2.6,
+                4.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "3921c57c-3921-4392-a392-00007908e824",
+              "export": true,
+              "isOpen": true,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "uuid": "anim-red_box-idle",
+      "name": "animation.boxhead.idle",
+      "loop": "loop",
+      "override": false,
+      "length": 1.6,
+      "snapping": 20,
+      "selected": true,
+      "animators": {
+        "1321a759-1321-4132-a132-00001d71f27f": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 4,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "anim-red_box-action",
+      "name": "animation.boxhead.trigger",
+      "loop": "once",
+      "override": false,
+      "length": 0.4,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "1321a759-1321-4132-a132-00001d71f27f": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.08,
+              "data_points": [
+                {
+                  "x": 6,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "linear"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.4,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "path": "",
+      "name": "boxhead_palette.png",
+      "folder": "block",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "mode": "bitmap",
+      "saved": true,
+      "uuid": "43dbde39-43db-443d-a43d-000062eab09f",
+      "relative_path": "",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA7klEQVR42u3Yrw4BAQDHcZuoGXZjN5vNbYKisAnKeYETbxOIGg/gT7iXYAJFs+mippiRJFVQzM7Ndt7gp999w/cFPvGbuO+mocowCrKbZckcx5W584vMD76y5uwt+4xysgQAAAAAAAAAxBjgaduhqtx/yBbrrWwwnMgae1/WzidlrV5aFhyzMgAAAAAAAACIM8BmtQxVxUpdVjp0ZZlOVTY2TdmrlpJ5nie7nk8yAAAAAAAAAIgzwL/hEfUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDC/QBaeU7W8BJhBgAAAABJRU5ErkJggg==",
+      "width": 64,
+      "height": 64,
+      "uv_width": 64,
+      "uv_height": 64
+    }
+  ],
+  "boxhead_meta": {
+    "id": "red_box",
+    "scale": 1.24,
+    "bones": {
+      "root": {
+        "uuid": "5f4d128f-5f4d-45f4-a5f4-00002e8b3d59",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "body_bone": {
+        "uuid": "1321a759-1321-4132-a132-00001d71f27f",
+        "origin": [
+          0,
+          9,
+          0
+        ]
+      },
+      "head_bone": {
+        "uuid": "28acdcb6-28ac-428a-a28a-0000101542a6",
+        "origin": [
+          0,
+          20,
+          0
+        ]
+      },
+      "left_arm_bone": {
+        "uuid": "45b9eee7-45b9-445b-a45b-0000351d12bf",
+        "origin": [
+          -6.8,
+          18.2,
+          0
+        ]
+      },
+      "left_forearm_bone": {
+        "uuid": "171078a4-1710-4171-a171-00004f3fa344",
+        "origin": [
+          -6.8,
+          15.8,
+          4.2
+        ]
+      },
+      "right_arm_bone": {
+        "uuid": "486a64a8-486a-4486-a486-0000679b58e8",
+        "origin": [
+          6.8,
+          18.2,
+          0
+        ]
+      },
+      "right_forearm_bone": {
+        "uuid": "560147f9-5601-4560-a560-00001d2cd0df",
+        "origin": [
+          6.8,
+          15.8,
+          4.2
+        ]
+      },
+      "weapon_mount_bone": {
+        "uuid": "0779309d-7793-4779-a779-00002e203d9b",
+        "origin": [
+          6.8,
+          15.5,
+          10.2
+        ]
+      },
+      "left_leg_bone": {
+        "uuid": "6ea7462c-6ea7-46ea-a6ea-00001a0cc00c",
+        "origin": [
+          -2.6,
+          9,
+          0
+        ]
+      },
+      "left_knee_bone": {
+        "uuid": "2abe54ca-2abe-42ab-a2ab-00003c790ada",
+        "origin": [
+          -2.6,
+          4.5,
+          0
+        ]
+      },
+      "right_leg_bone": {
+        "uuid": "2277c5fe-2277-4227-a227-0000377b412e",
+        "origin": [
+          2.6,
+          9,
+          0
+        ]
+      },
+      "right_knee_bone": {
+        "uuid": "3921c57c-3921-4392-a392-00007908e824",
+        "origin": [
+          2.6,
+          4.5,
+          0
+        ]
+      }
+    },
+    "cubes": [
+      {
+        "uuid": "43cfe4c2-43cf-443c-a43c-00001cb6b86e",
+        "name": "RedBox_Classic_Simple_Cube",
+        "from": [
+          -9,
+          0,
+          -9
+        ],
+        "to": [
+          9,
+          13,
+          9
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "hexColor": "#f4320b",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      }
+    ]
+  }
+}

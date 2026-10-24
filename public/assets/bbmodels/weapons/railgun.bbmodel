@@ -1,0 +1,892 @@
+{
+  "meta": {
+    "format_version": "4.5",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "boxhead_railgun",
+  "model_identifier": "boxhead_railgun",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "Railgun_Core_Receiver",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -2.1,
+        -1,
+        -2.7
+      ],
+      "to": [
+        2.1,
+        4.2,
+        7.3
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        0,
+        -1,
+        2.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "025229cd-2522-4252-a252-00001b9ed715"
+    },
+    {
+      "name": "Railgun_Crimson_Coil_Barrel",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.9,
+        -0.2,
+        7.3
+      ],
+      "to": [
+        1.9,
+        3.6,
+        15.3
+      ],
+      "autouv": 0,
+      "color": 1,
+      "origin": [
+        0,
+        -0.2,
+        11.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "74fe758b-74fe-474f-a74f-000040627403"
+    },
+    {
+      "name": "Railgun_Energy_Core_Strip",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.2,
+        3.6,
+        0.8
+      ],
+      "to": [
+        1.2,
+        4.6,
+        14.3
+      ],
+      "autouv": 0,
+      "color": 2,
+      "origin": [
+        0,
+        3.6,
+        7.55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            41,
+            1,
+            47,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            41,
+            1,
+            47,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            41,
+            1,
+            47,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            41,
+            1,
+            47,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            41,
+            1,
+            47,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            41,
+            1,
+            47,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "644fe9f9-644f-4644-a644-00003a47a121"
+    }
+  ],
+  "outliner": [
+    {
+      "name": "weapon_mount_bone",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "37abefcc-37ab-437a-a37a-00003a336d54",
+      "export": true,
+      "isOpen": true,
+      "children": [
+        "025229cd-2522-4252-a252-00001b9ed715",
+        {
+          "name": "weapon_coil_bone",
+          "origin": [
+            0,
+            2.2,
+            11.3
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "b1050001-4000-8000-000000000001",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "74fe758b-74fe-474f-a74f-000040627403",
+            "644fe9f9-644f-4644-a644-00003a47a121"
+          ]
+        },
+        {
+          "name": "muzzle_bone",
+          "origin": [
+            0,
+            1.7,
+            15.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "b1050002-4000-8000-000000000002",
+          "export": true,
+          "isOpen": true,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "uuid": "c0000001-4000-8000-000000000099",
+      "name": "animation.boxhead.idle",
+      "loop": "loop",
+      "override": false,
+      "length": 1.6,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "37abefcc-37ab-437a-a37a-00003a336d54": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000009a",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "uuid": "a0000001-4000-8000-00000000009b",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "4",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "uuid": "a0000001-4000-8000-00000000009c",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "c0000002-4000-8000-00000000009d",
+      "name": "animation.boxhead.fire",
+      "loop": "once",
+      "override": false,
+      "length": 1,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "37abefcc-37ab-437a-a37a-00003a336d54": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000006a",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "-18",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.3,
+              "uuid": "a0000001-4000-8000-00000000006b",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-21",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.72,
+              "uuid": "a0000001-4000-8000-00000000006c",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-6",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-00000000006d",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000006e",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0.3",
+                  "z": "-3.1"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.3,
+              "uuid": "a0000001-4000-8000-00000000006f",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0.5",
+                  "z": "-3.4"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.72,
+              "uuid": "a0000001-4000-8000-000000000070",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0.1",
+                  "z": "-0.9"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-000000000071",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        },
+        "b1050001-4000-8000-000000000001": {
+          "name": "weapon_coil_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000072",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-2.4"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.4,
+              "uuid": "a0000001-4000-8000-000000000073",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-1.8"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.85,
+              "uuid": "a0000001-4000-8000-000000000074",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-000000000075",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "c0000003-4000-8000-00000000009e",
+      "name": "animation.boxhead.reload",
+      "loop": "once",
+      "override": false,
+      "length": 1,
+      "snapping": 20,
+      "selected": true,
+      "animators": {
+        "37abefcc-37ab-437a-a37a-00003a336d54": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000076",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.25,
+              "uuid": "a0000001-4000-8000-000000000077",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-8",
+                  "y": "0",
+                  "z": "-6"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.65,
+              "uuid": "a0000001-4000-8000-000000000078",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-10",
+                  "y": "0",
+                  "z": "-8"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.9,
+              "uuid": "a0000001-4000-8000-000000000079",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-00000000007a",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        },
+        "b1050001-4000-8000-000000000001": {
+          "name": "weapon_coil_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000007b",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.22,
+              "uuid": "a0000001-4000-8000-00000000007c",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-2.4"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.5,
+              "uuid": "a0000001-4000-8000-00000000007d",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "1.2"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.75,
+              "uuid": "a0000001-4000-8000-00000000007e",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-1.4"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.92,
+              "uuid": "a0000001-4000-8000-00000000007f",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-000000000080",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "path": "",
+      "name": "boxhead_palette.png",
+      "folder": "block",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "mode": "bitmap",
+      "saved": true,
+      "uuid": "04e61618-4e61-44e6-a4e6-000057198028",
+      "relative_path": "",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA7klEQVR42u3Yrw4BAQDHcZuoGXZjN5vNbYKisAnKeYETbxOIGg/gT7iXYAJFs+mippiRJFVQzM7Ndt7gp999w/cFPvGbuO+mocowCrKbZckcx5W584vMD76y5uwt+4xysgQAAAAAAAAAxBjgaduhqtx/yBbrrWwwnMgae1/WzidlrV5aFhyzMgAAAAAAAACIM8BmtQxVxUpdVjp0ZZlOVTY2TdmrlpJ5nie7nk8yAAAAAAAAAIgzwL/hEfUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDC/QBaeU7W8BJhBgAAAABJRU5ErkJggg==",
+      "width": 64,
+      "height": 64,
+      "uv_width": 64,
+      "uv_height": 64
+    }
+  ],
+  "boxhead_meta": {
+    "id": "railgun",
+    "scale": 1,
+    "bones": {
+      "root": {
+        "uuid": "root-railgun",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weapon_mount_bone": {
+        "uuid": "37abefcc-37ab-437a-a37a-00003a336d54",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weapon_coil_bone": {
+        "uuid": "b1050001-4000-8000-000000000001",
+        "origin": [
+          0,
+          2.2,
+          11.3
+        ]
+      },
+      "muzzle_bone": {
+        "uuid": "b1050002-4000-8000-000000000002",
+        "origin": [
+          0,
+          1.7,
+          15.4
+        ]
+      }
+    },
+    "cubes": [
+      {
+        "uuid": "025229cd-2522-4252-a252-00001b9ed715",
+        "name": "Railgun_Core_Receiver",
+        "from": [
+          -2.1,
+          -1,
+          -2.7
+        ],
+        "to": [
+          2.1,
+          4.2,
+          7.3
+        ],
+        "origin": [
+          0,
+          -1,
+          2.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      },
+      {
+        "uuid": "74fe758b-74fe-474f-a74f-000040627403",
+        "name": "Railgun_Crimson_Coil_Barrel",
+        "from": [
+          -1.9,
+          -0.2,
+          7.3
+        ],
+        "to": [
+          1.9,
+          3.6,
+          15.3
+        ],
+        "origin": [
+          0,
+          -0.2,
+          11.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#dc2626",
+        "bonePath": [
+          "weapon_mount_bone",
+          "weapon_coil_bone"
+        ]
+      },
+      {
+        "uuid": "644fe9f9-644f-4644-a644-00003a47a121",
+        "name": "Railgun_Energy_Core_Strip",
+        "from": [
+          -1.2,
+          3.6,
+          0.8
+        ],
+        "to": [
+          1.2,
+          4.6,
+          14.3
+        ],
+        "origin": [
+          0,
+          3.6,
+          7.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#f8fafc",
+        "bonePath": [
+          "weapon_mount_bone",
+          "weapon_coil_bone"
+        ]
+      }
+    ],
+    "mountSocket": "weapon_mount_bone"
+  }
+}

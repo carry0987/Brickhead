@@ -1,0 +1,1669 @@
+{
+  "meta": {
+    "format_version": "4.5",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "boxhead_barrel",
+  "model_identifier": "boxhead_barrel",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "Barrel_Cylinder_Lower_A",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -6.6,
+        0,
+        -2.8
+      ],
+      "to": [
+        6.6,
+        7.2,
+        2.8
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "644a3682-644a-4644-a644-00007f95b0ae"
+    },
+    {
+      "name": "Barrel_Cylinder_Lower_B",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -2.8,
+        0,
+        -6.6
+      ],
+      "to": [
+        2.8,
+        7.2,
+        6.6
+      ],
+      "autouv": 0,
+      "color": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "375e3834-375e-4375-a375-000063922aac"
+    },
+    {
+      "name": "Barrel_Cylinder_Lower_Diag",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -5.8,
+        0,
+        -5.8
+      ],
+      "to": [
+        5.8,
+        7.2,
+        5.8
+      ],
+      "autouv": 0,
+      "color": 2,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "1bb69d8c-1bb6-41bb-a1bb-000064fb566c"
+    },
+    {
+      "name": "Barrel_Cylinder_Red_Ring_A",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -6.9,
+        7.2,
+        -2.9
+      ],
+      "to": [
+        6.9,
+        13.6,
+        2.9
+      ],
+      "autouv": 0,
+      "color": 3,
+      "origin": [
+        0,
+        7.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "01f45648-1f45-41f4-a1f4-00003e55b388"
+    },
+    {
+      "name": "Barrel_Cylinder_Red_Ring_B",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -2.9,
+        7.2,
+        -6.9
+      ],
+      "to": [
+        2.9,
+        13.6,
+        6.9
+      ],
+      "autouv": 0,
+      "color": 4,
+      "origin": [
+        0,
+        7.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "0321ed10-321e-4321-a321-000073e3db90"
+    },
+    {
+      "name": "Barrel_Cylinder_Upper_A",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -6.6,
+        13.6,
+        -2.8
+      ],
+      "to": [
+        6.6,
+        20.5,
+        2.8
+      ],
+      "autouv": 0,
+      "color": 5,
+      "origin": [
+        0,
+        13.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "411ba15c-411b-4411-a411-000020c4f944"
+    },
+    {
+      "name": "Barrel_Cylinder_Upper_B",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -2.8,
+        13.6,
+        -6.6
+      ],
+      "to": [
+        2.8,
+        20.5,
+        6.6
+      ],
+      "autouv": 0,
+      "color": 6,
+      "origin": [
+        0,
+        13.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            9,
+            23,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "7a821868-7a82-47a8-a7a8-00003efd92a8"
+    },
+    {
+      "name": "Barrel_Top_Recessed_Lid",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -4.6,
+        20.5,
+        -4.6
+      ],
+      "to": [
+        4.6,
+        21.3,
+        4.6
+      ],
+      "autouv": 0,
+      "color": 7,
+      "origin": [
+        0,
+        20.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            25,
+            9,
+            31,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            25,
+            9,
+            31,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            25,
+            9,
+            31,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            25,
+            9,
+            31,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            25,
+            9,
+            31,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            25,
+            9,
+            31,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "53ea362b-53ea-453e-a53e-000008e0b5a3"
+    }
+  ],
+  "outliner": [
+    {
+      "name": "root",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "763a94b2-763a-4763-a763-000068e3d102",
+      "export": true,
+      "isOpen": true,
+      "children": [
+        {
+          "name": "body_bone",
+          "origin": [
+            0,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "2a747c60-2a74-42a7-a2a7-000012f33ca0",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "644a3682-644a-4644-a644-00007f95b0ae",
+            "375e3834-375e-4375-a375-000063922aac",
+            "1bb69d8c-1bb6-41bb-a1bb-000064fb566c",
+            "01f45648-1f45-41f4-a1f4-00003e55b388",
+            "0321ed10-321e-4321-a321-000073e3db90",
+            "411ba15c-411b-4411-a411-000020c4f944",
+            "7a821868-7a82-47a8-a7a8-00003efd92a8",
+            "53ea362b-53ea-453e-a53e-000008e0b5a3",
+            {
+              "name": "head_bone",
+              "origin": [
+                0,
+                20,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "2f0e6dbb-2f0e-42f0-a2f0-00002d361fb3",
+              "export": true,
+              "isOpen": true,
+              "children": []
+            },
+            {
+              "name": "left_arm_bone",
+              "origin": [
+                -6.8,
+                18.2,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "75104922-7510-4751-a751-00003977cd0e",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                {
+                  "name": "left_forearm_bone",
+                  "origin": [
+                    -6.8,
+                    15.8,
+                    4.2
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "uuid": "7733ae41-7733-4773-a773-00007ac28d57",
+                  "export": true,
+                  "isOpen": true,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "right_arm_bone",
+              "origin": [
+                6.8,
+                18.2,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "34eb01ab-34eb-434e-a34e-00004cd0d2dd",
+              "export": true,
+              "isOpen": true,
+              "children": [
+                {
+                  "name": "right_forearm_bone",
+                  "origin": [
+                    6.8,
+                    15.8,
+                    4.2
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "uuid": "4bf31524-4bf3-44bf-a4bf-000001392c3c",
+                  "export": true,
+                  "isOpen": true,
+                  "children": [
+                    {
+                      "name": "weapon_mount_bone",
+                      "origin": [
+                        6.8,
+                        15.5,
+                        10.2
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "uuid": "0ba6e7f4-ba6e-4ba6-aba6-000051ff6b14",
+                      "export": true,
+                      "isOpen": true,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "left_leg_bone",
+          "origin": [
+            -2.6,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "7ce927fb-7ce9-47ce-a7ce-000058af03f3",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            {
+              "name": "left_knee_bone",
+              "origin": [
+                -2.6,
+                4.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "6b16fb59-6b16-46b1-a6b1-00001fca7e7f",
+              "export": true,
+              "isOpen": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "right_leg_bone",
+          "origin": [
+            2.6,
+            9,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "53d2096b-53d2-453d-a53d-000079a2dae3",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            {
+              "name": "right_knee_bone",
+              "origin": [
+                2.6,
+                4.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "uuid": "4cea5ce3-4cea-44ce-a4ce-00003c64471b",
+              "export": true,
+              "isOpen": true,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "uuid": "anim-barrel-idle",
+      "name": "animation.boxhead.idle",
+      "loop": "loop",
+      "override": false,
+      "length": 1.6,
+      "snapping": 20,
+      "selected": true,
+      "animators": {
+        "2a747c60-2a74-42a7-a2a7-000012f33ca0": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 4,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "anim-barrel-fire",
+      "name": "animation.boxhead.fire",
+      "loop": "once",
+      "override": false,
+      "length": 1,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "2a747c60-2a74-42a7-a2a7-000012f33ca0": {
+          "name": "body_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 8.02,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 6.82,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 3.61,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "34eb01ab-34eb-434e-a34e-00004cd0d2dd": {
+          "name": "right_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 24.06,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 20.45,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 10.83,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 2.2
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 1.87
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0.99
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "4bf31524-4bf3-44bf-a4bf-000001392c3c": {
+          "name": "right_forearm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 14.44,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 12.27,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 6.5,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        },
+        "75104922-7510-4751-a751-00003977cd0e": {
+          "name": "left_arm_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 21.66,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 18.41,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 9.75,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 1.1
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.35,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0.94
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 0.7,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0.5
+                }
+              ],
+              "interpolation": "catmullrom"
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "data_points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              ],
+              "interpolation": "catmullrom"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "path": "",
+      "name": "boxhead_palette.png",
+      "folder": "block",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "mode": "bitmap",
+      "saved": true,
+      "uuid": "79f0ef00-79f0-479f-a79f-00002a47f900",
+      "relative_path": "",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA7klEQVR42u3Yrw4BAQDHcZuoGXZjN5vNbYKisAnKeYETbxOIGg/gT7iXYAJFs+mippiRJFVQzM7Ndt7gp999w/cFPvGbuO+mocowCrKbZckcx5W584vMD76y5uwt+4xysgQAAAAAAAAAxBjgaduhqtx/yBbrrWwwnMgae1/WzidlrV5aFhyzMgAAAAAAAACIM8BmtQxVxUpdVjp0ZZlOVTY2TdmrlpJ5nie7nk8yAAAAAAAAAIgzwL/hEfUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDC/QBaeU7W8BJhBgAAAABJRU5ErkJggg==",
+      "width": 64,
+      "height": 64,
+      "uv_width": 64,
+      "uv_height": 64
+    }
+  ],
+  "boxhead_meta": {
+    "id": "barrel",
+    "scale": 1.38,
+    "bones": {
+      "root": {
+        "uuid": "763a94b2-763a-4763-a763-000068e3d102",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "body_bone": {
+        "uuid": "2a747c60-2a74-42a7-a2a7-000012f33ca0",
+        "origin": [
+          0,
+          9,
+          0
+        ]
+      },
+      "head_bone": {
+        "uuid": "2f0e6dbb-2f0e-42f0-a2f0-00002d361fb3",
+        "origin": [
+          0,
+          20,
+          0
+        ]
+      },
+      "left_arm_bone": {
+        "uuid": "75104922-7510-4751-a751-00003977cd0e",
+        "origin": [
+          -6.8,
+          18.2,
+          0
+        ]
+      },
+      "left_forearm_bone": {
+        "uuid": "7733ae41-7733-4773-a773-00007ac28d57",
+        "origin": [
+          -6.8,
+          15.8,
+          4.2
+        ]
+      },
+      "right_arm_bone": {
+        "uuid": "34eb01ab-34eb-434e-a34e-00004cd0d2dd",
+        "origin": [
+          6.8,
+          18.2,
+          0
+        ]
+      },
+      "right_forearm_bone": {
+        "uuid": "4bf31524-4bf3-44bf-a4bf-000001392c3c",
+        "origin": [
+          6.8,
+          15.8,
+          4.2
+        ]
+      },
+      "weapon_mount_bone": {
+        "uuid": "0ba6e7f4-ba6e-4ba6-aba6-000051ff6b14",
+        "origin": [
+          6.8,
+          15.5,
+          10.2
+        ]
+      },
+      "left_leg_bone": {
+        "uuid": "7ce927fb-7ce9-47ce-a7ce-000058af03f3",
+        "origin": [
+          -2.6,
+          9,
+          0
+        ]
+      },
+      "left_knee_bone": {
+        "uuid": "6b16fb59-6b16-46b1-a6b1-00001fca7e7f",
+        "origin": [
+          -2.6,
+          4.5,
+          0
+        ]
+      },
+      "right_leg_bone": {
+        "uuid": "53d2096b-53d2-453d-a53d-000079a2dae3",
+        "origin": [
+          2.6,
+          9,
+          0
+        ]
+      },
+      "right_knee_bone": {
+        "uuid": "4cea5ce3-4cea-44ce-a4ce-00003c64471b",
+        "origin": [
+          2.6,
+          4.5,
+          0
+        ]
+      }
+    },
+    "cubes": [
+      {
+        "uuid": "644a3682-644a-4644-a644-00007f95b0ae",
+        "name": "Barrel_Cylinder_Lower_A",
+        "from": [
+          -6.6,
+          0,
+          -2.8
+        ],
+        "to": [
+          6.6,
+          7.2,
+          2.8
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#9ca3af",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      },
+      {
+        "uuid": "375e3834-375e-4375-a375-000063922aac",
+        "name": "Barrel_Cylinder_Lower_B",
+        "from": [
+          -2.8,
+          0,
+          -6.6
+        ],
+        "to": [
+          2.8,
+          7.2,
+          6.6
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#9ca3af",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      },
+      {
+        "uuid": "1bb69d8c-1bb6-41bb-a1bb-000064fb566c",
+        "name": "Barrel_Cylinder_Lower_Diag",
+        "from": [
+          -5.8,
+          0,
+          -5.8
+        ],
+        "to": [
+          5.8,
+          7.2,
+          5.8
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          45,
+          0
+        ],
+        "hexColor": "#9ca3af",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      },
+      {
+        "uuid": "01f45648-1f45-41f4-a1f4-00003e55b388",
+        "name": "Barrel_Cylinder_Red_Ring_A",
+        "from": [
+          -6.9,
+          7.2,
+          -2.9
+        ],
+        "to": [
+          6.9,
+          13.6,
+          2.9
+        ],
+        "origin": [
+          0,
+          7.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#dc2626",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      },
+      {
+        "uuid": "0321ed10-321e-4321-a321-000073e3db90",
+        "name": "Barrel_Cylinder_Red_Ring_B",
+        "from": [
+          -2.9,
+          7.2,
+          -6.9
+        ],
+        "to": [
+          2.9,
+          13.6,
+          6.9
+        ],
+        "origin": [
+          0,
+          7.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#dc2626",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      },
+      {
+        "uuid": "411ba15c-411b-4411-a411-000020c4f944",
+        "name": "Barrel_Cylinder_Upper_A",
+        "from": [
+          -6.6,
+          13.6,
+          -2.8
+        ],
+        "to": [
+          6.6,
+          20.5,
+          2.8
+        ],
+        "origin": [
+          0,
+          13.6,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#9ca3af",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      },
+      {
+        "uuid": "7a821868-7a82-47a8-a7a8-00003efd92a8",
+        "name": "Barrel_Cylinder_Upper_B",
+        "from": [
+          -2.8,
+          13.6,
+          -6.6
+        ],
+        "to": [
+          2.8,
+          20.5,
+          6.6
+        ],
+        "origin": [
+          0,
+          13.6,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#9ca3af",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      },
+      {
+        "uuid": "53ea362b-53ea-453e-a53e-000008e0b5a3",
+        "name": "Barrel_Top_Recessed_Lid",
+        "from": [
+          -4.6,
+          20.5,
+          -4.6
+        ],
+        "to": [
+          4.6,
+          21.3,
+          4.6
+        ],
+        "origin": [
+          0,
+          20.5,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#6b7280",
+        "bonePath": [
+          "root",
+          "body_bone"
+        ]
+      }
+    ]
+  }
+}

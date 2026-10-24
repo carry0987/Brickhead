@@ -1,0 +1,891 @@
+{
+  "meta": {
+    "format_version": "4.5",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "boxhead_uzi",
+  "model_identifier": "boxhead_uzi",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "UZI_Grip_Magazine",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.4,
+        -5.7,
+        0.3
+      ],
+      "to": [
+        1.4,
+        0.3,
+        3.3
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        0,
+        -5.7,
+        1.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "56aae48d-56aa-456a-a56a-000002fd102b"
+    },
+    {
+      "name": "UZI_Compact_Receiver",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.8,
+        -0.2,
+        -1.4
+      ],
+      "to": [
+        1.8,
+        4.2,
+        7.3
+      ],
+      "autouv": 0,
+      "color": 1,
+      "origin": [
+        0,
+        -0.2,
+        2.95
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            25,
+            1,
+            31,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "05a79100-5a79-45a7-a5a7-00002cd47900"
+    },
+    {
+      "name": "UZI_Suppressor_Nozzle",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.1,
+        0.8,
+        7.3
+      ],
+      "to": [
+        1.1,
+        3.2,
+        11.3
+      ],
+      "autouv": 0,
+      "color": 2,
+      "origin": [
+        0,
+        0.8,
+        9.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "3d516fa3-3d51-43d5-a3d5-00000a658825"
+    }
+  ],
+  "outliner": [
+    {
+      "name": "weapon_mount_bone",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "69347520-6934-4693-a693-000026554a20",
+      "export": true,
+      "isOpen": true,
+      "children": [
+        "56aae48d-56aa-456a-a56a-000002fd102b",
+        "3d516fa3-3d51-43d5-a3d5-00000a658825",
+        {
+          "name": "weapon_slide_bone",
+          "origin": [
+            0,
+            2,
+            2.95
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "b1020001-4000-8000-000000000001",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "05a79100-5a79-45a7-a5a7-00002cd47900"
+          ]
+        },
+        {
+          "name": "muzzle_bone",
+          "origin": [
+            0,
+            2,
+            11.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "b1020002-4000-8000-000000000002",
+          "export": true,
+          "isOpen": true,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "uuid": "c0000001-4000-8000-000000000087",
+      "name": "animation.boxhead.idle",
+      "loop": "loop",
+      "override": false,
+      "length": 1.6,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "69347520-6934-4693-a693-000026554a20": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000088",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "uuid": "a0000001-4000-8000-000000000089",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "4",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "uuid": "a0000001-4000-8000-00000000008a",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "c0000002-4000-8000-00000000008b",
+      "name": "animation.boxhead.fire",
+      "loop": "once",
+      "override": false,
+      "length": 1,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "69347520-6934-4693-a693-000026554a20": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000018",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "-12",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.3,
+              "uuid": "a0000001-4000-8000-000000000019",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-15",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.7,
+              "uuid": "a0000001-4000-8000-00000000001a",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-4",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-00000000001b",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000001c",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-1.5"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.3,
+              "uuid": "a0000001-4000-8000-00000000001d",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0.2",
+                  "z": "-1.8"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.7,
+              "uuid": "a0000001-4000-8000-00000000001e",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-0.5"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-00000000001f",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        },
+        "b1020001-4000-8000-000000000001": {
+          "name": "weapon_slide_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000020",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-2.6"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.4,
+              "uuid": "a0000001-4000-8000-000000000021",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-2.6"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.8,
+              "uuid": "a0000001-4000-8000-000000000022",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-000000000023",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "c0000003-4000-8000-00000000008c",
+      "name": "animation.boxhead.reload",
+      "loop": "once",
+      "override": false,
+      "length": 1,
+      "snapping": 20,
+      "selected": true,
+      "animators": {
+        "69347520-6934-4693-a693-000026554a20": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000024",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.22,
+              "uuid": "a0000001-4000-8000-000000000025",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-12",
+                  "y": "0",
+                  "z": "-10"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.6,
+              "uuid": "a0000001-4000-8000-000000000026",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-14",
+                  "y": "0",
+                  "z": "-12"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.88,
+              "uuid": "a0000001-4000-8000-000000000027",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-000000000028",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        },
+        "b1020001-4000-8000-000000000001": {
+          "name": "weapon_slide_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000029",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.15,
+              "uuid": "a0000001-4000-8000-00000000002a",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.45,
+              "uuid": "a0000001-4000-8000-00000000002b",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-2.8"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.62,
+              "uuid": "a0000001-4000-8000-00000000002c",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-2.8"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.85,
+              "uuid": "a0000001-4000-8000-00000000002d",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-00000000002e",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "path": "",
+      "name": "boxhead_palette.png",
+      "folder": "block",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "mode": "bitmap",
+      "saved": true,
+      "uuid": "475ad3d4-475a-4475-a475-000072cc160c",
+      "relative_path": "",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA7klEQVR42u3Yrw4BAQDHcZuoGXZjN5vNbYKisAnKeYETbxOIGg/gT7iXYAJFs+mippiRJFVQzM7Ndt7gp999w/cFPvGbuO+mocowCrKbZckcx5W584vMD76y5uwt+4xysgQAAAAAAAAAxBjgaduhqtx/yBbrrWwwnMgae1/WzidlrV5aFhyzMgAAAAAAAACIM8BmtQxVxUpdVjp0ZZlOVTY2TdmrlpJ5nie7nk8yAAAAAAAAAIgzwL/hEfUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDC/QBaeU7W8BJhBgAAAABJRU5ErkJggg==",
+      "width": 64,
+      "height": 64,
+      "uv_width": 64,
+      "uv_height": 64
+    }
+  ],
+  "boxhead_meta": {
+    "id": "uzi",
+    "scale": 1,
+    "bones": {
+      "root": {
+        "uuid": "root-uzi",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weapon_mount_bone": {
+        "uuid": "69347520-6934-4693-a693-000026554a20",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weapon_slide_bone": {
+        "uuid": "b1020001-4000-8000-000000000001",
+        "origin": [
+          0,
+          2,
+          2.95
+        ]
+      },
+      "muzzle_bone": {
+        "uuid": "b1020002-4000-8000-000000000002",
+        "origin": [
+          0,
+          2,
+          11.4
+        ]
+      }
+    },
+    "cubes": [
+      {
+        "uuid": "56aae48d-56aa-456a-a56a-000002fd102b",
+        "name": "UZI_Grip_Magazine",
+        "from": [
+          -1.4,
+          -5.7,
+          0.3
+        ],
+        "to": [
+          1.4,
+          0.3,
+          3.3
+        ],
+        "origin": [
+          0,
+          -5.7,
+          1.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      },
+      {
+        "uuid": "05a79100-5a79-45a7-a5a7-00002cd47900",
+        "name": "UZI_Compact_Receiver",
+        "from": [
+          -1.8,
+          -0.2,
+          -1.4
+        ],
+        "to": [
+          1.8,
+          4.2,
+          7.3
+        ],
+        "origin": [
+          0,
+          -0.2,
+          2.95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#52525b",
+        "bonePath": [
+          "weapon_mount_bone",
+          "weapon_slide_bone"
+        ]
+      },
+      {
+        "uuid": "3d516fa3-3d51-43d5-a3d5-00000a658825",
+        "name": "UZI_Suppressor_Nozzle",
+        "from": [
+          -1.1,
+          0.8,
+          7.3
+        ],
+        "to": [
+          1.1,
+          3.2,
+          11.3
+        ],
+        "origin": [
+          0,
+          0.8,
+          9.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      }
+    ],
+    "mountSocket": "weapon_mount_bone"
+  }
+}

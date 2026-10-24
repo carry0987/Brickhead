@@ -1,0 +1,1197 @@
+{
+  "meta": {
+    "format_version": "4.5",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "boxhead_rocket",
+  "model_identifier": "boxhead_rocket",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "Rocket_Under_Hand_Grip",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.2,
+        -4.4,
+        0
+      ],
+      "to": [
+        1.1,
+        0,
+        3.6
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        -0.05,
+        -4.4,
+        1.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "4d101f55-4d10-44d1-a4d1-00004a8b5bdd"
+    },
+    {
+      "name": "Rocket_Shoulder_Rest_Pad",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -2.2,
+        -1,
+        -9.3
+      ],
+      "to": [
+        2.2,
+        0.4,
+        -2
+      ],
+      "autouv": 0,
+      "color": 1,
+      "origin": [
+        0,
+        -1,
+        -5.65
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "08a81fe6-8a81-48a8-a8a8-000053d74eaa"
+    },
+    {
+      "name": "Rocket_Rear_Exhaust_Bell",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -2.9,
+        -0.5,
+        -19.6
+      ],
+      "to": [
+        2.9,
+        5.1,
+        -15.6
+      ],
+      "autouv": 0,
+      "color": 2,
+      "origin": [
+        0,
+        -0.5,
+        -17.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "288d84d5-288d-4288-a288-00001358fd5d"
+    },
+    {
+      "name": "Rocket_Shoulder_Main_Tube",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -2.4,
+        0,
+        -15.8
+      ],
+      "to": [
+        2.4,
+        4.6,
+        15.7
+      ],
+      "autouv": 0,
+      "color": 3,
+      "origin": [
+        0,
+        0,
+        -0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            49,
+            9,
+            55,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "593a1a58-593a-4593-a593-00004962be18"
+    },
+    {
+      "name": "Rocket_Front_Muzzle_Collar",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -2.8,
+        -0.4,
+        13.4
+      ],
+      "to": [
+        2.8,
+        5,
+        16.6
+      ],
+      "autouv": 0,
+      "color": 4,
+      "origin": [
+        0,
+        -0.4,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "0ea1c57d-ea1c-4ea1-aea1-000018779245"
+    },
+    {
+      "name": "Rocket_Top_Sight_Bracket",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -0.8,
+        4.6,
+        5.7
+      ],
+      "to": [
+        0.8,
+        6.6,
+        9
+      ],
+      "autouv": 0,
+      "color": 5,
+      "origin": [
+        0,
+        4.6,
+        7.35
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "1e61c0cf-1e61-41e6-a1e6-00000bfabae7"
+    },
+    {
+      "name": "Rocket_Warhead_Tip",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.8,
+        0.5,
+        16.6
+      ],
+      "to": [
+        1.8,
+        4.1,
+        21
+      ],
+      "autouv": 0,
+      "color": 6,
+      "origin": [
+        0,
+        0.5,
+        18.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            1,
+            23,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "008c9410-8c94-48c9-a8ca-000038385a90"
+    }
+  ],
+  "outliner": [
+    {
+      "name": "weapon_mount_bone",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "06f8a360-6f8a-46f8-a6f8-000059d6c260",
+      "export": true,
+      "isOpen": true,
+      "children": [
+        "4d101f55-4d10-44d1-a4d1-00004a8b5bdd",
+        "08a81fe6-8a81-48a8-a8a8-000053d74eaa",
+        "593a1a58-593a-4593-a593-00004962be18",
+        "0ea1c57d-ea1c-4ea1-aea1-000018779245",
+        "1e61c0cf-1e61-41e6-a1e6-00000bfabae7",
+        {
+          "name": "weapon_breech_bone",
+          "origin": [
+            0,
+            2.3,
+            -17.6
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "b1040002-4000-8000-000000000002",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "288d84d5-288d-4288-a288-00001358fd5d"
+          ]
+        },
+        {
+          "name": "weapon_warhead_bone",
+          "origin": [
+            0,
+            2.3,
+            18.8
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "b1040001-4000-8000-000000000001",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "008c9410-8c94-48c9-a8ca-000038385a90"
+          ]
+        },
+        {
+          "name": "muzzle_bone",
+          "origin": [
+            0,
+            2.3,
+            21.2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "b1040003-4000-8000-000000000003",
+          "export": true,
+          "isOpen": true,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "uuid": "c0000001-4000-8000-000000000093",
+      "name": "animation.boxhead.idle",
+      "loop": "loop",
+      "override": false,
+      "length": 1.6,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "06f8a360-6f8a-46f8-a6f8-000059d6c260": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000094",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "uuid": "a0000001-4000-8000-000000000095",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "4",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "uuid": "a0000001-4000-8000-000000000096",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "c0000002-4000-8000-000000000097",
+      "name": "animation.boxhead.fire",
+      "loop": "once",
+      "override": false,
+      "length": 1.2,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "b1040001-4000-8000-000000000001": {
+          "name": "weapon_warhead_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000004d",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-4.4"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.3,
+              "uuid": "a0000001-4000-8000-00000000004e",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-3.3"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.6,
+              "uuid": "a0000001-4000-8000-00000000004f",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-2.2"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.9,
+              "uuid": "a0000001-4000-8000-000000000050",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-1.1"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1.2,
+              "uuid": "a0000001-4000-8000-000000000051",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "c0000003-4000-8000-000000000098",
+      "name": "animation.boxhead.reload",
+      "loop": "once",
+      "override": false,
+      "length": 1.2,
+      "snapping": 20,
+      "selected": true,
+      "animators": {
+        "b1040001-4000-8000-000000000001": {
+          "name": "weapon_warhead_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000058",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-4.4"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.3,
+              "uuid": "a0000001-4000-8000-000000000059",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-3.3"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.6,
+              "uuid": "a0000001-4000-8000-00000000005a",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-2.2"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.9,
+              "uuid": "a0000001-4000-8000-00000000005b",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-1.1"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1.2,
+              "uuid": "a0000001-4000-8000-00000000005c",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "path": "",
+      "name": "boxhead_palette.png",
+      "folder": "block",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "mode": "bitmap",
+      "saved": true,
+      "uuid": "7dff0194-7dff-47df-a7df-000034582db4",
+      "relative_path": "",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA7klEQVR42u3Yrw4BAQDHcZuoGXZjN5vNbYKisAnKeYETbxOIGg/gT7iXYAJFs+mippiRJFVQzM7Ndt7gp999w/cFPvGbuO+mocowCrKbZckcx5W584vMD76y5uwt+4xysgQAAAAAAAAAxBjgaduhqtx/yBbrrWwwnMgae1/WzidlrV5aFhyzMgAAAAAAAACIM8BmtQxVxUpdVjp0ZZlOVTY2TdmrlpJ5nie7nk8yAAAAAAAAAIgzwL/hEfUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDC/QBaeU7W8BJhBgAAAABJRU5ErkJggg==",
+      "width": 64,
+      "height": 64,
+      "uv_width": 64,
+      "uv_height": 64
+    }
+  ],
+  "boxhead_meta": {
+    "id": "rocket",
+    "scale": 1,
+    "bones": {
+      "root": {
+        "uuid": "root-rocket",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weapon_mount_bone": {
+        "uuid": "06f8a360-6f8a-46f8-a6f8-000059d6c260",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weapon_warhead_bone": {
+        "uuid": "b1040001-4000-8000-000000000001",
+        "origin": [
+          0,
+          2.3,
+          18.8
+        ]
+      },
+      "weapon_breech_bone": {
+        "uuid": "b1040002-4000-8000-000000000002",
+        "origin": [
+          0,
+          2.3,
+          -17.6
+        ]
+      },
+      "muzzle_bone": {
+        "uuid": "b1040003-4000-8000-000000000003",
+        "origin": [
+          0,
+          2.3,
+          21.2
+        ]
+      }
+    },
+    "cubes": [
+      {
+        "uuid": "4d101f55-4d10-44d1-a4d1-00004a8b5bdd",
+        "name": "Rocket_Under_Hand_Grip",
+        "from": [
+          -1.2,
+          -4.4,
+          0
+        ],
+        "to": [
+          1.1,
+          0,
+          3.6
+        ],
+        "origin": [
+          -0.05,
+          -4.4,
+          1.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      },
+      {
+        "uuid": "08a81fe6-8a81-48a8-a8a8-000053d74eaa",
+        "name": "Rocket_Shoulder_Rest_Pad",
+        "from": [
+          -2.2,
+          -1,
+          -9.3
+        ],
+        "to": [
+          2.2,
+          0.4,
+          -2
+        ],
+        "origin": [
+          0,
+          -1,
+          -5.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#e2b281",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      },
+      {
+        "uuid": "288d84d5-288d-4288-a288-00001358fd5d",
+        "name": "Rocket_Rear_Exhaust_Bell",
+        "from": [
+          -2.9,
+          -0.5,
+          -19.6
+        ],
+        "to": [
+          2.9,
+          5.1,
+          -15.6
+        ],
+        "origin": [
+          0,
+          -0.5,
+          -17.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "weapon_mount_bone",
+          "weapon_breech_bone"
+        ]
+      },
+      {
+        "uuid": "593a1a58-593a-4593-a593-00004962be18",
+        "name": "Rocket_Shoulder_Main_Tube",
+        "from": [
+          -2.4,
+          0,
+          -15.8
+        ],
+        "to": [
+          2.4,
+          4.6,
+          15.7
+        ],
+        "origin": [
+          0,
+          0,
+          -0.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#3f6212",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      },
+      {
+        "uuid": "0ea1c57d-ea1c-4ea1-aea1-000018779245",
+        "name": "Rocket_Front_Muzzle_Collar",
+        "from": [
+          -2.8,
+          -0.4,
+          13.4
+        ],
+        "to": [
+          2.8,
+          5,
+          16.6
+        ],
+        "origin": [
+          0,
+          -0.4,
+          15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      },
+      {
+        "uuid": "1e61c0cf-1e61-41e6-a1e6-00000bfabae7",
+        "name": "Rocket_Top_Sight_Bracket",
+        "from": [
+          -0.8,
+          4.6,
+          5.7
+        ],
+        "to": [
+          0.8,
+          6.6,
+          9
+        ],
+        "origin": [
+          0,
+          4.6,
+          7.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#e2b281",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      },
+      {
+        "uuid": "008c9410-8c94-48c9-a8ca-000038385a90",
+        "name": "Rocket_Warhead_Tip",
+        "from": [
+          -1.8,
+          0.5,
+          16.6
+        ],
+        "to": [
+          1.8,
+          4.1,
+          21
+        ],
+        "origin": [
+          0,
+          0.5,
+          18.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#dc2626",
+        "bonePath": [
+          "weapon_mount_bone",
+          "weapon_warhead_bone"
+        ]
+      }
+    ],
+    "mountSocket": "shoulder_mount_bone"
+  }
+}

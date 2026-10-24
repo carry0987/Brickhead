@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        --font-display: "Outfit", "Noto Sans TC", system-ui, sans-serif;
+        --font-sans: "Plus Jakarta Sans", "Noto Sans TC", system-ui, sans-serif;
+        --font-mono: "JetBrains Mono", monospace;
+    }
+
+    body {
+        font-family: var(--font-sans);
+        background-color: #0b0f17;
+        color: #f8fafc;
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-display {
+        font-family: var(--font-display);
+        text-wrap: balance;
+    }
+
+    .font-mono-tabular {
+        font-family: var(--font-mono);
+        font-variant-numeric: tabular-nums;
+    }
+
+    button {
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    button,
+    a,
+    [role="button"],
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    input[type="checkbox"],
+    input[type="radio"],
+    input[type="range"],
+    select,
+    summary,
+    label[for] {
+        cursor: pointer;
+    }
+}

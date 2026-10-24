@@ -1,0 +1,872 @@
+{
+  "meta": {
+    "format_version": "4.5",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "boxhead_shotgun",
+  "model_identifier": "boxhead_shotgun",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "Shotgun_Wood_Stock",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.5,
+        -2,
+        -3.7
+      ],
+      "to": [
+        1.5,
+        2.2,
+        1.8
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        0,
+        -2,
+        -0.95
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "39189fdc-3918-4391-a391-00002748693c"
+    },
+    {
+      "name": "Shotgun_Heavy_Barrel",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.6,
+        0,
+        1.3
+      ],
+      "to": [
+        1.6,
+        3.4,
+        12.8
+      ],
+      "autouv": 0,
+      "color": 1,
+      "origin": [
+        0,
+        0,
+        7.05
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            1,
+            15,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "024a5e57-24a5-424a-a24a-0000617627af"
+    },
+    {
+      "name": "Shotgun_Pump_Guard",
+      "box_uv": false,
+      "rescale": false,
+      "locked": false,
+      "from": [
+        -1.7,
+        -1.4,
+        3.8
+      ],
+      "to": [
+        1.7,
+        0.4,
+        9.3
+      ],
+      "autouv": 0,
+      "color": 2,
+      "origin": [
+        0,
+        -1.4,
+        6.55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            41,
+            9,
+            47,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "534dd17a-534d-4534-a534-000040bf0f0a"
+    }
+  ],
+  "outliner": [
+    {
+      "name": "weapon_mount_bone",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "72cc40e0-72cc-472c-a72c-00006cb15be0",
+      "export": true,
+      "isOpen": true,
+      "children": [
+        "39189fdc-3918-4391-a391-00002748693c",
+        "024a5e57-24a5-424a-a24a-0000617627af",
+        {
+          "name": "weapon_pump_bone",
+          "origin": [
+            0,
+            -0.5,
+            6.55
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "b1030001-4000-8000-000000000001",
+          "export": true,
+          "isOpen": true,
+          "children": [
+            "534dd17a-534d-4534-a534-000040bf0f0a"
+          ]
+        },
+        {
+          "name": "muzzle_bone",
+          "origin": [
+            0,
+            1.7,
+            13
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "uuid": "b1030002-4000-8000-000000000002",
+          "export": true,
+          "isOpen": true,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "uuid": "c0000001-4000-8000-00000000008d",
+      "name": "animation.boxhead.idle",
+      "loop": "loop",
+      "override": false,
+      "length": 1.6,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "72cc40e0-72cc-472c-a72c-00006cb15be0": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000008e",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.8,
+              "uuid": "a0000001-4000-8000-00000000008f",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "4",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1.6,
+              "uuid": "a0000001-4000-8000-000000000090",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "c0000002-4000-8000-000000000091",
+      "name": "animation.boxhead.fire",
+      "loop": "once",
+      "override": false,
+      "length": 1,
+      "snapping": 20,
+      "selected": false,
+      "animators": {
+        "72cc40e0-72cc-472c-a72c-00006cb15be0": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000002f",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "-24",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.25,
+              "uuid": "a0000001-4000-8000-000000000030",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-28",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.68,
+              "uuid": "a0000001-4000-8000-000000000031",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-8",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-000000000032",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000033",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0.5",
+                  "z": "-2.8"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.25,
+              "uuid": "a0000001-4000-8000-000000000034",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0.8",
+                  "z": "-3.2"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.68,
+              "uuid": "a0000001-4000-8000-000000000035",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0.2",
+                  "z": "-0.9"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-000000000036",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "c0000003-4000-8000-000000000092",
+      "name": "animation.boxhead.reload",
+      "loop": "once",
+      "override": false,
+      "length": 1,
+      "snapping": 20,
+      "selected": true,
+      "animators": {
+        "72cc40e0-72cc-472c-a72c-00006cb15be0": {
+          "name": "weapon_mount_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "rotation",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-000000000037",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.2,
+              "uuid": "a0000001-4000-8000-000000000038",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-12",
+                  "y": "0",
+                  "z": "-8"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.52,
+              "uuid": "a0000001-4000-8000-000000000039",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "-16",
+                  "y": "0",
+                  "z": "-12"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 0.86,
+              "uuid": "a0000001-4000-8000-00000000003a",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "rotation",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-00000000003b",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000003c",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.52,
+              "uuid": "a0000001-4000-8000-00000000003d",
+              "interpolation": "catmullrom",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0.6",
+                  "z": "-1.2"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-00000000003e",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        },
+        "b1030001-4000-8000-000000000001": {
+          "name": "weapon_pump_bone",
+          "type": "bone",
+          "keyframes": [
+            {
+              "channel": "position",
+              "time": 0,
+              "uuid": "a0000001-4000-8000-00000000003f",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.16,
+              "uuid": "a0000001-4000-8000-000000000040",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.48,
+              "uuid": "a0000001-4000-8000-000000000041",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-3.2"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.62,
+              "uuid": "a0000001-4000-8000-000000000042",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "-3.2"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 0.86,
+              "uuid": "a0000001-4000-8000-000000000043",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            },
+            {
+              "channel": "position",
+              "time": 1,
+              "uuid": "a0000001-4000-8000-000000000044",
+              "interpolation": "linear",
+              "data_points": [
+                {
+                  "x": "0",
+                  "y": "0",
+                  "z": "0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "textures": [
+    {
+      "path": "",
+      "name": "boxhead_palette.png",
+      "folder": "block",
+      "namespace": "",
+      "id": "0",
+      "particle": false,
+      "render_mode": "default",
+      "render_sides": "auto",
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "mode": "bitmap",
+      "saved": true,
+      "uuid": "5ff8c6ec-5ff8-45ff-a5ff-00001429f134",
+      "relative_path": "",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA7klEQVR42u3Yrw4BAQDHcZuoGXZjN5vNbYKisAnKeYETbxOIGg/gT7iXYAJFs+mippiRJFVQzM7Ndt7gp999w/cFPvGbuO+mocowCrKbZckcx5W584vMD76y5uwt+4xysgQAAAAAAAAAxBjgaduhqtx/yBbrrWwwnMgae1/WzidlrV5aFhyzMgAAAAAAAACIM8BmtQxVxUpdVjp0ZZlOVTY2TdmrlpJ5nie7nk8yAAAAAAAAAIgzwL/hEfUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDC/QBaeU7W8BJhBgAAAABJRU5ErkJggg==",
+      "width": 64,
+      "height": 64,
+      "uv_width": 64,
+      "uv_height": 64
+    }
+  ],
+  "boxhead_meta": {
+    "id": "shotgun",
+    "scale": 1,
+    "bones": {
+      "root": {
+        "uuid": "root-shotgun",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weapon_mount_bone": {
+        "uuid": "72cc40e0-72cc-472c-a72c-00006cb15be0",
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weapon_pump_bone": {
+        "uuid": "b1030001-4000-8000-000000000001",
+        "origin": [
+          0,
+          -0.5,
+          6.55
+        ]
+      },
+      "muzzle_bone": {
+        "uuid": "b1030002-4000-8000-000000000002",
+        "origin": [
+          0,
+          1.7,
+          13
+        ]
+      }
+    },
+    "cubes": [
+      {
+        "uuid": "39189fdc-3918-4391-a391-00002748693c",
+        "name": "Shotgun_Wood_Stock",
+        "from": [
+          -1.5,
+          -2,
+          -3.7
+        ],
+        "to": [
+          1.5,
+          2.2,
+          1.8
+        ],
+        "origin": [
+          0,
+          -2,
+          -0.95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#451a03",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      },
+      {
+        "uuid": "024a5e57-24a5-424a-a24a-0000617627af",
+        "name": "Shotgun_Heavy_Barrel",
+        "from": [
+          -1.6,
+          0,
+          1.3
+        ],
+        "to": [
+          1.6,
+          3.4,
+          12.8
+        ],
+        "origin": [
+          0,
+          0,
+          7.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#18181b",
+        "bonePath": [
+          "weapon_mount_bone"
+        ]
+      },
+      {
+        "uuid": "534dd17a-534d-4534-a534-000040bf0f0a",
+        "name": "Shotgun_Pump_Guard",
+        "from": [
+          -1.7,
+          -1.4,
+          3.8
+        ],
+        "to": [
+          1.7,
+          0.4,
+          9.3
+        ],
+        "origin": [
+          0,
+          -1.4,
+          6.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "hexColor": "#451a03",
+        "bonePath": [
+          "weapon_mount_bone",
+          "weapon_pump_bone"
+        ]
+      }
+    ],
+    "mountSocket": "weapon_mount_bone"
+  }
+}

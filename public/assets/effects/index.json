@@ -1,0 +1,741 @@
+{
+  "version": "1.2",
+  "description": "Boxhead 2Play Rooms Unified SVG Effect Catalog (Authentic Flash DefineSprite sequences, scorch marks, rocket smoke & weapon muzzle flashes)",
+  "effects": {
+    "explosion": {
+      "id": "explosion",
+      "spriteId": 568,
+      "category": "EXPLOSION",
+      "defaultDurationMs": 450,
+      "width": 216.6,
+      "height": 162.2,
+      "originX": 108.3,
+      "originY": 108.3,
+      "baseRadius": 96.0,
+      "rotatable": false,
+      "basePath": "assets/effects/explosion",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "explosion_ground_1.svg",
+          "url": "assets/effects/explosion/explosion_ground_1.svg",
+          "scaleX": 0.261,
+          "bottomScaleY": -0.1304,
+          "topScaleY": 0.2614,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 2,
+          "file": "explosion_ground_2.svg",
+          "url": "assets/effects/explosion/explosion_ground_2.svg",
+          "scaleX": 0.2725,
+          "bottomScaleY": -0.1362,
+          "topScaleY": 0.2729,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 3,
+          "file": "explosion_ground_3.svg",
+          "url": "assets/effects/explosion/explosion_ground_3.svg",
+          "scaleX": 0.3077,
+          "bottomScaleY": -0.1537,
+          "topScaleY": 0.3081,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 4,
+          "file": "explosion_ground_4.svg",
+          "url": "assets/effects/explosion/explosion_ground_4.svg",
+          "scaleX": 0.3663,
+          "bottomScaleY": -0.1828,
+          "topScaleY": 0.3667,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 5,
+          "file": "explosion_ground_5.svg",
+          "url": "assets/effects/explosion/explosion_ground_5.svg",
+          "scaleX": 0.4483,
+          "bottomScaleY": -0.2236,
+          "topScaleY": 0.4487,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 6,
+          "file": "explosion_ground_6.svg",
+          "url": "assets/effects/explosion/explosion_ground_6.svg",
+          "scaleX": 0.5538,
+          "bottomScaleY": -0.2761,
+          "topScaleY": 0.5543,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 7,
+          "file": "explosion_ground_7.svg",
+          "url": "assets/effects/explosion/explosion_ground_7.svg",
+          "scaleX": 0.6828,
+          "bottomScaleY": -0.3402,
+          "topScaleY": 0.6832,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 8,
+          "file": "explosion_ground_8.svg",
+          "url": "assets/effects/explosion/explosion_ground_8.svg",
+          "scaleX": 0.8352,
+          "bottomScaleY": -0.416,
+          "topScaleY": 0.8356,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 9,
+          "file": "explosion_ground_9.svg",
+          "url": "assets/effects/explosion/explosion_ground_9.svg",
+          "scaleX": 0.8907,
+          "bottomScaleY": -0.4436,
+          "topScaleY": 0.8912,
+          "stopOpacity": 0.80784315
+        },
+        {
+          "frame": 10,
+          "file": "explosion_ground_10.svg",
+          "url": "assets/effects/explosion/explosion_ground_10.svg",
+          "scaleX": 0.9404,
+          "bottomScaleY": -0.4684,
+          "topScaleY": 0.9409,
+          "stopOpacity": 0.6392157
+        },
+        {
+          "frame": 11,
+          "file": "explosion_ground_11.svg",
+          "url": "assets/effects/explosion/explosion_ground_11.svg",
+          "scaleX": 0.9842,
+          "bottomScaleY": -0.4902,
+          "topScaleY": 0.9848,
+          "stopOpacity": 0.4862745
+        },
+        {
+          "frame": 12,
+          "file": "explosion_ground_12.svg",
+          "url": "assets/effects/explosion/explosion_ground_12.svg",
+          "scaleX": 1.0222,
+          "bottomScaleY": -0.5092,
+          "topScaleY": 1.0228,
+          "stopOpacity": 0.35686275
+        },
+        {
+          "frame": 13,
+          "file": "explosion_ground_13.svg",
+          "url": "assets/effects/explosion/explosion_ground_13.svg",
+          "scaleX": 1.0544,
+          "bottomScaleY": -0.5252,
+          "topScaleY": 1.055,
+          "stopOpacity": 0.24705882
+        },
+        {
+          "frame": 14,
+          "file": "explosion_ground_14.svg",
+          "url": "assets/effects/explosion/explosion_ground_14.svg",
+          "scaleX": 1.0807,
+          "bottomScaleY": -0.5383,
+          "topScaleY": 1.0813,
+          "stopOpacity": 0.15686275
+        },
+        {
+          "frame": 15,
+          "file": "explosion_ground_15.svg",
+          "url": "assets/effects/explosion/explosion_ground_15.svg",
+          "scaleX": 1.1011,
+          "bottomScaleY": -0.5484,
+          "topScaleY": 1.1017,
+          "stopOpacity": 0.08627451
+        },
+        {
+          "frame": 16,
+          "file": "explosion_ground_16.svg",
+          "url": "assets/effects/explosion/explosion_ground_16.svg",
+          "scaleX": 1.1157,
+          "bottomScaleY": -0.5557,
+          "topScaleY": 1.1164,
+          "stopOpacity": 0.039215688
+        },
+        {
+          "frame": 17,
+          "file": "explosion_ground_17.svg",
+          "url": "assets/effects/explosion/explosion_ground_17.svg",
+          "scaleX": 1.1245,
+          "bottomScaleY": -0.56,
+          "topScaleY": 1.1251,
+          "stopOpacity": 0.007843138
+        },
+        {
+          "frame": 18,
+          "file": "explosion_ground_18.svg",
+          "url": "assets/effects/explosion/explosion_ground_18.svg",
+          "scaleX": 1.1274,
+          "bottomScaleY": -0.5615,
+          "topScaleY": 1.1281,
+          "stopOpacity": 0.0
+        }
+      ]
+    },
+    "explosion_midair": {
+      "id": "explosion_midair",
+      "spriteId": 573,
+      "category": "EXPLOSION",
+      "defaultDurationMs": 450,
+      "width": 216.6,
+      "height": 216.45,
+      "originX": 108.3,
+      "originY": 108.3,
+      "baseRadius": 96.0,
+      "rotatable": false,
+      "basePath": "assets/effects/explosion_midair",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "explosion_midair_1.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_1.svg",
+          "scaleX": 0.261,
+          "bottomScaleY": -0.261,
+          "topScaleY": 0.2612,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 2,
+          "file": "explosion_midair_2.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_2.svg",
+          "scaleX": 0.2727,
+          "bottomScaleY": -0.2727,
+          "topScaleY": 0.2729,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 3,
+          "file": "explosion_midair_3.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_3.svg",
+          "scaleX": 0.3078,
+          "bottomScaleY": -0.3078,
+          "topScaleY": 0.3081,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 4,
+          "file": "explosion_midair_4.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_4.svg",
+          "scaleX": 0.3664,
+          "bottomScaleY": -0.3664,
+          "topScaleY": 0.3667,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 5,
+          "file": "explosion_midair_5.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_5.svg",
+          "scaleX": 0.4484,
+          "bottomScaleY": -0.4484,
+          "topScaleY": 0.4487,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 6,
+          "file": "explosion_midair_6.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_6.svg",
+          "scaleX": 0.5538,
+          "bottomScaleY": -0.5538,
+          "topScaleY": 0.5543,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 7,
+          "file": "explosion_midair_7.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_7.svg",
+          "scaleX": 0.6827,
+          "bottomScaleY": -0.6827,
+          "topScaleY": 0.6832,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 8,
+          "file": "explosion_midair_8.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_8.svg",
+          "scaleX": 0.835,
+          "bottomScaleY": -0.835,
+          "topScaleY": 0.8356,
+          "stopOpacity": 1.0
+        },
+        {
+          "frame": 9,
+          "file": "explosion_midair_9.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_9.svg",
+          "scaleX": 0.8905,
+          "bottomScaleY": -0.8905,
+          "topScaleY": 0.8912,
+          "stopOpacity": 0.80784315
+        },
+        {
+          "frame": 10,
+          "file": "explosion_midair_10.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_10.svg",
+          "scaleX": 0.9401,
+          "bottomScaleY": -0.9401,
+          "topScaleY": 0.9409,
+          "stopOpacity": 0.6392157
+        },
+        {
+          "frame": 11,
+          "file": "explosion_midair_11.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_11.svg",
+          "scaleX": 0.9839,
+          "bottomScaleY": -0.9839,
+          "topScaleY": 0.9848,
+          "stopOpacity": 0.4862745
+        },
+        {
+          "frame": 12,
+          "file": "explosion_midair_12.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_12.svg",
+          "scaleX": 1.0219,
+          "bottomScaleY": -1.0219,
+          "topScaleY": 1.0228,
+          "stopOpacity": 0.35686275
+        },
+        {
+          "frame": 13,
+          "file": "explosion_midair_13.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_13.svg",
+          "scaleX": 1.054,
+          "bottomScaleY": -1.054,
+          "topScaleY": 1.055,
+          "stopOpacity": 0.24705882
+        },
+        {
+          "frame": 14,
+          "file": "explosion_midair_14.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_14.svg",
+          "scaleX": 1.0803,
+          "bottomScaleY": -1.0803,
+          "topScaleY": 1.0813,
+          "stopOpacity": 0.15686275
+        },
+        {
+          "frame": 15,
+          "file": "explosion_midair_15.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_15.svg",
+          "scaleX": 1.1007,
+          "bottomScaleY": -1.1007,
+          "topScaleY": 1.1018,
+          "stopOpacity": 0.08627451
+        },
+        {
+          "frame": 16,
+          "file": "explosion_midair_16.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_16.svg",
+          "scaleX": 1.1153,
+          "bottomScaleY": -1.1153,
+          "topScaleY": 1.1164,
+          "stopOpacity": 0.03529412
+        },
+        {
+          "frame": 17,
+          "file": "explosion_midair_17.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_17.svg",
+          "scaleX": 1.1241,
+          "bottomScaleY": -1.1241,
+          "topScaleY": 1.1252,
+          "stopOpacity": 0.007843138
+        },
+        {
+          "frame": 18,
+          "file": "explosion_midair_18.svg",
+          "url": "assets/effects/explosion_midair/explosion_midair_18.svg",
+          "scaleX": 1.127,
+          "bottomScaleY": -1.127,
+          "topScaleY": 1.1281,
+          "stopOpacity": 0.0
+        }
+      ]
+    },
+    "rocket_smoke": {
+      "id": "rocket_smoke",
+      "spriteId": 580,
+      "category": "IMPACT",
+      "defaultDurationMs": 320,
+      "width": 128.0,
+      "height": 128.0,
+      "originX": 64.0,
+      "originY": 64.0,
+      "baseRadius": 48.0,
+      "rotatable": false,
+      "basePath": "assets/effects/rocket_smoke",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "rocket_smoke_1.svg",
+          "url": "assets/effects/rocket_smoke/rocket_smoke_1.svg",
+          "stopOpacity": 0.49803922
+        },
+        {
+          "frame": 2,
+          "file": "rocket_smoke_2.svg",
+          "url": "assets/effects/rocket_smoke/rocket_smoke_2.svg",
+          "stopOpacity": 0.3372549
+        },
+        {
+          "frame": 3,
+          "file": "rocket_smoke_3.svg",
+          "url": "assets/effects/rocket_smoke/rocket_smoke_3.svg",
+          "stopOpacity": 0.21176471
+        },
+        {
+          "frame": 4,
+          "file": "rocket_smoke_4.svg",
+          "url": "assets/effects/rocket_smoke/rocket_smoke_4.svg",
+          "stopOpacity": 0.12156863
+        },
+        {
+          "frame": 5,
+          "file": "rocket_smoke_5.svg",
+          "url": "assets/effects/rocket_smoke/rocket_smoke_5.svg",
+          "stopOpacity": 0.07058824
+        },
+        {
+          "frame": 6,
+          "file": "rocket_smoke_6.svg",
+          "url": "assets/effects/rocket_smoke/rocket_smoke_6.svg",
+          "stopOpacity": 0.050980393
+        }
+      ]
+    },
+    "fake_wall_smoke": {
+      "id": "fake_wall_smoke",
+      "spriteId": 626,
+      "category": "IMPACT",
+      "defaultDurationMs": 500,
+      "width": 128.0,
+      "height": 128.0,
+      "originX": 64.0,
+      "originY": 100.25,
+      "baseRadius": 48.0,
+      "rotatable": false,
+      "basePath": "assets/effects/fake_wall_smoke",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "fake_wall_smoke_1.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_1.svg",
+          "stopOpacity": 0.3019608
+        },
+        {
+          "frame": 2,
+          "file": "fake_wall_smoke_2.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_2.svg",
+          "stopOpacity": 0.5803922
+        },
+        {
+          "frame": 3,
+          "file": "fake_wall_smoke_3.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_3.svg",
+          "stopOpacity": 0.74509805
+        },
+        {
+          "frame": 4,
+          "file": "fake_wall_smoke_4.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_4.svg",
+          "stopOpacity": 0.8
+        },
+        {
+          "frame": 5,
+          "file": "fake_wall_smoke_5.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_5.svg",
+          "stopOpacity": 0.73333335
+        },
+        {
+          "frame": 6,
+          "file": "fake_wall_smoke_6.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_6.svg",
+          "stopOpacity": 0.6627451
+        },
+        {
+          "frame": 7,
+          "file": "fake_wall_smoke_7.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_7.svg",
+          "stopOpacity": 0.59607846
+        },
+        {
+          "frame": 8,
+          "file": "fake_wall_smoke_8.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_8.svg",
+          "stopOpacity": 0.5294118
+        },
+        {
+          "frame": 9,
+          "file": "fake_wall_smoke_9.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_9.svg",
+          "stopOpacity": 0.45882353
+        },
+        {
+          "frame": 10,
+          "file": "fake_wall_smoke_10.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_10.svg",
+          "stopOpacity": 0.39215687
+        },
+        {
+          "frame": 11,
+          "file": "fake_wall_smoke_11.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_11.svg",
+          "stopOpacity": 0.32156864
+        },
+        {
+          "frame": 12,
+          "file": "fake_wall_smoke_12.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_12.svg",
+          "stopOpacity": 0.25490198
+        },
+        {
+          "frame": 13,
+          "file": "fake_wall_smoke_13.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_13.svg",
+          "stopOpacity": 0.1882353
+        },
+        {
+          "frame": 14,
+          "file": "fake_wall_smoke_14.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_14.svg",
+          "stopOpacity": 0.11764706
+        },
+        {
+          "frame": 15,
+          "file": "fake_wall_smoke_15.svg",
+          "url": "assets/effects/fake_wall_smoke/fake_wall_smoke_15.svg",
+          "stopOpacity": 0.050980393
+        }
+      ]
+    },
+    "fake_wall_damage": {
+      "id": "fake_wall_damage",
+      "spriteId": 660,
+      "category": "IMPACT",
+      "defaultDurationMs": 1000,
+      "width": 40.45,
+      "height": 44.45,
+      "originX": 25.85,
+      "originY": 32.75,
+      "rotatable": false,
+      "basePath": "assets/effects/fake_wall",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "fake_wall_1.svg",
+          "url": "assets/effects/fake_wall/fake_wall_1.svg"
+        },
+        {
+          "frame": 2,
+          "file": "fake_wall_2.svg",
+          "url": "assets/effects/fake_wall/fake_wall_2.svg"
+        },
+        {
+          "frame": 3,
+          "file": "fake_wall_3.svg",
+          "url": "assets/effects/fake_wall/fake_wall_3.svg"
+        },
+        {
+          "frame": 4,
+          "file": "fake_wall_4.svg",
+          "url": "assets/effects/fake_wall/fake_wall_4.svg"
+        },
+        {
+          "frame": 5,
+          "file": "fake_wall_5.svg",
+          "url": "assets/effects/fake_wall/fake_wall_5.svg"
+        },
+        {
+          "frame": 6,
+          "file": "fake_wall_6.svg",
+          "url": "assets/effects/fake_wall/fake_wall_6.svg"
+        },
+        {
+          "frame": 7,
+          "file": "fake_wall_7.svg",
+          "url": "assets/effects/fake_wall/fake_wall_7.svg"
+        },
+        {
+          "frame": 8,
+          "file": "fake_wall_8.svg",
+          "url": "assets/effects/fake_wall/fake_wall_8.svg"
+        },
+        {
+          "frame": 9,
+          "file": "fake_wall_9.svg",
+          "url": "assets/effects/fake_wall/fake_wall_9.svg"
+        },
+        {
+          "frame": 10,
+          "file": "fake_wall_10.svg",
+          "url": "assets/effects/fake_wall/fake_wall_10.svg"
+        }
+      ]
+    },
+    "scorch_mark_ground": {
+      "id": "scorch_mark_ground",
+      "spriteId": 613,
+      "category": "IMPACT",
+      "defaultDurationMs": 1000,
+      "width": 91.2,
+      "height": 91.2,
+      "originX": 45.6,
+      "originY": 45.6,
+      "baseRadius": 45.6,
+      "rotatable": true,
+      "basePath": "assets/effects/scorch_mark",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "scorch_mark_ground.svg",
+          "url": "assets/effects/scorch_mark/scorch_mark_ground.svg",
+          "stopOpacity": 0.34901962
+        }
+      ]
+    },
+    "scorch_mark_faint": {
+      "id": "scorch_mark_faint",
+      "spriteId": 614,
+      "category": "IMPACT",
+      "defaultDurationMs": 1000,
+      "width": 121.3,
+      "height": 121.3,
+      "originX": 60.65,
+      "originY": 60.65,
+      "baseRadius": 60.65,
+      "rotatable": true,
+      "basePath": "assets/effects/scorch_mark",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "scorch_mark_faint.svg",
+          "url": "assets/effects/scorch_mark/scorch_mark_faint.svg",
+          "stopOpacity": 0.09019608
+        }
+      ]
+    },
+    "muzzle_pistol": {
+      "id": "muzzle_pistol",
+      "spriteId": 678,
+      "category": "WEAPON_MUZZLE",
+      "defaultDurationMs": 95,
+      "width": 75.9,
+      "height": 59.95,
+      "originX": 30.0,
+      "originY": 29.85,
+      "rotatable": true,
+      "basePath": "assets/effects/muzzle_flash",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "pistol_muzzle_flash.svg",
+          "url": "assets/effects/muzzle_flash/pistol_muzzle_flash.svg"
+        },
+        {
+          "frame": 2,
+          "file": "muzzle_flash_star.svg",
+          "url": "assets/effects/muzzle_flash/muzzle_flash_star.svg"
+        },
+        {
+          "frame": 3,
+          "file": "muzzle_flash_cone.svg",
+          "url": "assets/effects/muzzle_flash/muzzle_flash_cone.svg"
+        }
+      ]
+    },
+    "muzzle_uzi": {
+      "id": "muzzle_uzi",
+      "spriteId": 687,
+      "category": "WEAPON_MUZZLE",
+      "defaultDurationMs": 80,
+      "width": 75.9,
+      "height": 59.95,
+      "originX": 30.0,
+      "originY": 29.85,
+      "rotatable": true,
+      "basePath": "assets/effects/muzzle_flash",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "uzi_muzzle_flash.svg",
+          "url": "assets/effects/muzzle_flash/uzi_muzzle_flash.svg"
+        }
+      ]
+    },
+    "muzzle_shotgun": {
+      "id": "muzzle_shotgun",
+      "spriteId": 684,
+      "category": "WEAPON_MUZZLE",
+      "defaultDurationMs": 135,
+      "width": 75.9,
+      "height": 59.95,
+      "originX": 30.0,
+      "originY": 29.85,
+      "rotatable": true,
+      "basePath": "assets/effects/muzzle_flash",
+      "frames": [
+        {
+          "frame": 1,
+          "file": "shotgun_muzzle_flash.svg",
+          "url": "assets/effects/muzzle_flash/shotgun_muzzle_flash.svg"
+        }
+      ]
+    },
+    "muzzle_rocket": {
+      "id": "muzzle_rocket",
+      "spriteId": 580,
+      "category": "WEAPON_MUZZLE",
+      "defaultDurationMs": 145,
+      "width": 120,
+      "height": 72,
+      "originX": 60,
+      "originY": 36,
+      "rotatable": true,
+      "basePath": "assets/effects/rocket_smoke",
+      "frames": []
+    },
+    "muzzle_railgun": {
+      "id": "muzzle_railgun",
+      "spriteId": null,
+      "category": "WEAPON_MUZZLE",
+      "defaultDurationMs": 140,
+      "width": 88,
+      "height": 72,
+      "originX": 20,
+      "originY": 36,
+      "rotatable": true,
+      "basePath": "assets/effects/muzzle_railgun",
+      "frames": []
+    },
+    "throw_grenade": {
+      "id": "throw_grenade",
+      "spriteId": null,
+      "category": "WEAPON_MUZZLE",
+      "defaultDurationMs": 110,
+      "width": 40,
+      "height": 40,
+      "originX": 20,
+      "originY": 20,
+      "rotatable": true,
+      "basePath": "assets/effects/throw_grenade",
+      "frames": []
+    },
+    "place_object": {
+      "id": "place_object",
+      "spriteId": null,
+      "category": "WEAPON_MUZZLE",
+      "defaultDurationMs": 110,
+      "width": 48,
+      "height": 48,
+      "originX": 24,
+      "originY": 24,
+      "rotatable": false,
+      "basePath": "assets/effects/place_object",
+      "frames": []
+    }
+  }
+}
