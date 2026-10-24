@@ -1,6 +1,6 @@
 {
   "name": "brickhead",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "description": "A modern LEGO-style top-down zombie survival and tower defense shooting game with local co-op and AI companions.",
