@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/carry0987/Brickhead/compare/v1.1.1...v1.2.0) (2026-10-24)
+
+
+### Features
+
+* **homepage:** highlight gameplay loop ([#8](https://github.com/carry0987/Brickhead/issues/8)) ([796def9](https://github.com/carry0987/Brickhead/commit/796def954e94c30722617aaae11207bb88da43d3))
+
 ## [1.1.1](https://github.com/carry0987/Brickhead/compare/v1.1.0...v1.1.1) (2026-10-24)
 
 
