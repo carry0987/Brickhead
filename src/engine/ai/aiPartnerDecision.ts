@@ -170,6 +170,30 @@ function hasClearBallisticShotForAI(
     return true;
 }
 
+function hasClearNavigationLine(
+    p: PlayerEntity,
+    targetX: number,
+    targetY: number,
+    room: RoomSpec,
+    st: BattleEngineState,
+): boolean {
+    if (!hasClearLineOfSight(p.x, p.y, targetX, targetY, room.obstacles, st.placedObjects)) {
+        return false;
+    }
+
+    for (let i = 0; i < st.placedObjects.length; i++) {
+        const obj = st.placedObjects[i];
+        if (obj.kind !== 'barrel' || obj.hp <= 0) continue;
+
+        const pad = obj.radius + p.radius;
+        if (segmentIntersectsRect(p.x, p.y, targetX, targetY, obj.x - pad, obj.y - pad, pad * 2, pad * 2)) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 /**
  * Dynamically computes the target-lock hysteresis distance buffer (in pixels) from the
  * active weapon's physical knockback force (`forceNT`), pellet count, and target mass (`massKg`).
@@ -415,7 +439,7 @@ export function computeAIPlayerDecision(
             mx = -Math.cos(closeThreatAng);
             my = -Math.sin(closeThreatAng);
         } else if (dToP1 > 20) {
-            const hasLOS = hasClearLineOfSight(p.x, p.y, p1.x, p1.y, room.obstacles, st.placedObjects);
+            const hasLOS = hasClearNavigationLine(p, p1.x, p1.y, room, st);
             // Do NOT use sampleFlowFieldAngle here because st.flowField seeds P2 itself at distance 0!
             const navAng = hasLOS
                 ? Math.atan2(p1.y - p.y, p1.x - p.x)
@@ -430,12 +454,16 @@ export function computeAIPlayerDecision(
             if (hasLOS && st.debugPathfinding) {
                 debugPathPoints.push({ x: p.x, y: p.y }, { x: p1.x, y: p1.y });
             }
-            if (!visibleNearest && !inPostShotRecoilHold) {
+            if (navAng !== null && !visibleNearest && !inPostShotRecoilHold) {
                 const snapped = snapAngleTo8DirStable(Math.cos(navAng), Math.sin(navAng), p.dir8);
                 rotateAIFacingTowards(snapped.angle);
             }
-            mx = Math.cos(navAng);
-            my = Math.sin(navAng);
+            if (navAng !== null) {
+                mx = Math.cos(navAng);
+                my = Math.sin(navAng);
+            } else {
+                debugGoalLabel = 'HOLD: P1 UNREACHABLE';
+            }
         }
     } else if (visibleNearest) {
         const tEn = visibleNearest as TrackedEnemyEntity;
@@ -486,14 +514,7 @@ export function computeAIPlayerDecision(
             debugGoalLabel = 'PICKUP RED BOX';
             debugGoalX = urgentSupplyBox.x;
             debugGoalY = urgentSupplyBox.y;
-            const hasBoxLOS = hasClearLineOfSight(
-                p.x,
-                p.y,
-                urgentSupplyBox.x,
-                urgentSupplyBox.y,
-                room.obstacles,
-                st.placedObjects,
-            );
+            const hasBoxLOS = hasClearNavigationLine(p, urgentSupplyBox.x, urgentSupplyBox.y, room, st);
             const boxAng = hasBoxLOS
                 ? Math.atan2(urgentSupplyBox.y - p.y, urgentSupplyBox.x - p.x)
                 : computeGridPathAngleToGoal(
@@ -507,8 +528,12 @@ export function computeAIPlayerDecision(
             if (hasBoxLOS && st.debugPathfinding) {
                 debugPathPoints.push({ x: p.x, y: p.y }, { x: urgentSupplyBox.x, y: urgentSupplyBox.y });
             }
-            mx = Math.cos(boxAng);
-            my = Math.sin(boxAng);
+            if (boxAng !== null) {
+                mx = Math.cos(boxAng);
+                my = Math.sin(boxAng);
+            } else {
+                debugGoalLabel = 'HOLD: BOX UNREACHABLE';
+            }
         } else if (bestVisibleD < kiteBackDist) {
             debugGoalLabel = 'KITE BACK';
             mx = -Math.cos(exactAng);
@@ -540,7 +565,7 @@ export function computeAIPlayerDecision(
                     clampedHuntY,
                     st.debugPathfinding ? debugPathPoints : undefined,
                 );
-                if (!isAtViewportEdgeInDir(Math.cos(huntAng), Math.sin(huntAng))) {
+                if (huntAng !== null && !isAtViewportEdgeInDir(Math.cos(huntAng), Math.sin(huntAng))) {
                     debugGoalLabel = 'HUNT DEVIL + FIRE';
                     debugGoalX = clampedHuntX;
                     debugGoalY = clampedHuntY;
@@ -570,7 +595,7 @@ export function computeAIPlayerDecision(
             debugGoalLabel = 'FOLLOW P1 + FIRE';
             debugGoalX = p1.x;
             debugGoalY = p1.y;
-            const hasLOS = hasClearLineOfSight(p.x, p.y, p1.x, p1.y, room.obstacles, st.placedObjects);
+            const hasLOS = hasClearNavigationLine(p, p1.x, p1.y, room, st);
             const followAng = hasLOS
                 ? Math.atan2(p1.y - p.y, p1.x - p.x)
                 : computeGridPathAngleToGoal(
@@ -584,8 +609,12 @@ export function computeAIPlayerDecision(
             if (hasLOS && st.debugPathfinding) {
                 debugPathPoints.push({ x: p.x, y: p.y }, { x: p1.x, y: p1.y });
             }
-            mx = Math.cos(followAng);
-            my = Math.sin(followAng);
+            if (followAng !== null) {
+                mx = Math.cos(followAng);
+                my = Math.sin(followAng);
+            } else {
+                debugGoalLabel = 'HOLD: P1 UNREACHABLE';
+            }
         } else if (st.debugPathfinding) {
             debugPathPoints.push({ x: p.x, y: p.y }, { x: tEn.x, y: tEn.y });
         }
@@ -593,14 +622,7 @@ export function computeAIPlayerDecision(
         debugGoalLabel = 'PICKUP RED BOX';
         debugGoalX = urgentSupplyBox.x;
         debugGoalY = urgentSupplyBox.y;
-        const hasBoxLOS = hasClearLineOfSight(
-            p.x,
-            p.y,
-            urgentSupplyBox.x,
-            urgentSupplyBox.y,
-            room.obstacles,
-            st.placedObjects,
-        );
+        const hasBoxLOS = hasClearNavigationLine(p, urgentSupplyBox.x, urgentSupplyBox.y, room, st);
         const boxAng = hasBoxLOS
             ? Math.atan2(urgentSupplyBox.y - p.y, urgentSupplyBox.x - p.x)
             : computeGridPathAngleToGoal(
@@ -614,12 +636,16 @@ export function computeAIPlayerDecision(
         if (hasBoxLOS && st.debugPathfinding) {
             debugPathPoints.push({ x: p.x, y: p.y }, { x: urgentSupplyBox.x, y: urgentSupplyBox.y });
         }
-        if (!inPostShotRecoilHold) {
+        if (boxAng !== null && !inPostShotRecoilHold) {
             const snapped = snapAngleTo8DirStable(Math.cos(boxAng), Math.sin(boxAng), p.dir8);
             rotateAIFacingTowards(snapped.angle);
         }
-        mx = Math.cos(boxAng);
-        my = Math.sin(boxAng);
+        if (boxAng !== null) {
+            mx = Math.cos(boxAng);
+            my = Math.sin(boxAng);
+        } else {
+            debugGoalLabel = 'HOLD: BOX UNREACHABLE';
+        }
     } else if (
         isLV4 &&
         anyNearestDevil &&
@@ -641,11 +667,12 @@ export function computeAIPlayerDecision(
                   clampedHuntY,
                   st.debugPathfinding ? debugPathPoints : undefined,
               );
-        if (!inPostShotRecoilHold) {
+        if (navAng !== null && !inPostShotRecoilHold) {
             const snapped = snapAngleTo8DirStable(Math.cos(navAng), Math.sin(navAng), p.dir8);
             rotateAIFacingTowards(snapped.angle);
         }
         if (
+            navAng !== null &&
             dist(p.x, p.y, clampedHuntX, clampedHuntY) > 20 &&
             !isAtViewportEdgeInDir(Math.cos(navAng), Math.sin(navAng))
         ) {
@@ -658,13 +685,13 @@ export function computeAIPlayerDecision(
             mx = Math.cos(navAng);
             my = Math.sin(navAng);
         } else {
-            debugGoalLabel = 'HOLD AT VIEWPORT EDGE';
+            debugGoalLabel = navAng === null ? 'HOLD: DEVIL UNREACHABLE' : 'HOLD AT VIEWPORT EDGE';
             debugGoalX = clampedHuntX;
             debugGoalY = clampedHuntY;
         }
     } else if (p1) {
         const dToP1 = dist(p.x, p.y, p1.x, p1.y);
-        const hasLOS = hasClearLineOfSight(p.x, p.y, p1.x, p1.y, room.obstacles, st.placedObjects);
+        const hasLOS = hasClearNavigationLine(p, p1.x, p1.y, room, st);
         // Distance hysteresis band: start catching up when > 125px (or > 95px if LOS is blocked),
         // and keep walking smoothly until within 80px of P1 so P2 never oscillates at the boundary.
         const startFollowDist = hasLOS
@@ -690,12 +717,16 @@ export function computeAIPlayerDecision(
             if (hasLOS && st.debugPathfinding) {
                 debugPathPoints.push({ x: p.x, y: p.y }, { x: p1.x, y: p1.y });
             }
-            if (!inPostShotRecoilHold) {
+            if (navAng !== null && !inPostShotRecoilHold) {
                 const snapped = snapAngleTo8DirStable(Math.cos(navAng), Math.sin(navAng), p.dir8);
                 rotateAIFacingTowards(snapped.angle);
             }
-            mx = Math.cos(navAng);
-            my = Math.sin(navAng);
+            if (navAng !== null) {
+                mx = Math.cos(navAng);
+                my = Math.sin(navAng);
+            } else {
+                debugGoalLabel = 'HOLD: P1 UNREACHABLE';
+            }
         } else if (anyNearest && !inPostShotRecoilHold) {
             // Scheme A1: Enemy is behind a wall/obstacle -> pre-aim toward the corridor corner / doorway
             // where the zombie will emerge (using grid pathfinding), never staring straight into a solid wall!
@@ -711,8 +742,10 @@ export function computeAIPlayerDecision(
                 tEn.y,
                 st.debugPathfinding ? debugPathPoints : undefined,
             );
-            const snapped = snapAngleTo8DirStable(Math.cos(cornerWatchAng), Math.sin(cornerWatchAng), p.dir8, 0.22);
-            rotateAIFacingTowards(snapped.angle);
+            if (cornerWatchAng !== null) {
+                const snapped = snapAngleTo8DirStable(Math.cos(cornerWatchAng), Math.sin(cornerWatchAng), p.dir8, 0.22);
+                rotateAIFacingTowards(snapped.angle);
+            }
         }
     } else if (anyNearest) {
         const tEn = anyNearest as TrackedEnemyEntity;
@@ -727,11 +760,11 @@ export function computeAIPlayerDecision(
             tEn.y,
             st.debugPathfinding ? debugPathPoints : undefined,
         );
-        if (!inPostShotRecoilHold) {
+        if (navAng !== null && !inPostShotRecoilHold) {
             const snapped = snapAngleTo8DirStable(Math.cos(navAng), Math.sin(navAng), p.dir8);
             rotateAIFacingTowards(snapped.angle);
         }
-        if (bestAnyD > 150) {
+        if (navAng !== null && bestAnyD > 150) {
             mx = Math.cos(navAng);
             my = Math.sin(navAng);
         }

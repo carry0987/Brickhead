@@ -544,7 +544,7 @@ export function computeGridPathAngleToGoal(
     goalX: number,
     goalY: number,
     outDebugPath?: Array<{ x: number; y: number }>,
-): number {
+): number | null {
     const cols = st.flowCols;
     const rows = st.flowRows;
     if (cols === 0 || rows === 0) {
@@ -622,6 +622,13 @@ export function computeGridPathAngleToGoal(
                 }
             }
         }
+    }
+
+    if (distMap[startIdx] === -1) {
+        if (outDebugPath) {
+            outDebugPath.push({ x: startX, y: startY });
+        }
+        return null;
     }
 
     let bestScore = Infinity;
@@ -704,5 +711,5 @@ export function computeGridPathAngleToGoal(
         }
     }
 
-    return Math.atan2(bestY - startY, bestX - startX);
+    return bestScore < Infinity ? Math.atan2(bestY - startY, bestX - startX) : null;
 }
