@@ -121,7 +121,8 @@
   "model_weapon_mount": "Attach a weapon .bbmodel to the right-hand weapon_mount_bone:",
   "model_texture_animation_badge": "Embedded 64×64 PNG texture and complete skeletal animations",
   "model_texture_animation_help": "Every .bbmodel embeds its color texture for complete Blockbench rendering and includes all keyframe animations.",
-  "poster_label": "Boxhead 2Play Rooms in-game .bbmodel poster",
-  "poster_caption": "In-game .bbmodel snapshot · Cylindrical barrel · White octagonal fake wall · Red-light mine · Green-light charge pack",
-  "poster_description": "Every character, monster, weapon, and tactical item is an independent .bbmodel file integrated under /assets."
+  "poster_label": "Brickhead gameplay scene",
+  "poster_caption": "HORDE INCOMING · BUILD YOUR LINE WITH BARRELS, WALLS, AND MINES",
+  "poster_description": "Keep the combo alive and survive every escalating wave.",
+  "poster_modes": "SOLO · AI PARTNER · LOCAL CO-OP · DEATHMATCH"
 }
