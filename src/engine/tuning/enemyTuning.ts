@@ -29,7 +29,13 @@ export interface EnemySpec {
         cooldownMs: number;
         maxRange: number;
         projectileSpeed: number;
+        spawnOffset: number;
+        initialHeight: number;
+        verticalSpeed: number;
+        projectileRadius: number;
+        damage: number;
         knockback: number;
+        blastRadius: number;
     };
 }
 
@@ -106,7 +112,13 @@ export const ENEMY_SPECS: Readonly<Record<EnemyKind, EnemySpec>> = {
             cooldownMs: 1250,
             maxRange: 580,
             projectileSpeed: 8.4,
+            spawnOffset: 24,
+            initialHeight: 18,
+            verticalSpeed: 0,
+            projectileRadius: 8,
+            damage: 5,
             knockback: 50,
+            blastRadius: 0,
         },
     },
 };

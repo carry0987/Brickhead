@@ -4,7 +4,8 @@ import type { BattleEngineState, RoomBounds } from '../battleTypes';
 import { ENEMY_SPECS } from '../tuning/enemyTuning';
 
 export const FLOW_CELL = 16;
-const DYNAMIC_BARREL_OR_WALL_COST = 18;
+const DYNAMIC_WALL_COST = 18;
+const ZOMBIE_BARREL_SAFETY_MARGIN = 2;
 
 /**
  * Ensures any spawned or dropped Red Box supply crate (`red_box`) is placed completely clear
@@ -128,19 +129,80 @@ export function initRoomFlowField(st: BattleEngineState, activeRoom: RoomSpec, a
     st.lastFlowUpdate = 0;
 }
 
-function getCellDynamicStepCost(st: BattleEngineState, cx: number, cy: number, extraRadiusPad: number = 8): number {
+function getCellDynamicStepCost(
+    st: BattleEngineState,
+    cx: number,
+    cy: number,
+    extraRadiusPad: number = 8,
+    barrelsAreImpassable: boolean = false,
+): number | null {
+    let overlapsDynamicObstacle = false;
+
     for (let i = 0; i < st.placedObjects.length; i++) {
         const obj = st.placedObjects[i];
         if ((obj.kind === 'wall' || obj.kind === 'barrel') && obj.hp > 0) {
-            const pad = obj.radius + extraRadiusPad;
+            const obstaclePad =
+                barrelsAreImpassable && obj.kind === 'barrel'
+                    ? ENEMY_SPECS.zombie.radius + ZOMBIE_BARREL_SAFETY_MARGIN
+                    : extraRadiusPad;
+            const pad = obj.radius + obstaclePad;
             const dx = cx - obj.x;
             const dy = cy - obj.y;
             if (dx * dx + dy * dy <= pad * pad) {
-                return DYNAMIC_BARREL_OR_WALL_COST;
+                if (barrelsAreImpassable && obj.kind === 'barrel') {
+                    return null;
+                }
+                overlapsDynamicObstacle = true;
             }
         }
     }
-    return 1;
+
+    return overlapsDynamicObstacle ? DYNAMIC_WALL_COST : 1;
+}
+
+function segmentCutsThroughZombieBarrel(
+    st: BattleEngineState,
+    startX: number,
+    startY: number,
+    endX: number,
+    endY: number,
+): boolean {
+    const segmentX = endX - startX;
+    const segmentY = endY - startY;
+    const segmentLengthSquared = segmentX * segmentX + segmentY * segmentY;
+
+    for (let i = 0; i < st.placedObjects.length; i++) {
+        const obj = st.placedObjects[i];
+        if (obj.kind !== 'barrel' || obj.hp <= 0) continue;
+
+        const clearance = obj.radius + ENEMY_SPECS.zombie.radius + ZOMBIE_BARREL_SAFETY_MARGIN;
+        const clearanceSquared = clearance * clearance;
+        const startDx = startX - obj.x;
+        const startDy = startY - obj.y;
+        const endDx = endX - obj.x;
+        const endDy = endY - obj.y;
+        const startDistanceSquared = startDx * startDx + startDy * startDy;
+        const endDistanceSquared = endDx * endDx + endDy * endDy;
+
+        // Allow a zombie already inside the safety margin to move outward after collision resolution.
+        if (startDistanceSquared < clearanceSquared && endDistanceSquared > startDistanceSquared) {
+            continue;
+        }
+
+        const projection =
+            segmentLengthSquared > 0
+                ? clamp(((obj.x - startX) * segmentX + (obj.y - startY) * segmentY) / segmentLengthSquared, 0, 1)
+                : 0;
+        const closestX = startX + segmentX * projection;
+        const closestY = startY + segmentY * projection;
+        const closestDx = closestX - obj.x;
+        const closestDy = closestY - obj.y;
+        if (closestDx * closestDx + closestDy * closestDy <= clearanceSquared) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 function computeWeightedFlowGrid(
@@ -148,17 +210,15 @@ function computeWeightedFlowGrid(
     blockedGrid: Uint8Array,
     distMap: Int16Array,
     extraRadiusPad: number,
+    barrelsAreImpassable: boolean,
 ): void {
     const cols = st.flowCols;
     const rows = st.flowRows;
     distMap.fill(-1);
 
-    // Use a lightweight Dijkstra / 0-1-K priority queue so that:
-    // 1) Open floor cells have cost 1 -> entities always route around barrels/walls when a gap exists.
-    // 2) Barrels & fake walls have finite cost (18) instead of blocking flood-fill completely ->
-    //    even when the player completely seals a corridor with barrels, the flow field penetrates
-    //    the barrel barricade and floods the rest of the map so zombies behind distant walls
-    //    still navigate around map walls toward the player!
+    // Use a lightweight Dijkstra priority queue. Oil barrels are impassable to zombies,
+    // while fake walls retain a finite cost so enemies can still route toward them to attack.
+    // The fireball Devil is the sole exception and may traverse barrel cells.
     const heapIdx: number[] = [];
     const heapCost: number[] = [];
 
@@ -211,7 +271,10 @@ function computeWeightedFlowGrid(
             const idx = gr * cols + gc;
             let seededCount = 0;
 
-            if (st.flowBlocked[idx] !== 1) {
+            if (
+                blockedGrid[idx] !== 1 &&
+                getCellDynamicStepCost(st, p.x, p.y, extraRadiusPad, barrelsAreImpassable) !== null
+            ) {
                 distMap[idx] = 0;
                 pushHeap(idx, 0);
                 seededCount++;
@@ -225,13 +288,18 @@ function computeWeightedFlowGrid(
                     const nr = gr + dr;
                     if (nc >= 0 && nc < cols && nr >= 0 && nr < rows) {
                         const nIdx = nr * cols + nc;
-                        if (st.flowBlocked[nIdx] !== 1) {
+                        const cellX = nc * FLOW_CELL + FLOW_CELL * 0.5;
+                        const cellY = nr * FLOW_CELL + FLOW_CELL * 0.5;
+                        if (
+                            blockedGrid[nIdx] !== 1 &&
+                            getCellDynamicStepCost(st, cellX, cellY, extraRadiusPad, barrelsAreImpassable) !== null
+                        ) {
                             // Avoid diagonal seeding across a hard corner
                             if (
                                 Math.abs(dr) === 1 &&
                                 Math.abs(dc) === 1 &&
-                                st.flowBlocked[gr * cols + nc] === 1 &&
-                                st.flowBlocked[nr * cols + gc] === 1
+                                blockedGrid[gr * cols + nc] === 1 &&
+                                blockedGrid[nr * cols + gc] === 1
                             ) {
                                 continue;
                             }
@@ -254,7 +322,13 @@ function computeWeightedFlowGrid(
                         const nr = gr + dr;
                         if (nc >= 0 && nc < cols && nr >= 0 && nr < rows) {
                             const nIdx = nr * cols + nc;
-                            if (st.flowBlocked[nIdx] !== 1 && distMap[nIdx] === -1) {
+                            const cellX = nc * FLOW_CELL + FLOW_CELL * 0.5;
+                            const cellY = nr * FLOW_CELL + FLOW_CELL * 0.5;
+                            if (
+                                blockedGrid[nIdx] !== 1 &&
+                                distMap[nIdx] === -1 &&
+                                getCellDynamicStepCost(st, cellX, cellY, extraRadiusPad, barrelsAreImpassable) !== null
+                            ) {
                                 distMap[nIdx] = 2;
                                 pushHeap(nIdx, 2);
                             }
@@ -289,13 +363,15 @@ function computeWeightedFlowGrid(
                 const nIdx = nr * cols + nc;
                 // Hard wall core (5px margin) is strictly impassable; soft wall margin (2) or devil margin (1)
                 // is traversable at a modest penalty so 32px narrow corridors never disconnect the flood-fill.
-                const isHardWall = st.flowBlocked[nIdx] === 1;
+                const isHardWall = blockedGrid[nIdx] === 1;
                 if (isHardWall) continue;
 
                 const softWallPenalty = blockedGrid[nIdx] === 1 ? 6 : blockedGrid[nIdx] === 2 ? 2 : 0;
                 const cx = nc * FLOW_CELL + FLOW_CELL * 0.5;
                 const cy = nr * FLOW_CELL + FLOW_CELL * 0.5;
-                const stepCost = getCellDynamicStepCost(st, cx, cy, extraRadiusPad) + softWallPenalty;
+                const dynamicStepCost = getCellDynamicStepCost(st, cx, cy, extraRadiusPad, barrelsAreImpassable);
+                if (dynamicStepCost === null) continue;
+                const stepCost = dynamicStepCost + softWallPenalty;
                 const nextD = curD + stepCost;
 
                 if (distMap[nIdx] === -1 || nextD < distMap[nIdx]) {
@@ -322,11 +398,11 @@ export function updateFlowField(st: BattleEngineState, now: number): void {
         st.devilFlowField = new Int16Array(cols * rows).fill(-1);
     }
 
-    // 1. Standard Zombie Flow Field (radius 14 -> extraRadiusPad = 8 => 22px clearance around barrels)
-    computeWeightedFlowGrid(st, st.flowBlocked, st.flowField, ENEMY_SPECS.zombie.flowFieldClearancePad);
+    // 1. Standard Zombie Flow Field: oil barrels are hard obstacles.
+    computeWeightedFlowGrid(st, st.flowBlocked, st.flowField, ENEMY_SPECS.zombie.flowFieldClearancePad, true);
 
-    // 2. Devil Boss Flow Field (radius 22 -> extraRadiusPad = 22 => 36px clearance around barrels)
-    computeWeightedFlowGrid(st, st.devilFlowBlocked, st.devilFlowField, ENEMY_SPECS.devil.flowFieldClearancePad);
+    // 2. Fireball Devil Flow Field: the boss can move through oil barrels.
+    computeWeightedFlowGrid(st, st.devilFlowBlocked, st.devilFlowField, ENEMY_SPECS.devil.flowFieldClearancePad, false);
 }
 
 /**
@@ -347,6 +423,10 @@ export function sampleFlowFieldAngle(
 
     const activeField =
         isDevil && st.devilFlowField && st.devilFlowField.length === cols * rows ? st.devilFlowField : st.flowField;
+    const activeBlocked =
+        isDevil && st.devilFlowBlocked && st.devilFlowBlocked.length === cols * rows
+            ? st.devilFlowBlocked
+            : st.flowBlocked;
 
     const gc = clamp(Math.floor(x / FLOW_CELL), 0, cols - 1);
     const gr = clamp(Math.floor(y / FLOW_CELL), 0, rows - 1);
@@ -363,23 +443,27 @@ export function sampleFlowFieldAngle(
             if (nc < 0 || nc >= cols || nr < 0 || nr >= rows) continue;
 
             const nIdx = nr * cols + nc;
-            if (st.flowBlocked[nIdx] === 1) continue;
+            if (activeBlocked[nIdx] === 1) continue;
+
+            const cellX = nc * FLOW_CELL + FLOW_CELL * 0.5;
+            const cellY = nr * FLOW_CELL + FLOW_CELL * 0.5;
+            if (!isDevil && segmentCutsThroughZombieBarrel(st, x, y, cellX, cellY)) {
+                continue;
+            }
 
             // Prevent cutting diagonally through blocked wall corners
             if (Math.abs(dr) === 1 && Math.abs(dc) === 1) {
-                if (st.flowBlocked[gr * cols + nc] === 1 || st.flowBlocked[nr * cols + gc] === 1) {
+                if (activeBlocked[gr * cols + nc] === 1 || activeBlocked[nr * cols + gc] === 1) {
                     continue;
                 }
             } else if (Math.abs(dr) === 2 || Math.abs(dc) === 2) {
                 const midC = gc + Math.trunc(dc / 2);
                 const midR = gr + Math.trunc(dr / 2);
-                if (st.flowBlocked[midR * cols + midC] === 1) continue;
+                if (activeBlocked[midR * cols + midC] === 1) continue;
             }
 
             const dVal = activeField[nIdx];
             if (dVal >= 0) {
-                const cellX = nc * FLOW_CELL + FLOW_CELL * 0.5;
-                const cellY = nr * FLOW_CELL + FLOW_CELL * 0.5;
                 const tieBreak = Math.hypot(targetX - cellX, targetY - cellY) * 0.0005;
                 const score = dVal + tieBreak;
                 if (score < bestScore) {

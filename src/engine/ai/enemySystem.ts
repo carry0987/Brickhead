@@ -25,6 +25,7 @@ export function updateEnemiesAIAndCombat(
     for (let i = st.enemies.length - 1; i >= 0; i--) {
         const en = st.enemies[i];
         const enemySpec = ENEMY_SPECS[en.kind];
+        const isFireballDevil = en.kind === 'devil';
         if (en.hp <= 0) {
             // Spawn the straight-backward falling corpse animation.
             st.corpses.push({
@@ -110,13 +111,29 @@ export function updateEnemiesAIAndCombat(
 
         if (targetP) {
             const tp = targetP as PlayerEntity;
-            const isDevil = en.kind === 'devil';
             // Use 10px obstacle ray margin for both Zombies and Devils so 32px doorways (32 - 20 = 12px clear center)
             // allow clean line-of-sight transition once aligned with the doorway center
             const obsMargin = 10;
             const objMargin = enemySpec.obstacleClearance;
 
             // Check if direct line of sight to target player is blocked for this enemy's physical radius
+            const blockedByBarrel =
+                !isFireballDevil &&
+                st.placedObjects.some(
+                    (obj) =>
+                        obj.kind === 'barrel' &&
+                        obj.hp > 0 &&
+                        segmentIntersectsRect(
+                            en.x,
+                            en.y,
+                            tp.x,
+                            tp.y,
+                            obj.x - obj.radius - objMargin,
+                            obj.y - obj.radius - objMargin,
+                            (obj.radius + objMargin) * 2,
+                            (obj.radius + objMargin) * 2,
+                        ),
+                );
             const blockedByWall =
                 room.obstacles.some((obs) =>
                     segmentIntersectsRect(
@@ -132,7 +149,7 @@ export function updateEnemiesAIAndCombat(
                 ) ||
                 st.placedObjects.some(
                     (obj) =>
-                        (obj.kind === 'wall' || obj.kind === 'barrel') &&
+                        obj.kind === 'wall' &&
                         obj.hp > 0 &&
                         segmentIntersectsRect(
                             en.x,
@@ -144,14 +161,15 @@ export function updateEnemiesAIAndCombat(
                             (obj.radius + objMargin) * 2,
                             (obj.radius + objMargin) * 2,
                         ),
-                );
+                ) ||
+                blockedByBarrel;
 
             blockedByWallForSlide = blockedByWall;
             let desiredAngle = Math.atan2(tp.y - en.y, tp.x - en.x);
             let navMode: 'DIRECT_LOS' | 'FLOW_FIELD' | 'FALLBACK_NO_PATH' = 'DIRECT_LOS';
 
             if (blockedByWall) {
-                const flowAngle = sampleFlowFieldAngle(st, en.x, en.y, tp.x, tp.y, isDevil);
+                const flowAngle = sampleFlowFieldAngle(st, en.x, en.y, tp.x, tp.y, isFireballDevil);
                 if (flowAngle !== null) {
                     desiredAngle = flowAngle;
                     navMode = 'FLOW_FIELD';
@@ -160,13 +178,12 @@ export function updateEnemiesAIAndCombat(
                 }
             }
 
-            // Local barrel avoidance steering for wide bodies (especially Devils, radius 22)
-            // so they smoothly glide around barrel shoulders instead of getting snagged
+            // Zombies steer around barrels locally in addition to their flow-field path.
             let avoidVx = Math.cos(desiredAngle);
             let avoidVy = Math.sin(desiredAngle);
             for (let j = 0; j < st.placedObjects.length; j++) {
                 const obj = st.placedObjects[j];
-                if (obj.kind === 'barrel' && obj.hp > 0) {
+                if (!isFireballDevil && obj.kind === 'barrel' && obj.hp > 0) {
                     const dx = obj.x - en.x;
                     const dy = obj.y - en.y;
                     const d = Math.hypot(dx, dy);
@@ -234,8 +251,10 @@ export function updateEnemiesAIAndCombat(
 
             currentDesiredAngle = desiredAngle;
             en.angle = stepAngleTowards(en.angle, desiredAngle, ENEMY_MOVEMENT_TUNING.maxTurnStepRad);
-            const targetVx = Math.cos(en.angle) * en.speed * gameSpeedMult;
-            const targetVy = Math.sin(en.angle) * en.speed * gameSpeedMult;
+            const shouldHoldAtBarrel = blockedByBarrel && navMode === 'FALLBACK_NO_PATH';
+            const targetSpeed = shouldHoldAtBarrel ? 0 : en.speed * gameSpeedMult;
+            const targetVx = Math.cos(en.angle) * targetSpeed;
+            const targetVy = Math.sin(en.angle) * targetSpeed;
             en.vx = en.vx * ENEMY_MOVEMENT_TUNING.velocityRetention + targetVx * ENEMY_MOVEMENT_TUNING.acceleration;
             en.vy = en.vy * ENEMY_MOVEMENT_TUNING.velocityRetention + targetVy * ENEMY_MOVEMENT_TUNING.acceleration;
             en.x += en.vx;
@@ -246,7 +265,7 @@ export function updateEnemiesAIAndCombat(
                 const gc = clamp(Math.floor(en.x / FLOW_CELL), 0, Math.max(0, st.flowCols - 1));
                 const gr = clamp(Math.floor(en.y / FLOW_CELL), 0, Math.max(0, st.flowRows - 1));
                 const activeField =
-                    isDevil && st.devilFlowField && st.devilFlowField.length === st.flowCols * st.flowRows
+                    isFireballDevil && st.devilFlowField && st.devilFlowField.length === st.flowCols * st.flowRows
                         ? st.devilFlowField
                         : st.flowField;
                 en.debugNavMode = navMode;
@@ -260,7 +279,7 @@ export function updateEnemiesAIAndCombat(
                               { x: en.x, y: en.y },
                               { x: tp.x, y: tp.y },
                           ]
-                        : traceFlowFieldPathForDebug(st, en.x, en.y, tp.x, tp.y, isDevil);
+                        : traceFlowFieldPathForDebug(st, en.x, en.y, tp.x, tp.y, isFireballDevil);
             } else if (en.debugPathPoints) {
                 en.debugPathPoints = undefined;
             }
@@ -285,16 +304,16 @@ export function updateEnemiesAIAndCombat(
                     ownerId: 'DEVIL',
                     sourceEnemyId: en.id,
                     weaponId: 'devil_fireball',
-                    x: en.x + Math.cos(aimAng) * 24,
-                    y: en.y + Math.sin(aimAng) * 24,
+                    x: en.x + Math.cos(aimAng) * rangedAttack.spawnOffset,
+                    y: en.y + Math.sin(aimAng) * rangedAttack.spawnOffset,
                     vx: Math.cos(aimAng) * rangedAttack.projectileSpeed,
                     vy: Math.sin(aimAng) * rangedAttack.projectileSpeed,
-                    z: 18,
-                    vz: 0,
-                    radius: 8,
-                    damage: 5,
+                    z: rangedAttack.initialHeight,
+                    vz: rangedAttack.verticalSpeed,
+                    radius: rangedAttack.projectileRadius,
+                    damage: rangedAttack.damage,
                     knockback: rangedAttack.knockback,
-                    blastRadius: 0,
+                    blastRadius: rangedAttack.blastRadius,
                     cluster: false,
                     spawnTime: now,
                 });
@@ -355,7 +374,7 @@ export function updateEnemiesAIAndCombat(
                             triggeredSingleMine = true;
                             soundFX.playMineDetonate();
                         }
-                    } else if (obj.kind === 'barrel' && objectCollision) {
+                    } else if (obj.kind === 'barrel' && !isFireballDevil && objectCollision) {
                         const pushAng = d > 0.001 ? Math.atan2(en.y - obj.y, en.x - obj.x) : en.angle + Math.PI;
                         const nx = Math.cos(pushAng);
                         const ny = Math.sin(pushAng);
@@ -510,7 +529,7 @@ export function updateEnemiesAIAndCombat(
 
                     for (let oIdx = 0; oIdx < st.placedObjects.length; oIdx++) {
                         const obj = st.placedObjects[oIdx];
-                        if ((obj.kind === 'barrel' || obj.kind === 'wall') && obj.hp > 0) {
+                        if ((obj.kind === 'wall' || (en.kind !== 'devil' && obj.kind === 'barrel')) && obj.hp > 0) {
                             const d = dist(en.x, en.y, obj.x, obj.y);
                             const minDist = en.radius + obj.radius;
                             if (d < minDist) {
