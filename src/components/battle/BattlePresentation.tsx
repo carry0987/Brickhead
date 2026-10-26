@@ -28,12 +28,15 @@ interface BattlePresentationProps {
     worldH: number;
     isComboModalOpen: boolean;
     deathmatchFragsGoal: number;
+    battleWorkspaceRef: RefObject<HTMLDivElement | null>;
     canvasRef: RefObject<HTMLCanvasElement | null>;
     leftMinimapCanvasRef: RefObject<HTMLCanvasElement | null>;
     rightMinimapCanvasRef: RefObject<HTMLCanvasElement | null>;
     engineRef: RefObject<BattleEngineState>;
     loadingPhaseRef: RefObject<LoadingPhase>;
+    isFullscreen: boolean;
     onToggleMouseAim: () => void;
+    onToggleFullscreen: () => void;
     onToggleDebugPathfinding: () => void;
     onOpenComboModal: () => void;
     onTogglePause: () => void;
@@ -65,12 +68,15 @@ export const BattlePresentation: FC<BattlePresentationProps> = ({
     worldH,
     isComboModalOpen,
     deathmatchFragsGoal,
+    battleWorkspaceRef,
     canvasRef,
     leftMinimapCanvasRef,
     rightMinimapCanvasRef,
     engineRef,
     loadingPhaseRef,
+    isFullscreen,
     onToggleMouseAim,
+    onToggleFullscreen,
     onToggleDebugPathfinding,
     onOpenComboModal,
     onTogglePause,
@@ -90,7 +96,11 @@ export const BattlePresentation: FC<BattlePresentationProps> = ({
     const rightPlayer = gameMode === 'DEATHMATCH_2P' && isSplitSwapped ? firstPlayer : secondPlayer;
 
     return (
-        <div className="w-full min-w-[1180px] max-w-385 mx-auto px-5 py-3 flex flex-col gap-3">
+        <div
+            ref={battleWorkspaceRef}
+            className={`battle-workspace w-full mx-auto flex flex-col gap-3 ${
+                isFullscreen ? 'h-full min-w-0 max-w-none justify-center p-3' : 'min-w-[1180px] max-w-385 px-5 py-3'
+            }`}>
             <BattleTopHud
                 gameMode={gameMode}
                 difficulty={difficulty}
@@ -99,6 +109,8 @@ export const BattlePresentation: FC<BattlePresentationProps> = ({
                 useMouseAim={useMouseAim}
                 isSplitSwapped={isSplitSwapped}
                 onToggleMouseAim={onToggleMouseAim}
+                isFullscreen={isFullscreen}
+                onToggleFullscreen={onToggleFullscreen}
                 onToggleSplitSwap={onToggleSplitSwap}
                 onToggleDebugPathfinding={onToggleDebugPathfinding}
                 onOpenComboModal={onOpenComboModal}

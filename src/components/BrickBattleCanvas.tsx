@@ -52,6 +52,7 @@ import { soundFX } from '@/utils/sound';
 import { statsStorage, weaponStateStorage } from '@/utils/statsStorage';
 import { preloadAllSvgEffectsWithProgress, preloadExplosionSprites } from '@/utils/svgEffectRenderer';
 import { BattlePresentation } from './battle/BattlePresentation';
+import { useGameToast } from './ui/GameToastProvider';
 
 interface BrickBattleCanvasProps {
     gameState: GameState;
@@ -91,6 +92,8 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
     onReturnToTitle,
     onGameStateChange,
 }) => {
+    const { notify } = useGameToast();
+    const battleWorkspaceRef = useRef<HTMLDivElement | null>(null);
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
     const leftMinimapCanvasRef = useRef<HTMLCanvasElement | null>(null);
     const rightMinimapCanvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -98,6 +101,9 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
     const floorBufferRef = useRef<HTMLCanvasElement | null>(null);
 
     const [useMouseAim, setUseMouseAim] = useState(false);
+    const [isFullscreen, setIsFullscreen] = useState(false);
+    const wasFullscreenRef = useRef(false);
+    const isFullscreenExitRequestedRef = useRef(false);
     // In 2P Deathmatch mode, allows swapping Left & Right split-screen order via bottom arrow button outside the canvas
     const [isSplitSwapped, setIsSplitSwapped] = useState(false);
 
@@ -574,6 +580,54 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
         player.currentWeapon = available[nextIdx];
         syncWeaponState(st);
     }, []);
+
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            const isWorkspaceFullscreen = document.fullscreenElement === battleWorkspaceRef.current;
+            const didExitFullscreen = wasFullscreenRef.current && !isWorkspaceFullscreen;
+            const wasExitRequested = isFullscreenExitRequestedRef.current;
+
+            wasFullscreenRef.current = isWorkspaceFullscreen;
+            isFullscreenExitRequestedRef.current = false;
+            setIsFullscreen(isWorkspaceFullscreen);
+
+            if (didExitFullscreen && !wasExitRequested && gameState === 'PLAYING') {
+                onGameStateChange('PAUSED');
+            }
+        };
+
+        document.addEventListener('fullscreenchange', handleFullscreenChange);
+        return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+    }, [gameState, onGameStateChange]);
+
+    const handleToggleFullscreen = useCallback(async () => {
+        const workspace = battleWorkspaceRef.current;
+        if (!workspace?.requestFullscreen) {
+            notify({
+                id: 'fullscreen-unavailable',
+                title: m.fullscreen_unavailable_title(),
+                description: m.fullscreen_unavailable_description(),
+            });
+            return;
+        }
+
+        try {
+            if (document.fullscreenElement === workspace) {
+                isFullscreenExitRequestedRef.current = true;
+                await document.exitFullscreen();
+            } else if (!document.fullscreenElement) {
+                await workspace.requestFullscreen();
+            }
+        } catch (error) {
+            isFullscreenExitRequestedRef.current = false;
+            console.error('Unable to change fullscreen mode.', error);
+            notify({
+                id: 'fullscreen-unavailable',
+                title: m.fullscreen_unavailable_title(),
+                description: m.fullscreen_unavailable_description(),
+            });
+        }
+    }, [notify]);
 
     useEffect(() => {
         const onKeyDown = (e: KeyboardEvent) => {
@@ -1491,12 +1545,15 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
             worldH={worldH}
             isComboModalOpen={isComboModalOpen}
             deathmatchFragsGoal={deathmatchFragsGoal}
+            battleWorkspaceRef={battleWorkspaceRef}
             canvasRef={canvasRef}
             leftMinimapCanvasRef={leftMinimapCanvasRef}
             rightMinimapCanvasRef={rightMinimapCanvasRef}
             engineRef={engineRef}
             loadingPhaseRef={loadingPhaseRef}
+            isFullscreen={isFullscreen}
             onToggleMouseAim={() => setUseMouseAim((previous) => !previous)}
+            onToggleFullscreen={handleToggleFullscreen}
             onToggleDebugPathfinding={handleToggleDebugPathfinding}
             onOpenComboModal={() => {
                 if (loadingPhase === 'READY') onOpenComboModal();
