@@ -1,4 +1,4 @@
-import { ArrowLeftRight, Clock, Compass, Flame, Pause, Play, ShieldAlert } from 'lucide-react';
+import { ArrowLeftRight, Clock, Compass, Flame, Maximize2, Minimize2, Pause, Play, ShieldAlert } from 'lucide-react';
 import type { FC } from 'react';
 import type { HudState } from '@/engine/battleTypes';
 import * as m from '@/paraglide/messages';
@@ -12,7 +12,9 @@ interface BattleTopHudProps {
     hud: HudState;
     useMouseAim: boolean;
     isSplitSwapped: boolean;
+    isFullscreen: boolean;
     onToggleMouseAim: () => void;
+    onToggleFullscreen: () => void;
     onToggleSplitSwap: () => void;
     onToggleDebugPathfinding?: () => void;
     onOpenComboModal: () => void;
@@ -33,7 +35,9 @@ export const BattleTopHud: FC<BattleTopHudProps> = ({
     hud,
     useMouseAim,
     isSplitSwapped,
+    isFullscreen,
     onToggleMouseAim,
+    onToggleFullscreen,
     onToggleSplitSwap,
     onToggleDebugPathfinding,
     onOpenComboModal,
@@ -147,14 +151,24 @@ export const BattleTopHud: FC<BattleTopHudProps> = ({
 
                 <button
                     type="button"
-                    onClick={onTogglePause}
+                    onClick={onToggleFullscreen}
                     className="p-2 rounded-lg border border-stone-700 bg-stone-800 text-stone-200 hover:bg-stone-700 transition-colors shrink-0 cursor-pointer select-none"
+                    aria-label={isFullscreen ? m.hud_exit_fullscreen() : m.hud_enter_fullscreen()}
+                    title={isFullscreen ? m.hud_exit_fullscreen() : m.hud_enter_fullscreen()}>
+                    {isFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+                </button>
+
+                <button
+                    type="button"
+                    onClick={onTogglePause}
+                    className="flex items-center gap-1.5 px-2.5 py-2 rounded-lg border border-stone-700 bg-stone-800 text-stone-200 hover:bg-stone-700 transition-colors shrink-0 cursor-pointer select-none"
                     aria-label={m.hud_pause()}>
                     {gameState === 'PAUSED' ? (
                         <Play className="w-4 h-4 text-emerald-400" />
                     ) : (
                         <Pause className="w-4 h-4" />
                     )}
+                    <span className="text-xs font-semibold">[P]</span>
                 </button>
             </div>
         </div>

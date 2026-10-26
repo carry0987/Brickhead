@@ -383,6 +383,10 @@ export default function App() {
                 return;
             }
 
+            if (document.fullscreenElement) {
+                return;
+            }
+
             e.preventDefault();
             soundFX.playClick();
 
