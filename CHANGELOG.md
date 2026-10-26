@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/carry0987/Brickhead/compare/v1.2.0...v1.3.0) (2026-10-26)
+
+
+### Features
+
+* **battle:** add fullscreen workspace mode ([#10](https://github.com/carry0987/Brickhead/issues/10)) ([4a9a7ec](https://github.com/carry0987/Brickhead/commit/4a9a7ecac2b00cbcaf0ba05496304f96d13d0ff1))
+
 ## [1.2.0](https://github.com/carry0987/Brickhead/compare/v1.1.1...v1.2.0) (2026-10-24)
 
 
