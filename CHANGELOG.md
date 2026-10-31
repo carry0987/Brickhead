@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/carry0987/Brickhead/compare/v1.3.0...v1.3.1) (2026-10-31)
+
+
+### Bug Fixes
+
+* **rendering:** correct railgun beam depth and add CI ([#12](https://github.com/carry0987/Brickhead/issues/12)) ([c36cfdc](https://github.com/carry0987/Brickhead/commit/c36cfdca060d379272b995936df15d796786e104))
+
 ## [1.3.0](https://github.com/carry0987/Brickhead/compare/v1.2.0...v1.3.0) (2026-10-26)
 
 
