@@ -713,6 +713,8 @@ export function fireWeapon(ctx: CombatContext, player: PlayerEntity, now: number
             createdAt: now,
             durationMs: 200,
             sortY: railBeamSortY,
+            depthStartY: y1,
+            depthEndY: y2,
         });
 
         const dx = x2 - x1;

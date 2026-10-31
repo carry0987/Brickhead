@@ -378,6 +378,8 @@ export interface RailBeam {
     width?: number;
     isBulletTrail?: boolean;
     sortY?: number;
+    depthStartY?: number;
+    depthEndY?: number;
 }
 
 export interface FloatingBanner {
