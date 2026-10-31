@@ -7,6 +7,7 @@ import {
     drawRocketSmokeFrameOnCanvas,
 } from '@/utils/svgEffectRenderer';
 import type { BattleEngineState } from '../battleTypes';
+import { splitBeamByDepth } from './beamDepthSegments';
 import type { WorldRenderItem, WorldVisibleBounds } from './worldRenderQueue';
 
 export function enqueueWorldProjectiles(
@@ -17,40 +18,50 @@ export function enqueueWorldProjectiles(
     now: number,
 ): void {
     const { left: visLeft, right: visRight, top: visTop } = visible;
-    // Instant Hitscan White Bullet Lines & Railgun Beams inside 2.5D renderQueue (Option A depth occlusion)
+    // Split railgun beams at depth changes so a single wall cannot hide the entire beam.
+    const sceneDepths = renderQueue.map((item) => item.sortY);
     st.beams.forEach((bm) => {
-        const beamSortY = bm.sortY ?? Math.max(bm.y1, bm.y2);
-        renderQueue.push({
-            sortY: beamSortY,
-            draw: () => {
-                const p = (now - bm.createdAt) / bm.durationMs;
-                ctx.save();
-                ctx.globalAlpha = clamp(1 - p, 0, 1);
-                if (bm.isBulletTrail) {
-                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.95)';
-                    ctx.lineWidth = bm.width ?? 1.8;
-                    ctx.beginPath();
-                    ctx.moveTo(bm.x1, bm.y1);
-                    ctx.lineTo(bm.x2, bm.y2);
-                    ctx.stroke();
-                } else {
-                    ctx.strokeStyle = bm.color;
-                    ctx.lineWidth = 10 * (1 - p * 0.5);
-                    ctx.beginPath();
-                    ctx.moveTo(bm.x1, bm.y1);
-                    ctx.lineTo(bm.x2, bm.y2);
-                    ctx.stroke();
+        const segments =
+            bm.depthStartY !== undefined && bm.depthEndY !== undefined
+                ? splitBeamByDepth(bm.depthStartY, bm.depthEndY, sceneDepths)
+                : [{ start: 0, end: 1, sortY: bm.sortY ?? Math.max(bm.y1, bm.y2) }];
+        for (const segment of segments) {
+            const x1 = bm.x1 + (bm.x2 - bm.x1) * segment.start;
+            const y1 = bm.y1 + (bm.y2 - bm.y1) * segment.start;
+            const x2 = bm.x1 + (bm.x2 - bm.x1) * segment.end;
+            const y2 = bm.y1 + (bm.y2 - bm.y1) * segment.end;
+            renderQueue.push({
+                sortY: segment.sortY,
+                draw: () => {
+                    const p = (now - bm.createdAt) / bm.durationMs;
+                    ctx.save();
+                    ctx.globalAlpha = clamp(1 - p, 0, 1);
+                    if (bm.isBulletTrail) {
+                        ctx.strokeStyle = 'rgba(255, 255, 255, 0.95)';
+                        ctx.lineWidth = bm.width ?? 1.8;
+                        ctx.beginPath();
+                        ctx.moveTo(x1, y1);
+                        ctx.lineTo(x2, y2);
+                        ctx.stroke();
+                    } else {
+                        ctx.strokeStyle = bm.color;
+                        ctx.lineWidth = 10 * (1 - p * 0.5);
+                        ctx.beginPath();
+                        ctx.moveTo(x1, y1);
+                        ctx.lineTo(x2, y2);
+                        ctx.stroke();
 
-                    ctx.strokeStyle = '#ffffff';
-                    ctx.lineWidth = 3;
-                    ctx.beginPath();
-                    ctx.moveTo(bm.x1, bm.y1);
-                    ctx.lineTo(bm.x2, bm.y2);
-                    ctx.stroke();
-                }
-                ctx.restore();
-            },
-        });
+                        ctx.strokeStyle = '#ffffff';
+                        ctx.lineWidth = 3;
+                        ctx.beginPath();
+                        ctx.moveTo(x1, y1);
+                        ctx.lineTo(x2, y2);
+                        ctx.stroke();
+                    }
+                    ctx.restore();
+                },
+            });
+        }
     });
 
     // Authentic 6-Frame Boxhead Smoke Puffs (`DefineSprite_580_Effect.RocketSmoke`) & 15-Frame Fake Wall Collapse Smoke (`DefineSprite_626`) inside 2.5D renderQueue
