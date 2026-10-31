@@ -1,6 +1,7 @@
 # BRICKHEAD
 
 [![Release](https://github.com/carry0987/Brickhead/actions/workflows/release.yml/badge.svg)](https://github.com/carry0987/Brickhead/actions/workflows/release.yml)
+![CI](https://github.com/carry0987/Brickhead/actions/workflows/ci.yml/badge.svg)  
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
 **BRICKHEAD** is a LEGO-style, top-down zombie survival shooter inspired by the arcade pacing of _Boxhead_. Defend compact arenas from escalating zombie hordes, maintain a combo to unlock weapons and upgrades, build temporary defenses, collect supply crates, and survive for as long as possible.
