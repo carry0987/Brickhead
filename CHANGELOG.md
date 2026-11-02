@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/carry0987/Brickhead/compare/v1.3.1...v1.4.0) (2026-11-02)
+
+
+### Features
+
+* **input:** add gamepad controls ([#16](https://github.com/carry0987/Brickhead/issues/16)) ([3e5a841](https://github.com/carry0987/Brickhead/commit/3e5a841fb9e7bf72f7f20c1a87f31118583fd938))
+* **revive:** add cooperative rescue effects ([#14](https://github.com/carry0987/Brickhead/issues/14)) ([9fa2929](https://github.com/carry0987/Brickhead/commit/9fa29292b41c9cc53edab07e91fc57b80e3f08d3))
+
 ## [1.3.1](https://github.com/carry0987/Brickhead/compare/v1.3.0...v1.3.1) (2026-10-31)
 
 
