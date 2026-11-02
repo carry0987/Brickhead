@@ -60,6 +60,12 @@ All bindings can be changed in the lobby.
 
 Solo players can also use the arrow keys as an alternate movement layout. The in-game HUD can switch between classic eight-direction shooting and mouse aiming.
 
+### Gamepad controls
+
+Standard-mapped gamepads use the left stick to move and aim in eight directions, RT to fire, LB/RB to switch weapons, and Start to pause or resume. Up to two connected gamepads are assigned to P1 and P2 in detection order; a disconnected controller does not reassign the other player. In solo and AI partner modes, only P1's gamepad controls the game. Keyboard and mouse remain available; moving the mouse or clicking switches P1 back to mouse aiming when that mode is enabled.
+
+Connect controllers via USB or Bluetooth and press a button if the browser has not detected them. Gamepad availability and standard button mappings depend on the browser and controller. Menus still require keyboard or mouse.
+
 ## Technology
 
 - [React](https://react.dev/) 19
