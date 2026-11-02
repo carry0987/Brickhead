@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!**/dist", "!**/public", "!**/pnpm-lock.yaml", "!**/CHANGELOG.md"]
+    "includes": ["**", "!**/dist", "!**/public", "!**/pnpm-lock.yaml", "!**/pnpm-workspace.yaml", "!**/CHANGELOG.md"]
   },
   "formatter": {
     "enabled": true,

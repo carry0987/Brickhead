@@ -14,6 +14,7 @@ import { updatePlacedObjects } from '@/engine/combat/placedObjectSystem';
 import { updateBulletsAndGrenades } from '@/engine/combat/projectileSystem';
 import { fireWeapon } from '@/engine/combat/weaponFireSystem';
 import { applyMilestoneToPlayer, syncWeaponState } from '@/engine/combat/weaponProgression';
+import { GamepadInputManager } from '@/engine/input/gamepadInput';
 import {
     initRoomFlowField,
     resolveSafeRedBoxPosition,
@@ -100,6 +101,9 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
     const rightMinimapCanvasRef = useRef<HTMLCanvasElement | null>(null);
     // Offscreen Persistent World Floor Bitmap (Flash BitmapData technique for zero-cost blood/scorch decals!)
     const floorBufferRef = useRef<HTMLCanvasElement | null>(null);
+    const gamepadInputRef = useRef(new GamepadInputManager());
+    const gamepadAimRef = useRef(false);
+    const lastMousePositionRef = useRef({ x: CANVAS_WIDTH / 2, y: CANVAS_HEIGHT / 2 });
 
     const [useMouseAim, setUseMouseAim] = useState(false);
     const [isFullscreen, setIsFullscreen] = useState(false);
@@ -766,6 +770,26 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
             const dt = Math.min(100, Math.max(0, now - st.lastTickTime));
             st.lastTickTime = now;
 
+            let gamepads: ReturnType<GamepadInputManager['poll']>;
+            try {
+                gamepads = gamepadInputRef.current.poll(navigator.getGamepads?.() ?? []);
+            } catch {
+                gamepads = gamepadInputRef.current.poll([]);
+            }
+            const activeGamepads =
+                gameMode === 'COOP_2P' || gameMode === 'DEATHMATCH_2P' ? gamepads : gamepads.slice(0, 1);
+            const pausePressed = activeGamepads.some((input) => input?.pausePressed);
+            const pauseRequested =
+                pausePressed &&
+                loadingPhaseRef.current === 'READY' &&
+                !isMapViewerOpen &&
+                (gameState === 'PLAYING' || gameState === 'PAUSED');
+            if (pauseRequested) {
+                soundFX.playClick();
+                if (isComboModalOpen) onCloseComboModal();
+                else onGameStateChange(gameState === 'PLAYING' ? 'PAUSED' : 'PLAYING');
+            }
+
             const combatCtx: CombatContext = {
                 st,
                 floorCanvas: floorBufferRef.current,
@@ -780,6 +804,7 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
 
             if (
                 gameState === 'PLAYING' &&
+                !pauseRequested &&
                 loadingPhaseRef.current !== 'LOADING' &&
                 !isComboModalOpen &&
                 !isMapViewerOpen
@@ -956,6 +981,9 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
                     let my = 0;
                     let isShooting = false;
                     let isShootJustPressed = false;
+                    const gamepad = !p.isAI ? activeGamepads[idx] : undefined;
+                    if (gamepad?.previousWeaponPressed) cycleWeapon(p, -1);
+                    if (gamepad?.nextWeaponPressed) cycleWeapon(p, 1);
 
                     if (idx === 0) {
                         const singlePlayerArrows = gameMode === 'SOLO' || gameMode === 'COOP_AI';
@@ -964,20 +992,37 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
                         if (keys.has(p1Binds.left) || (singlePlayerArrows && keys.has(p2Binds.left))) mx -= 1;
                         if (keys.has(p1Binds.right) || (singlePlayerArrows && keys.has(p2Binds.right))) mx += 1;
 
+                        const lastMouse = lastMousePositionRef.current;
+                        if (st.mouse.x !== lastMouse.x || st.mouse.y !== lastMouse.y || justPressed.has('mouse_left')) {
+                            gamepadAimRef.current = false;
+                            lastMousePositionRef.current = { x: st.mouse.x, y: st.mouse.y };
+                        }
+                        if (gamepad && (gamepad.moveX !== 0 || gamepad.moveY !== 0)) {
+                            gamepadAimRef.current = true;
+                            if (mx === 0 && my === 0) {
+                                mx = gamepad.moveX;
+                                my = gamepad.moveY;
+                            }
+                        } else if (!gamepad) {
+                            gamepadAimRef.current = false;
+                        }
+
                         isShootJustPressed =
                             justPressed.has('mouse_left') ||
                             justPressed.has(p1Binds.shoot) ||
                             justPressed.has('f') ||
-                            (singlePlayerArrows && justPressed.has(p2Binds.shoot));
+                            (singlePlayerArrows && justPressed.has(p2Binds.shoot)) ||
+                            Boolean(gamepad?.shootPressed);
 
                         isShooting =
                             isShootJustPressed ||
+                            Boolean(gamepad?.shooting) ||
                             st.mouse.down ||
                             keys.has(p1Binds.shoot) ||
                             keys.has('f') ||
                             (singlePlayerArrows && keys.has(p2Binds.shoot));
 
-                        if (useMouseAim) {
+                        if (useMouseAim && !gamepadAimRef.current) {
                             const splitW = Math.floor(CANVAS_WIDTH / 2);
                             const p1ViewOffsetX = gameMode === 'DEATHMATCH_2P' ? (isSplitSwapped ? splitW : 0) : 0;
                             const activeCamX = gameMode === 'DEATHMATCH_2P' ? st.camP1.x : st.camShared.x;
@@ -1008,9 +1053,20 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
                         if (keys.has(p2Binds.down)) my += 1;
                         if (keys.has(p2Binds.left)) mx -= 1;
                         if (keys.has(p2Binds.right)) mx += 1;
+                        if (mx === 0 && my === 0 && gamepad) {
+                            mx = gamepad.moveX;
+                            my = gamepad.moveY;
+                        }
 
-                        isShootJustPressed = justPressed.has(p2Binds.shoot) || justPressed.has('enter');
-                        isShooting = isShootJustPressed || keys.has(p2Binds.shoot) || keys.has('enter');
+                        isShootJustPressed =
+                            justPressed.has(p2Binds.shoot) ||
+                            justPressed.has('enter') ||
+                            Boolean(gamepad?.shootPressed);
+                        isShooting =
+                            isShootJustPressed ||
+                            keys.has(p2Binds.shoot) ||
+                            keys.has('enter') ||
+                            Boolean(gamepad?.shooting);
 
                         if (mx !== 0 || my !== 0) {
                             const snapped = snapAngleTo8Dir(mx, my);
@@ -1424,6 +1480,7 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
     }, [
         activeCameraZoom,
         buildWaveEnemies,
+        cycleWeapon,
         deathmatchFragsGoal,
         diffMult,
         explosionPlayerDamage,
@@ -1436,6 +1493,7 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
         isSplitSwapped,
         minimapEnabled,
         objectCollision,
+        onCloseComboModal,
         onGameStateChange,
         p1Binds.down,
         p1Binds.left,
