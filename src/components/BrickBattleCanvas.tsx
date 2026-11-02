@@ -20,6 +20,7 @@ import {
     updateFlowField,
 } from '@/engine/pathfinding/flowFieldPathfinding';
 import { createPlayerEntity } from '@/engine/player/createPlayerEntity';
+import { findRevivingAlly } from '@/engine/player/reviveProximity';
 import { PLACEABLE_GRID_TUNING, PLACEABLE_SPECS } from '@/engine/tuning/placeableTuning';
 import {
     PICKUP_TUNING,
@@ -937,8 +938,7 @@ export const BrickBattleCanvas: FC<BrickBattleCanvasProps> = ({
                                 }
                             }
                         } else {
-                            const ally = st.players.find((other) => other.id !== p.id && !other.isDowned);
-                            if (ally && dist(p.x, p.y, ally.x, ally.y) < PLAYER_REVIVE_TUNING.coopDistance) {
+                            if (findRevivingAlly(p, st.players)) {
                                 p.reviveTimer += 1;
                                 if (p.reviveTimer >= PLAYER_REVIVE_TUNING.coopTicks) {
                                     p.isDowned = false;
