@@ -3,6 +3,7 @@ import type { CharacterId, GameMode, PlayerEntity, RoomSpec, WeaponId } from '@/
 import { clamp } from '@/utils/battleGeometry';
 import { computeObstacleNeighborFlags } from '@/utils/rendering/isoObstacleRenderer';
 import type { BattleEngineState } from './battleTypes';
+import { enqueueReviveEffects } from './rendering/reviveEffectRenderer';
 import { enqueueWorldActors } from './rendering/worldActorRenderer';
 import { renderWorldDebugOverlay } from './rendering/worldDebugOverlayRenderer';
 import { renderWorldFloor } from './rendering/worldFloorRenderer';
@@ -90,6 +91,7 @@ export function renderBattleCanvasFrame(params: RenderBattleFrameParams): void {
 
         const renderQueue: WorldRenderItem[] = [];
         enqueueWorldObstacles(ctx, st, room, visible, obstacleNeighborMap, renderQueue, now);
+        enqueueReviveEffects(ctx, st.players, gameMode, visible, renderQueue, now);
         enqueueWorldActors(ctx, st, visible, renderQueue, now, getWeaponName);
         enqueueWorldBottomPerimeter(ctx, room, worldW, worldH, renderQueue);
         enqueueWorldProjectiles(ctx, st, visible, renderQueue, now);
